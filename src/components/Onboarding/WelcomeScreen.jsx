@@ -2,14 +2,14 @@ import { Sparkles, Compass } from 'lucide-react'
 
 export default function WelcomeScreen({ onQuickHelp, onFreeBrowse }) {
   return (
-    <div className="min-h-screen bg-cream-50 flex flex-col items-center justify-center px-6">
+    <div className="min-h-screen bg-cream-50 flex flex-col items-center justify-center px-6 -mt-12">
       <div className="animate-fade-in text-center max-w-sm">
         {/* Logo */}
-        <img src="/dubon-logo.jpg" alt="דובון" className="w-40 h-40 mx-auto mb-4 rounded-full shadow-lg" />
+        <img src="/dubon-logo.jpg" alt="דובון" className="w-48 mx-auto mb-6 rounded-3xl shadow-lg" />
         <h1 className="text-5xl font-bold text-olive-600 mb-2 tracking-tight">
           דובון
         </h1>
-        <p className="text-cream-600 text-lg mb-12">מתכונים שמזינים את הגוף והנשמה</p>
+        <p className="text-cream-600 text-lg mb-10">מתכונים שמזינים את הגוף והנשמה</p>
 
         {/* Options */}
         <div className="space-y-4">
