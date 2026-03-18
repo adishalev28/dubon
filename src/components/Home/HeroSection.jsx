@@ -14,9 +14,9 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
 
       {/* Logo */}
-      <div className="absolute top-4 right-4 flex items-center gap-2">
-        <img src="/dubon-logo.jpg" alt="דובון" className="w-10 h-10 rounded-full shadow-md" />
-        <span className="text-white/90 font-bold text-xl tracking-tight">דובון</span>
+      <div className="absolute top-3 right-3 flex items-center gap-1.5 bg-white/20 backdrop-blur-sm rounded-full py-1 pl-3 pr-1">
+        <span className="text-white font-bold text-sm">דובון</span>
+        <img src="/dubon-icon-512.png" alt="דובון" className="w-8 h-8 rounded-full" />
       </div>
 
       {/* Greeting */}

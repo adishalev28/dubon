@@ -11,10 +11,16 @@
   "lang": "he",
   "icons": [
     {
-      "src": "/dubon-logo.jpg",
+      "src": "/dubon-icon-512.png",
       "sizes": "512x512",
-      "type": "image/jpeg",
-      "purpose": "any maskable"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/dubon-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }
