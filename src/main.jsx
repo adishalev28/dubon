@@ -11,3 +11,8 @@ createRoot(document.getElementById('root')).render(
     </BrowserRouter>
   </StrictMode>,
 )
+
+// Register service worker for PWA auto-updates
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+}
