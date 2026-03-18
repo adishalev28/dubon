@@ -1,14 +1,20 @@
 import { Clock, Bookmark } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
 import NutritionPills from './NutritionPills'
 import useAppStore from '../../store/useAppStore'
 
 export default function RecipeCard({ recipe, variant = 'compact' }) {
   const { favorites, toggleFavorite } = useAppStore()
   const isFavorite = favorites.includes(recipe.id)
+  const navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate(`/recipe/${recipe.id}`)
+  }
 
   if (variant === 'compact') {
     return (
-      <div className="flex-shrink-0 w-56 bg-white rounded-2xl overflow-hidden shadow-sm">
+      <div onClick={handleClick} className="flex-shrink-0 w-56 bg-white rounded-2xl overflow-hidden shadow-sm cursor-pointer active:scale-[0.98] transition-transform">
         {/* Image */}
         <div className="relative h-[130px]">
           <img
@@ -51,7 +57,7 @@ export default function RecipeCard({ recipe, variant = 'compact' }) {
 
   // Full variant for results screen
   return (
-    <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
+    <div onClick={handleClick} className="bg-white rounded-2xl overflow-hidden shadow-sm cursor-pointer active:scale-[0.98] transition-transform">
       <div className="relative h-[180px]">
         <img
           src={recipe.image}

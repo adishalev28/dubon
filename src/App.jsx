@@ -10,6 +10,7 @@ import MealCategories from './components/Home/MealCategories'
 import RecommendedRecipes from './components/Home/RecommendedRecipes'
 import QuickFilters from './components/Home/QuickFilters'
 import BottomNav from './components/Layout/BottomNav'
+import RecipePage from './components/Recipe/RecipePage'
 
 function HomePage() {
   return (
@@ -71,6 +72,7 @@ export default function App() {
     <div className="max-w-lg mx-auto bg-cream-50 min-h-screen">
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/recipe/:id" element={<RecipePage />} />
         <Route path="/categories" element={<PlaceholderPage title="קטגוריות" />} />
         <Route path="/nutrition" element={<PlaceholderPage title="מעקב תזונה" />} />
         <Route path="/favorites" element={<PlaceholderPage title="מועדפים" />} />
