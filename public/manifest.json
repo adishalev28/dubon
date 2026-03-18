@@ -1,0 +1,20 @@
+{
+  "name": "דובון — מתכונים ותזונה",
+  "short_name": "דובון",
+  "description": "מתכונים שמזינים את הגוף והנשמה",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDFCF8",
+  "theme_color": "#6B7F4A",
+  "orientation": "portrait",
+  "dir": "rtl",
+  "lang": "he",
+  "icons": [
+    {
+      "src": "/dubon-logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -5,6 +5,7 @@ export default function WelcomeScreen({ onQuickHelp, onFreeBrowse }) {
     <div className="min-h-screen bg-cream-50 flex flex-col items-center justify-center px-6">
       <div className="animate-fade-in text-center max-w-sm">
         {/* Logo */}
+        <img src="/dubon-logo.jpg" alt="דובון" className="w-40 h-40 mx-auto mb-4 rounded-full shadow-lg" />
         <h1 className="text-5xl font-bold text-olive-600 mb-2 tracking-tight">
           דובון
         </h1>
