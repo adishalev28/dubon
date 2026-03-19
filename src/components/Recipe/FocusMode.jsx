@@ -51,7 +51,7 @@ export default function FocusMode({ steps, recipeName, onClose }) {
   const progress = ((currentStep + 1) / total) * 100
 
   return (
-    <div className="fixed inset-0 z-50 bg-cream-50 flex flex-col" dir="rtl">
+    <div className="fixed inset-0 z-[60] bg-cream-50 flex flex-col" dir="rtl">
       {/* Top bar */}
       <div className="flex-shrink-0 px-4 pt-3 pb-2">
         <div className="flex items-center justify-between mb-3">
@@ -102,8 +102,8 @@ export default function FocusMode({ steps, recipeName, onClose }) {
         </div>
       </div>
 
-      {/* Bottom navigation */}
-      <div className="flex-shrink-0 px-4 pb-6 pt-3">
+      {/* Bottom navigation — above BottomNav safe area */}
+      <div className="flex-shrink-0 px-4 pt-3 pb-[max(env(safe-area-inset-bottom,16px),24px)]">
         <div className="flex gap-3">
           {/* Previous button */}
           {currentStep > 0 ? (
