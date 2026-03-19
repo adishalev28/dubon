@@ -1,18 +1,22 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play } from 'lucide-react'
+import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play, Minus, Plus, Check, CookingPot } from 'lucide-react'
 import { recipes } from '../../data/recipes'
 import useAppStore from '../../store/useAppStore'
 import NutritionPills from '../shared/NutritionPills'
 import { useState, useRef } from 'react'
+import { scaleAmount, parseAmount } from '../../utils/parseAmount'
+import FocusMode from './FocusMode'
 
 export default function RecipePage() {
   const { id } = useParams()
   const navigate = useNavigate()
   const recipe = recipes.find(r => r.id === Number(id))
-  const { favorites, toggleFavorite } = useAppStore()
+  const { favorites, toggleFavorite, checkedIngredients, toggleIngredientCheck } = useAppStore()
   const isFavorite = recipe ? favorites.includes(recipe.id) : false
   const [isPlaying, setIsPlaying] = useState(false)
   const videoRef = useRef(null)
+  const [servingCount, setServingCount] = useState(recipe?.baseServings || 1)
+  const [focusModeOpen, setFocusModeOpen] = useState(false)
 
   if (!recipe) {
     return (
@@ -24,6 +28,12 @@ export default function RecipePage() {
 
   const hasDetailedContent = recipe.steps && recipe.steps.length > 0
   const hasVideo = !!recipe.video
+  const hasDetailedIngredients = !!recipe.detailedIngredients
+  const hasScaler = hasDetailedIngredients && recipe.baseServings
+  const multiplier = hasScaler ? servingCount / recipe.baseServings : 1
+  const recipeChecked = checkedIngredients[recipe.id] || []
+
+  const isSeparator = (ing) => ing.name.includes('──')
 
   const handlePlayVideo = () => {
     if (videoRef.current) {
@@ -92,7 +102,7 @@ export default function RecipePage() {
       </div>
 
       {/* Quick info badges */}
-      <div className="flex items-center justify-center gap-4 px-4 mt-4">
+      <div className="flex items-center justify-center gap-3 px-4 mt-4 flex-wrap">
         <div className="flex items-center gap-1.5 bg-white rounded-full px-3 py-2 shadow-sm">
           <Clock size={16} className="text-warm-orange-600" />
           <span className="text-sm font-medium text-olive-800">{recipe.time} דק׳</span>
@@ -101,12 +111,34 @@ export default function RecipePage() {
           <ChefHat size={16} className="text-warm-orange-600" />
           <span className="text-sm font-medium text-olive-800">{recipe.difficulty}</span>
         </div>
-        {recipe.servings && (
+
+        {/* Serving Scaler */}
+        {hasScaler ? (
+          <div className="flex items-center gap-2 bg-white rounded-full px-2 py-1.5 shadow-sm">
+            <button
+              onClick={() => setServingCount(prev => Math.max(1, prev - 1))}
+              className="w-7 h-7 rounded-full bg-olive-50 flex items-center justify-center cursor-pointer active:bg-olive-100 transition-colors"
+            >
+              <Minus size={14} className="text-olive-600" />
+            </button>
+            <div className="flex items-center gap-1 px-1">
+              <Users size={14} className="text-warm-orange-600" />
+              <span className="text-sm font-bold text-olive-800 min-w-[20px] text-center">{servingCount}</span>
+              <span className="text-xs text-cream-600">{servingCount === 1 ? 'מנה' : 'מנות'}</span>
+            </div>
+            <button
+              onClick={() => setServingCount(prev => Math.min(20, prev + 1))}
+              className="w-7 h-7 rounded-full bg-olive-50 flex items-center justify-center cursor-pointer active:bg-olive-100 transition-colors"
+            >
+              <Plus size={14} className="text-olive-600" />
+            </button>
+          </div>
+        ) : recipe.servings ? (
           <div className="flex items-center gap-1.5 bg-white rounded-full px-3 py-2 shadow-sm">
             <Users size={16} className="text-warm-orange-600" />
             <span className="text-sm font-medium text-olive-800">{recipe.servings}</span>
           </div>
-        )}
+        ) : null}
       </div>
 
       {/* Nutrition */}
@@ -132,29 +164,72 @@ export default function RecipePage() {
         </div>
       )}
 
-      {/* Detailed Ingredients */}
-      {recipe.detailedIngredients ? (
+      {/* Detailed Ingredients with Checkboxes + Scaling */}
+      {hasDetailedIngredients ? (
         <div className="mx-4 mt-5">
-          <h2 className="font-bold text-olive-800 text-base mb-3">🧾 מרכיבים</h2>
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="font-bold text-olive-800 text-base">🧾 מרכיבים</h2>
+            {multiplier !== 1 && (
+              <span className="text-xs text-warm-orange-600 bg-warm-orange-50 px-2 py-1 rounded-full">
+                ×{multiplier.toFixed(1).replace(/\.0$/, '')}
+              </span>
+            )}
+          </div>
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
-            {recipe.detailedIngredients.map((ing, i) => (
-              <div
-                key={i}
-                className={`p-3 ${i !== recipe.detailedIngredients.length - 1 ? 'border-b border-cream-100' : ''}`}
-              >
-                <div className="flex items-start justify-between gap-2">
-                  <div className="flex-1">
-                    <span className="font-medium text-olive-800 text-sm">{ing.name}</span>
-                    {ing.note && (
-                      <p className="text-xs text-cream-400 mt-0.5">{ing.note}</p>
-                    )}
+            {recipe.detailedIngredients.map((ing, i) => {
+              const separator = isSeparator(ing)
+              const isChecked = recipeChecked.includes(i)
+              const scaledAmount = hasScaler && !separator ? scaleAmount(ing.amount, multiplier) : ing.amount
+              const amountParseable = ing.amount ? parseAmount(ing.amount).parseable : false
+
+              if (separator) {
+                return (
+                  <div key={i} className="bg-cream-50 px-3 py-2 border-b border-cream-100">
+                    <span className="text-xs font-bold text-cream-600">{ing.name}</span>
                   </div>
-                  <span className="text-sm text-warm-orange-600 font-medium whitespace-nowrap">
-                    {ing.amount}
-                  </span>
+                )
+              }
+
+              return (
+                <div
+                  key={i}
+                  className={`p-3 ${i !== recipe.detailedIngredients.length - 1 ? 'border-b border-cream-100' : ''}`}
+                >
+                  <div className="flex items-start gap-2">
+                    {/* Checkbox */}
+                    <button
+                      onClick={() => toggleIngredientCheck(recipe.id, i)}
+                      className={`flex-shrink-0 w-6 h-6 rounded-lg border-2 flex items-center justify-center mt-0.5 cursor-pointer transition-all ${
+                        isChecked
+                          ? 'bg-olive-600 border-olive-600'
+                          : 'border-cream-400 bg-white'
+                      }`}
+                    >
+                      {isChecked && <Check size={14} className="text-white" strokeWidth={3} />}
+                    </button>
+
+                    {/* Content */}
+                    <div className={`flex-1 flex items-start justify-between gap-2 transition-opacity ${isChecked ? 'opacity-40' : ''}`}>
+                      <div className="flex-1">
+                        <span className={`font-medium text-olive-800 text-sm ${isChecked ? 'line-through' : ''}`}>
+                          {ing.name}
+                        </span>
+                        {ing.note && (
+                          <p className="text-xs text-cream-400 mt-0.5">{ing.note}</p>
+                        )}
+                      </div>
+                      <span className={`text-sm font-medium whitespace-nowrap ${
+                        isChecked ? 'text-cream-400 line-through' :
+                        (hasScaler && !amountParseable && ing.amount) ? 'text-cream-400' :
+                        'text-warm-orange-600'
+                      }`}>
+                        {scaledAmount}
+                      </span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       ) : (
@@ -176,7 +251,16 @@ export default function RecipePage() {
       {/* Steps */}
       {hasDetailedContent && (
         <div className="mx-4 mt-5">
-          <h2 className="font-bold text-olive-800 text-base mb-3">👨‍🍳 שלבי הכנה</h2>
+          <div className="flex items-center justify-between mb-3">
+            <h2 className="font-bold text-olive-800 text-base">👨‍🍳 שלבי הכנה</h2>
+            <button
+              onClick={() => setFocusModeOpen(true)}
+              className="flex items-center gap-1.5 bg-olive-600 text-white px-3 py-2 rounded-xl text-xs font-medium shadow-sm cursor-pointer active:bg-olive-800 transition-colors"
+            >
+              <CookingPot size={14} />
+              מצב בישול
+            </button>
+          </div>
           <div className="space-y-3">
             {recipe.steps.map((step, i) => (
               <div key={i} className="bg-white rounded-2xl p-4 shadow-sm">
@@ -206,6 +290,15 @@ export default function RecipePage() {
             </div>
           </div>
         </div>
+      )}
+
+      {/* Focus Mode Overlay */}
+      {focusModeOpen && hasDetailedContent && (
+        <FocusMode
+          steps={recipe.steps}
+          recipeName={recipe.name}
+          onClose={() => setFocusModeOpen(false)}
+        />
       )}
     </div>
   )

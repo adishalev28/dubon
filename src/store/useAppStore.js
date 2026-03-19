@@ -44,6 +44,19 @@ const useAppStore = create((set, get) => ({
     localStorage.setItem('nourish_favorites', JSON.stringify(next))
     set({ favorites: next })
   },
+
+  // Ingredient Checklist
+  checkedIngredients: JSON.parse(localStorage.getItem('nourish_checked_ingredients') || '{}'),
+  toggleIngredientCheck: (recipeId, ingredientIndex) => {
+    const current = get().checkedIngredients
+    const recipeChecked = current[recipeId] || []
+    const next = recipeChecked.includes(ingredientIndex)
+      ? recipeChecked.filter((i) => i !== ingredientIndex)
+      : [...recipeChecked, ingredientIndex]
+    const updated = { ...current, [recipeId]: next }
+    localStorage.setItem('nourish_checked_ingredients', JSON.stringify(updated))
+    set({ checkedIngredients: updated })
+  },
 }))
 
 export default useAppStore
