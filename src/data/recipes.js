@@ -8,7 +8,7 @@ export const recipes = [
   {
     id: 11,
     name: 'עוף במנגל ואורז לבן אוורירי',
-    image: 'https://images.unsplash.com/photo-1532550907401-a500c9a57435?w=600&h=400&fit=crop',
+    image: '/עוף בגריל עם אורז.jpg',
     time: 45,
     difficulty: 'בינוני',
     category: 'צהריים',
