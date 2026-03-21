@@ -9,7 +9,6 @@ import SearchBar from './components/Home/SearchBar'
 import MealCategories from './components/Home/MealCategories'
 import RecommendedRecipes from './components/Home/RecommendedRecipes'
 import QuickFilters from './components/Home/QuickFilters'
-import OurDishes from './components/Home/OurDishes'
 import BottomNav from './components/Layout/BottomNav'
 import RecipePage from './components/Recipe/RecipePage'
 
@@ -21,7 +20,6 @@ function HomePage() {
       <MealCategories />
       <QuickFilters />
       <RecommendedRecipes />
-      <OurDishes />
     </div>
   )
 }

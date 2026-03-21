@@ -319,6 +319,7 @@ export const mealCategories = [
   { id: 'lunch', label: 'צהריים', icon: 'Salad', bgColor: 'bg-olive-50' },
   { id: 'dinner', label: 'ערב', icon: 'Moon', bgColor: 'bg-warm-brown-50' },
   { id: 'snack', label: 'נשנושים', icon: 'Cookie', bgColor: 'bg-warm-orange-50' },
+  { id: 'dip', label: 'מטבלים', icon: 'Droplets', bgColor: 'bg-olive-50' },
 ]
 
 export const quickFilters = [
