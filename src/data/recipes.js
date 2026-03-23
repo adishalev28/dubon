@@ -188,7 +188,7 @@ export const recipes = [
     id: 12,
     name: 'עוף ופתיתים בסיר אחד',
     image: '/עוף בפתיתים.jpg',
-    link: 'https://vm.tiktok.com/ZS9Rqb6UW/',
+    link: 'https://www.tiktok.com/@maayanraz/video/7588621958770593045',
     time: 90,
     difficulty: 'בינוני',
     category: 'צהריים',
