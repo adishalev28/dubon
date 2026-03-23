@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play, Minus, Plus, Check, CookingPot, Pencil, ExternalLink } from 'lucide-react'
+import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play, Minus, Plus, Check, CookingPot, Pencil, ExternalLink, PictureInPicture2 } from 'lucide-react'
 import { recipes } from '../../data/recipes'
 import useAppStore from '../../store/useAppStore'
 import NutritionPills from '../shared/NutritionPills'
@@ -91,6 +91,21 @@ export default function RecipePage() {
                 <div className="w-16 h-16 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
                   <Play size={28} className="text-olive-600 mr-[-3px]" fill="currentColor" />
                 </div>
+              </button>
+            )}
+            {isPlaying && document.pictureInPictureEnabled && (
+              <button
+                onClick={() => {
+                  if (document.pictureInPictureElement) {
+                    document.exitPictureInPicture()
+                  } else if (videoRef.current) {
+                    videoRef.current.requestPictureInPicture()
+                  }
+                }}
+                className="absolute top-2 left-2 bg-black/50 text-white rounded-full p-2"
+                title="חלונית צפה"
+              >
+                <PictureInPicture2 size={18} />
               </button>
             )}
           </div>

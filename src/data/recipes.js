@@ -188,6 +188,7 @@ export const recipes = [
     id: 12,
     name: 'עוף ופתיתים בסיר אחד',
     image: '/עוף בפתיתים.jpg',
+    video: '/סירטון עוף ופתיתים.mp4',
     link: 'https://www.tiktok.com/@shahafbenbasat/video/7467896006349262087',
     time: 90,
     difficulty: 'בינוני',
