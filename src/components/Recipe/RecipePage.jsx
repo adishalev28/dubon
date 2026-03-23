@@ -295,11 +295,11 @@ export default function RecipePage() {
       )}
 
       {/* Personal Notes */}
-      <div className="mx-4 mt-5 bg-white rounded-2xl p-4 shadow-sm border border-cream-100">
+      <div className="mx-4 mt-6 mb-24 bg-olive-50 rounded-2xl p-4 border border-olive-100">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-2">
-            <Pencil size={18} className="text-olive-600" />
-            <h3 className="font-bold text-olive-600 text-sm">ההערות שלי</h3>
+            <Pencil size={20} className="text-olive-600" />
+            <h3 className="font-bold text-olive-600">ההערות שלי</h3>
           </div>
           {!noteEditing && (
             <button
@@ -307,7 +307,7 @@ export default function RecipePage() {
                 setNoteText(recipeNotes[recipe.id] || '')
                 setNoteEditing(true)
               }}
-              className="text-xs text-olive-600 bg-olive-50 px-3 py-1 rounded-full"
+              className="text-xs text-olive-600 bg-white px-3 py-1.5 rounded-full border border-olive-100"
             >
               {recipeNotes[recipe.id] ? 'עריכה' : '+ הוספה'}
             </button>
