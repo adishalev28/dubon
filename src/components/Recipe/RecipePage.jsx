@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play, Minus, Plus, Check, CookingPot, Pencil } from 'lucide-react'
+import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play, Minus, Plus, Check, CookingPot, Pencil, ExternalLink } from 'lucide-react'
 import { recipes } from '../../data/recipes'
 import useAppStore from '../../store/useAppStore'
 import NutritionPills from '../shared/NutritionPills'
@@ -147,6 +147,22 @@ export default function RecipePage() {
       <div className="flex justify-center mt-3">
         <NutritionPills calories={recipe.calories} protein={recipe.protein} fat={recipe.fat} />
       </div>
+
+      {/* External Link (TikTok etc.) */}
+      {recipe.link && (
+        <div className="mx-4 mt-4">
+          <a
+            href={recipe.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-2 bg-warm-brown-50 text-warm-brown-600 rounded-xl py-3 px-4 text-sm font-medium border border-warm-brown-100"
+          >
+            <Play size={16} fill="currentColor" />
+            צפייה בסרטון המתכון
+            <ExternalLink size={14} />
+          </a>
+        </div>
+      )}
 
       {/* Description / Intro */}
       <div className="mx-4 mt-5 bg-white rounded-2xl p-4 shadow-sm">
