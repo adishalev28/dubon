@@ -16,9 +16,7 @@ export default function RecipePage() {
   const [noteEditing, setNoteEditing] = useState(false)
   const isFavorite = recipe ? favorites.includes(recipe.id) : false
   const [isPlaying, setIsPlaying] = useState(false)
-  const [isFloating, setIsFloating] = useState(false)
   const videoRef = useRef(null)
-  const videoContainerRef = useRef(null)
   const [servingCount, setServingCount] = useState(recipe?.baseServings || 1)
   const [focusModeOpen, setFocusModeOpen] = useState(false)
 
@@ -29,22 +27,6 @@ export default function RecipePage() {
       </div>
     )
   }
-
-  // Floating video on scroll
-  useEffect(() => {
-    if (!isPlaying || !videoContainerRef.current) return
-    const observer = new IntersectionObserver(
-      ([entry]) => setIsFloating(!entry.isIntersecting),
-      { threshold: 0.3 }
-    )
-    observer.observe(videoContainerRef.current)
-    return () => observer.disconnect()
-  }, [isPlaying])
-
-  // Reset floating when video stops
-  useEffect(() => {
-    if (!isPlaying) setIsFloating(false)
-  }, [isPlaying])
 
   const hasDetailedContent = recipe.steps && recipe.steps.length > 0
   const hasVideo = !!recipe.video
@@ -86,37 +68,8 @@ export default function RecipePage() {
         </div>
       </div>
 
-      {/* Floating mini player */}
-      {isFloating && isPlaying && (
-        <div className="fixed bottom-20 left-4 z-50 rounded-xl overflow-hidden shadow-2xl border-2 border-olive-400" style={{ width: '160px' }}>
-          <video
-            src={recipe.video}
-            ref={(el) => {
-              if (el && videoRef.current && el !== videoRef.current) {
-                el.currentTime = videoRef.current.currentTime
-                el.play()
-              }
-            }}
-            className="w-full"
-            controls
-            playsInline
-            autoPlay
-            muted={false}
-          />
-          <button
-            onClick={() => {
-              setIsFloating(false)
-              window.scrollTo({ top: 0, behavior: 'smooth' })
-            }}
-            className="absolute top-1 right-1 bg-black/60 text-white rounded-full w-6 h-6 flex items-center justify-center text-xs"
-          >
-            ✕
-          </button>
-        </div>
-      )}
-
       {/* Video or Image */}
-      <div ref={videoContainerRef} className="relative mx-4 rounded-2xl overflow-hidden shadow-md">
+      <div className={`relative mx-4 rounded-2xl overflow-hidden shadow-md ${isPlaying ? 'sticky top-0 z-40' : ''}`}>
         {hasVideo ? (
           <div className="relative">
             <video
