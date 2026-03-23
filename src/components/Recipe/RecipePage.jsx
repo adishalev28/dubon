@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play, Minus, Plus, Check, CookingPot } from 'lucide-react'
+import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play, Minus, Plus, Check, CookingPot, Pencil } from 'lucide-react'
 import { recipes } from '../../data/recipes'
 import useAppStore from '../../store/useAppStore'
 import NutritionPills from '../shared/NutritionPills'
@@ -11,7 +11,9 @@ export default function RecipePage() {
   const { id } = useParams()
   const navigate = useNavigate()
   const recipe = recipes.find(r => r.id === Number(id))
-  const { favorites, toggleFavorite, checkedIngredients, toggleIngredientCheck } = useAppStore()
+  const { favorites, toggleFavorite, checkedIngredients, toggleIngredientCheck, recipeNotes, setRecipeNote } = useAppStore()
+  const [noteText, setNoteText] = useState('')
+  const [noteEditing, setNoteEditing] = useState(false)
   const isFavorite = recipe ? favorites.includes(recipe.id) : false
   const [isPlaying, setIsPlaying] = useState(false)
   const videoRef = useRef(null)
@@ -291,6 +293,60 @@ export default function RecipePage() {
           </div>
         </div>
       )}
+
+      {/* Personal Notes */}
+      <div className="mx-4 mt-5 bg-white rounded-2xl p-4 shadow-sm border border-cream-100">
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center gap-2">
+            <Pencil size={18} className="text-olive-600" />
+            <h3 className="font-bold text-olive-600 text-sm">ההערות שלי</h3>
+          </div>
+          {!noteEditing && (
+            <button
+              onClick={() => {
+                setNoteText(recipeNotes[recipe.id] || '')
+                setNoteEditing(true)
+              }}
+              className="text-xs text-olive-600 bg-olive-50 px-3 py-1 rounded-full"
+            >
+              {recipeNotes[recipe.id] ? 'עריכה' : '+ הוספה'}
+            </button>
+          )}
+        </div>
+        {noteEditing ? (
+          <div>
+            <textarea
+              value={noteText}
+              onChange={(e) => setNoteText(e.target.value)}
+              placeholder="הוסיפו הערות אישיות למתכון... למשל: פחות מלח, יותר מים לפתיתים"
+              className="w-full border border-cream-100 rounded-xl p-3 text-sm text-warm-brown-600 resize-none focus:outline-none focus:border-olive-400 placeholder:text-warm-brown-400"
+              rows={3}
+              autoFocus
+            />
+            <div className="flex gap-2 mt-2 justify-end">
+              <button
+                onClick={() => setNoteEditing(false)}
+                className="text-xs text-warm-brown-400 px-3 py-1.5 rounded-full"
+              >
+                ביטול
+              </button>
+              <button
+                onClick={() => {
+                  setRecipeNote(recipe.id, noteText)
+                  setNoteEditing(false)
+                }}
+                className="text-xs text-white bg-olive-600 px-4 py-1.5 rounded-full"
+              >
+                שמירה
+              </button>
+            </div>
+          </div>
+        ) : recipeNotes[recipe.id] ? (
+          <p className="text-sm text-warm-brown-600 leading-relaxed whitespace-pre-wrap">{recipeNotes[recipe.id]}</p>
+        ) : (
+          <p className="text-sm text-warm-brown-400 italic">אין הערות עדיין</p>
+        )}
+      </div>
 
       {/* Focus Mode Overlay */}
       {focusModeOpen && hasDetailedContent && (

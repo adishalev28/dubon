@@ -57,6 +57,16 @@ const useAppStore = create((set, get) => ({
     localStorage.setItem('nourish_checked_ingredients', JSON.stringify(updated))
     set({ checkedIngredients: updated })
   },
+
+  // Personal recipe notes
+  recipeNotes: JSON.parse(localStorage.getItem('nourish_recipe_notes') || '{}'),
+  setRecipeNote: (recipeId, text) => {
+    const current = get().recipeNotes
+    const updated = { ...current, [recipeId]: text }
+    if (!text.trim()) delete updated[recipeId]
+    localStorage.setItem('nourish_recipe_notes', JSON.stringify(updated))
+    set({ recipeNotes: updated })
+  },
 }))
 
 export default useAppStore
