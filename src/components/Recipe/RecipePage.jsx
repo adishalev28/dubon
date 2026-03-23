@@ -37,6 +37,27 @@ export default function RecipePage() {
 
   const isSeparator = (ing) => ing.name.includes('──')
 
+  // Merge duplicate ingredients by name
+  const mergedIngredients = hasDetailedIngredients ? (() => {
+    const merged = []
+    const seen = {}
+    recipe.detailedIngredients.forEach(ing => {
+      if (isSeparator(ing)) { merged.push(ing); return }
+      const key = ing.name.trim()
+      if (seen[key] !== undefined) {
+        const existing = merged[seen[key]]
+        const amounts = [existing.amount, ing.amount].filter(Boolean)
+        existing.amount = amounts.join(' + ')
+        const notes = [existing.note, ing.note].filter(Boolean)
+        existing.note = notes.join(', ')
+      } else {
+        seen[key] = merged.length
+        merged.push({ ...ing })
+      }
+    })
+    return merged
+  })() : []
+
   const handlePlayVideo = () => {
     if (videoRef.current) {
       videoRef.current.play()
@@ -209,7 +230,7 @@ export default function RecipePage() {
             )}
           </div>
           <div className="bg-white rounded-2xl overflow-hidden shadow-sm">
-            {recipe.detailedIngredients.map((ing, i) => {
+            {mergedIngredients.map((ing, i) => {
               const separator = isSeparator(ing)
               const isChecked = recipeChecked.includes(i)
               const scaledAmount = hasScaler && !separator ? scaleAmount(ing.amount, multiplier) : ing.amount
@@ -226,7 +247,7 @@ export default function RecipePage() {
               return (
                 <div
                   key={i}
-                  className={`p-3 ${i !== recipe.detailedIngredients.length - 1 ? 'border-b border-cream-100' : ''}`}
+                  className={`p-3 ${i !== mergedIngredients.length - 1 ? 'border-b border-cream-100' : ''}`}
                 >
                   <div className="flex items-start gap-2">
                     {/* Checkbox */}

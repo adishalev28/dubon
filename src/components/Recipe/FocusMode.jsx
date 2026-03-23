@@ -95,10 +95,15 @@ export default function FocusMode({ steps, recipeName, onClose }) {
             {step.title}
           </h2>
 
-          {/* Step text */}
-          <p className="text-base text-cream-600 leading-relaxed text-center">
-            {step.text}
-          </p>
+          {/* Step text as bullets */}
+          <ul className="text-base text-cream-600 leading-loose text-right space-y-3 px-2">
+            {step.text.split('.').filter(s => s.trim()).map((sentence, i) => (
+              <li key={i} className="flex items-start gap-2">
+                <span className="text-olive-600 mt-1 shrink-0">•</span>
+                <span>{sentence.trim()}</span>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
