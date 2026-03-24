@@ -246,7 +246,7 @@ export const recipes = [
   {
     id: 13,
     name: 'פאי רועים קלאסי',
-    image: 'https://images.unsplash.com/photo-1600626333392-59e3e6e0c4f0?w=800',
+    image: '/פאי רועים.jpg',
     video: '/פאי רועים של שטרודל ♥️.mp4',
     link: 'https://www.youtube.com/watch?v=ytkBpeVaDfc',
     time: 50,
