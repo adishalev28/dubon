@@ -1,0 +1,93 @@
+{
+  "app": {
+    "name": "דובון",
+    "tagline": "מתכונים טבעיים לחיים בריאים"
+  },
+  "nav": {
+    "home": "בית",
+    "categories": "קטגוריות",
+    "nutrition": "תזונה",
+    "favorites": "מועדפים",
+    "profile": "פרופיל",
+    "explore": "חפש"
+  },
+  "home": {
+    "hero": "מתכונים טבעיים",
+    "heroSub": "לחיים בריאים",
+    "searchPlaceholder": "חפש מתכון, מרכיב או טעם...",
+    "recommended": "מומלצים עבורך",
+    "techniques": "טכניקות בישול",
+    "noResults": "לא נמצאו מתכונים",
+    "tryDifferent": "נסה חיפוש אחר או שנה את הסינון"
+  },
+  "meals": {
+    "breakfast": "בוקר",
+    "lunch": "צהריים",
+    "dinner": "ערב",
+    "snack": "נשנושים",
+    "dip": "מטבלים"
+  },
+  "recipe": {
+    "minutes": "דק׳",
+    "servings": "מנות",
+    "ingredients": "מרכיבים",
+    "steps": "שלבי הכנה",
+    "proTip": "טיפ שף",
+    "difficulty": "רמת קושי",
+    "easy": "קל",
+    "medium": "בינוני",
+    "hard": "מורכב",
+    "addFavorite": "הוסף למועדפים",
+    "removeFavorite": "הסר ממועדפים"
+  },
+  "tcm": {
+    "title": "רפואה סינית",
+    "western": "תזונה מערבית",
+    "nature": "טבע",
+    "hot": "לוהט",
+    "warm": "חם",
+    "neutral": "ניטרלי",
+    "cool": "קריר",
+    "cold": "קר",
+    "flavors": "טעמים",
+    "sweet": "מתוק",
+    "sour": "חמוץ",
+    "pungent": "חריף",
+    "bitter": "מר",
+    "salty": "מלוח",
+    "organs": "איברי מטרה",
+    "season": "עונה מומלצת",
+    "calories": "קלוריות",
+    "protein": "חלבון",
+    "fat": "שומן"
+  },
+  "filters": {
+    "glutenFree": "ללא גלוטן",
+    "highProtein": "עשיר בחלבון",
+    "quick": "מהיר",
+    "healthy": "בריא",
+    "impressive": "מרשים לאורחים",
+    "under30": "עד 30 דק׳",
+    "under400": "עד 400 קק״ל",
+    "lactoseFree": "ללא לקטוז"
+  },
+  "onboarding": {
+    "welcome": "ברוכים הבאים לדובון",
+    "subtitle": "בואו נמצא לכם את המתכונים המושלמים",
+    "startQuiz": "בואו נתחיל",
+    "freeBrowse": "דפדוף חופשי",
+    "next": "הבא",
+    "back": "חזרה",
+    "showResults": "הצג תוצאות",
+    "whatMeal": "מה ארוחה?",
+    "howMuchTime": "כמה זמן יש לך?",
+    "whatMood": "מה מצב הרוח?"
+  },
+  "techniques": {
+    "title": "טכניקות בישול",
+    "goldenRules": "כללי זהב",
+    "salmon": "צליית סלמון",
+    "chicken": "צליית עוף",
+    "steak": "צליית סטייק"
+  }
+}

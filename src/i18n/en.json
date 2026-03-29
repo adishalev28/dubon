@@ -1,0 +1,93 @@
+{
+  "app": {
+    "name": "Dubon",
+    "tagline": "Natural recipes for a healthy life"
+  },
+  "nav": {
+    "home": "Home",
+    "categories": "Categories",
+    "nutrition": "Nutrition",
+    "favorites": "Favorites",
+    "profile": "Profile",
+    "explore": "Search"
+  },
+  "home": {
+    "hero": "Natural Recipes",
+    "heroSub": "For a Healthy Life",
+    "searchPlaceholder": "Search recipe, ingredient or flavor...",
+    "recommended": "Recommended for You",
+    "techniques": "Cooking Techniques",
+    "noResults": "No recipes found",
+    "tryDifferent": "Try a different search or change your filters"
+  },
+  "meals": {
+    "breakfast": "Breakfast",
+    "lunch": "Lunch",
+    "dinner": "Dinner",
+    "snack": "Snacks",
+    "dip": "Dips"
+  },
+  "recipe": {
+    "minutes": "min",
+    "servings": "servings",
+    "ingredients": "Ingredients",
+    "steps": "Preparation Steps",
+    "proTip": "Chef's Tip",
+    "difficulty": "Difficulty",
+    "easy": "Easy",
+    "medium": "Medium",
+    "hard": "Complex",
+    "addFavorite": "Add to Favorites",
+    "removeFavorite": "Remove from Favorites"
+  },
+  "tcm": {
+    "title": "Chinese Medicine",
+    "western": "Western Nutrition",
+    "nature": "Nature",
+    "hot": "Hot",
+    "warm": "Warm",
+    "neutral": "Neutral",
+    "cool": "Cool",
+    "cold": "Cold",
+    "flavors": "Flavors",
+    "sweet": "Sweet",
+    "sour": "Sour",
+    "pungent": "Pungent",
+    "bitter": "Bitter",
+    "salty": "Salty",
+    "organs": "Target Organs",
+    "season": "Recommended Season",
+    "calories": "Calories",
+    "protein": "Protein",
+    "fat": "Fat"
+  },
+  "filters": {
+    "glutenFree": "Gluten Free",
+    "highProtein": "High Protein",
+    "quick": "Quick",
+    "healthy": "Healthy",
+    "impressive": "Impressive for Guests",
+    "under30": "Under 30 min",
+    "under400": "Under 400 cal",
+    "lactoseFree": "Lactose Free"
+  },
+  "onboarding": {
+    "welcome": "Welcome to Dubon",
+    "subtitle": "Let's find you the perfect recipes",
+    "startQuiz": "Let's Start",
+    "freeBrowse": "Free Browse",
+    "next": "Next",
+    "back": "Back",
+    "showResults": "Show Results",
+    "whatMeal": "What meal?",
+    "howMuchTime": "How much time do you have?",
+    "whatMood": "What's your mood?"
+  },
+  "techniques": {
+    "title": "Cooking Techniques",
+    "goldenRules": "Golden Rules",
+    "salmon": "Grilling Salmon",
+    "chicken": "Grilling Chicken",
+    "steak": "Grilling Steak"
+  }
+}

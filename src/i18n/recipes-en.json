@@ -1,0 +1,242 @@
+{
+  "11": {
+    "name": "Grilled Chicken with Fluffy Jasmine Rice",
+    "description": "A classic family lunch. Chicken in smoked paprika marinade alongside jasmine rice that always turns out perfect.",
+    "intro": "A classic family lunch. Chicken in smoked paprika marinade alongside jasmine rice that always turns out perfect. The marinade adds depth, and frying the rice in oil before cooking is the secret to separate, fluffy grains.",
+    "ingredients": ["Chicken", "Olive oil", "Lemon", "Garlic", "Smoked paprika", "Jasmine rice"],
+    "detailedIngredients": [
+      { "name": "Chicken (drumsticks or thighs)", "amount": "1 kg", "note": "" },
+      { "name": "Olive oil", "amount": "1/4 cup", "note": "For marinade" },
+      { "name": "Fresh lemon juice", "amount": "1/2 lemon", "note": "" },
+      { "name": "Lemon zest", "amount": "1 tsp", "note": "" },
+      { "name": "Crushed garlic", "amount": "3 cloves", "note": "" },
+      { "name": "Smoked paprika", "amount": "1 tbsp", "note": "Heaping" },
+      { "name": "Fine salt", "amount": "1.5 tsp", "note": "Split between chicken and rice" },
+      { "name": "Ground black pepper", "amount": "1/2 tsp", "note": "" },
+      { "name": "── For Rice ──", "amount": "", "note": "" },
+      { "name": "Jasmine rice", "amount": "2 cups", "note": "" },
+      { "name": "Boiling water", "amount": "3.5 cups", "note": "" },
+      { "name": "Vegetable oil", "amount": "3 tbsp", "note": "For frying rice" }
+    ],
+    "steps": [
+      { "title": "Marinade", "text": "Mix 1/4 cup olive oil, juice of half a lemon, lemon zest, 3 crushed garlic cloves, 1 tbsp smoked paprika, 1 tsp salt and 1/2 tsp black pepper." },
+      { "title": "Marinate chicken", "text": "Coat 1 kg chicken pieces well with the marinade. Marinate for at least 30 minutes (up to overnight in the fridge)." },
+      { "title": "Rice base", "text": "Heat 3 tbsp oil in a pot. Add 2 cups dry jasmine rice and fry for 2 minutes, stirring constantly, until the grains become translucent." },
+      { "title": "Cook rice", "text": "Add 3.5 cups boiling water and 1/2 tsp salt. Bring to a boil, cover and reduce to lowest heat for 15 minutes. Don't open the lid." },
+      { "title": "Grill chicken", "text": "Grill the chicken on high heat, about 6-7 minutes per side, until golden and cooked through." },
+      { "title": "Serve", "text": "Fluff the rice with a fork. Plate the rice alongside the grilled chicken and serve immediately." }
+    ],
+    "proTip": "The secret to separate rice grains: fry the dry rice in oil for 2 minutes before adding water. This coats each grain in a thin layer of oil that prevents clumping.",
+    "difficulty": "Medium",
+    "category": "Lunch",
+    "servings": "4 servings"
+  },
+  "9": {
+    "name": "Chicken & Orzo Bake",
+    "description": "One-pan family dinner. Chicken thighs with crispy orzo in tomato sauce and warming spices.",
+    "intro": "The ultimate comfort food. Chicken thighs roasted on a bed of orzo that absorbs all the juices and becomes irresistibly crispy on top. One pan, no fuss, feeds the whole family.",
+    "ingredients": ["Chicken thighs", "Orzo pasta", "Crushed tomatoes", "Onion", "Garlic", "Paprika"],
+    "detailedIngredients": [
+      { "name": "Chicken thighs with skin", "amount": "6 pieces", "note": "" },
+      { "name": "Orzo pasta", "amount": "2 cups", "note": "" },
+      { "name": "Crushed tomatoes", "amount": "1 can (400g)", "note": "" },
+      { "name": "Boiling water", "amount": "2 cups", "note": "" },
+      { "name": "Diced onion", "amount": "1 large", "note": "" },
+      { "name": "Crushed garlic", "amount": "4 cloves", "note": "" },
+      { "name": "Sweet paprika", "amount": "1 tbsp", "note": "" },
+      { "name": "Cumin", "amount": "1 tsp", "note": "" },
+      { "name": "Salt & pepper", "amount": "To taste", "note": "" },
+      { "name": "Olive oil", "amount": "3 tbsp", "note": "" }
+    ],
+    "steps": [
+      { "title": "Sear chicken", "text": "Season chicken thighs with salt, pepper and paprika. Sear skin-side down in a hot pan with olive oil until golden, about 5 minutes." },
+      { "title": "Build the base", "text": "In a baking dish, mix 2 cups orzo, crushed tomatoes, 2 cups boiling water, diced onion, garlic, cumin and salt." },
+      { "title": "Assemble", "text": "Place the seared chicken thighs skin-side up on top of the orzo mixture." },
+      { "title": "Bake", "text": "Bake at 200°C for 45 minutes until the chicken is golden and the orzo is crispy on the edges." }
+    ],
+    "proTip": "Don't stir during baking! The crispy orzo layer on the edges is the best part.",
+    "difficulty": "Easy",
+    "category": "Dinner",
+    "servings": "4-5 servings"
+  },
+  "10": {
+    "name": "Caramelized Rice Paper Malawach",
+    "description": "Light and crispy malawach made from rice paper with egg batter and date syrup. Golden color, caramel aroma and delicate sweetness.",
+    "intro": "Rice paper malawach is the lighter, crispier, faster version of the classic Yemeni dish. Using rice paper instead of oily dough makes it airy, while the date syrup in the batter gives it a deep golden color, amazing caramel aroma and delicate sweetness.",
+    "ingredients": ["Rice paper", "Egg", "Date syrup", "Cinnamon", "Olive oil", "Hard boiled eggs", "Tomatoes"],
+    "detailedIngredients": [
+      { "name": "Rice paper sheets", "amount": "3-4", "note": "Large (22cm diameter)" },
+      { "name": "Egg", "amount": "1 large", "note": "Well beaten" },
+      { "name": "Water or milk", "amount": "2 tbsp", "note": "To thin the batter" },
+      { "name": "Date syrup (silan)", "amount": "1 level tsp", "note": "Important!" },
+      { "name": "Cinnamon", "amount": "1/4 tsp", "note": "Optional" },
+      { "name": "── For Serving ──", "amount": "", "note": "" },
+      { "name": "Hard boiled eggs", "amount": "1-2", "note": "Halved" },
+      { "name": "Grated tomatoes", "amount": "2", "note": "Seasoned with salt and olive oil" },
+      { "name": "Olive oil", "amount": "Drizzle", "note": "" },
+      { "name": "Chili flakes", "amount": "Pinch", "note": "" },
+      { "name": "Fresh basil", "amount": "Few leaves", "note": "" },
+      { "name": "Black sesame seeds", "amount": "Sprinkle", "note": "" }
+    ],
+    "steps": [
+      { "title": "Make the batter", "text": "Beat 1 egg well. Add 2 tbsp water/milk, 1 level tsp date syrup and 1/4 tsp cinnamon. Mix until smooth." },
+      { "title": "Prepare rice paper", "text": "Briefly dip a rice paper sheet in warm water (2-3 seconds only). Place on a clean surface." },
+      { "title": "Layer and fold", "text": "Brush batter on the sheet. Stack another dipped sheet on top. Fold into a square or triangle." },
+      { "title": "Pan fry", "text": "Heat a non-stick pan with a little olive oil on medium heat. Fry the malawach 2-3 minutes per side until golden and crispy." },
+      { "title": "Serve", "text": "Fold in half and plate. Arrange 1-2 halved hard boiled eggs alongside, a bowl of grated tomato (seasoned with salt and olive oil), drizzle olive oil and garnish with chili flakes, fresh basil and black sesame." }
+    ],
+    "proTip": "Use large rice papers (22cm) for crispier results. If you don't have date syrup, use a teaspoon of honey, but silan gives the perfect caramel color.",
+    "difficulty": "Easy",
+    "category": "Breakfast",
+    "servings": "1 serving"
+  },
+  "12": {
+    "name": "Classic Homemade Bolognese",
+    "description": "Rich, slow-cooked meat sauce with a depth of flavor that only time can create. Worth every minute.",
+    "intro": "A true Bolognese is not a quick tomato sauce with meat. It's a slow, patient process where the flavors develop layer by layer. The wine, the milk, the long simmer - each step adds complexity.",
+    "ingredients": ["Ground beef", "Onion", "Carrots", "Celery", "Crushed tomatoes", "Red wine", "Milk", "Pasta"],
+    "detailedIngredients": [
+      { "name": "Ground beef", "amount": "500g", "note": "20% fat" },
+      { "name": "Onion", "amount": "1 large", "note": "Finely diced" },
+      { "name": "Carrots", "amount": "2", "note": "Finely diced" },
+      { "name": "Celery", "amount": "2 stalks", "note": "Finely diced" },
+      { "name": "Crushed tomatoes", "amount": "1 can (400g)", "note": "" },
+      { "name": "Tomato paste", "amount": "2 tbsp", "note": "" },
+      { "name": "Red wine", "amount": "1 cup", "note": "Dry" },
+      { "name": "Whole milk", "amount": "1/2 cup", "note": "" },
+      { "name": "Olive oil", "amount": "3 tbsp", "note": "" },
+      { "name": "Pasta of choice", "amount": "400g", "note": "Pappardelle or tagliatelle" }
+    ],
+    "steps": [
+      { "title": "Soffritto", "text": "Heat olive oil and saut onion, carrots and celery for 10 minutes on medium heat until soft and golden." },
+      { "title": "Brown the meat", "text": "Add 500g ground beef, break into small pieces and cook until browned, about 8 minutes." },
+      { "title": "Deglaze", "text": "Pour 1 cup red wine and cook until almost evaporated, about 5 minutes." },
+      { "title": "Add tomatoes", "text": "Add crushed tomatoes, tomato paste and 1/2 cup milk. Season with salt and pepper." },
+      { "title": "Slow simmer", "text": "Reduce heat to lowest setting. Cover and simmer for at least 2 hours, stirring occasionally." },
+      { "title": "Serve", "text": "Cook pasta al dente. Toss with the sauce and serve immediately." }
+    ],
+    "proTip": "The milk is the secret. It softens the acidity of the tomatoes and gives the sauce a velvety richness.",
+    "difficulty": "Medium",
+    "category": "Lunch",
+    "servings": "4-5 servings"
+  },
+  "13": {
+    "name": "Shepherd's Pie with Strudel Dough",
+    "description": "A creative twist on the classic - rich meat filling topped with crispy strudel sheets instead of mashed potato.",
+    "intro": "Shepherd's pie reimagined with Middle Eastern flair. A savory meat filling topped with crispy strudel (phyllo) dough instead of the traditional mashed potato crust. Lighter, crunchier, and irresistible.",
+    "ingredients": ["Ground beef", "Onion", "Potato", "Strudel dough", "Paprika", "Cumin"],
+    "detailedIngredients": [
+      { "name": "Ground beef", "amount": "500g", "note": "" },
+      { "name": "Large onion", "amount": "1", "note": "Diced" },
+      { "name": "Potato", "amount": "2 medium", "note": "Small cubes" },
+      { "name": "Strudel/phyllo dough", "amount": "4 sheets", "note": "" },
+      { "name": "Sweet paprika", "amount": "1 tbsp", "note": "" },
+      { "name": "Cumin", "amount": "1 tsp", "note": "" },
+      { "name": "Olive oil", "amount": "3 tbsp", "note": "" },
+      { "name": "Salt & pepper", "amount": "To taste", "note": "" }
+    ],
+    "steps": [
+      { "title": "Cook filling", "text": "Saut onion in olive oil until golden. Add ground beef and brown well. Add potato cubes, paprika, cumin, salt and 1 cup water. Simmer 20 minutes." },
+      { "title": "Assemble", "text": "Pour the meat filling into a baking dish. Layer strudel sheets on top, brushing each with olive oil." },
+      { "title": "Bake", "text": "Bake at 180C for 25-30 minutes until the strudel is golden and crispy." }
+    ],
+    "proTip": "Crumple the strudel sheets slightly before layering for extra crunch and a rustic look.",
+    "difficulty": "Easy",
+    "category": "Dinner",
+    "servings": "4-5 servings"
+  },
+  "14": {
+    "name": "Whole Wheat Pita Bread with Garlic",
+    "description": "Simple homemade whole wheat pitas with a garlic and parsley topping, pan-fried to perfection.",
+    "intro": "Simple, satisfying homemade pitas made with whole wheat flour and yogurt. Pan-fried until puffy and golden, then topped with a generous garlic, olive oil and parsley spread on both sides.",
+    "ingredients": ["Whole wheat flour", "Yogurt", "Baking soda", "Garlic", "Parsley", "Olive oil"],
+    "detailedIngredients": [
+      { "name": "Whole wheat flour", "amount": "2 cups", "note": "" },
+      { "name": "Yogurt", "amount": "200g (1 cup)", "note": "" },
+      { "name": "Baking soda", "amount": "1 level tsp", "note": "" },
+      { "name": "Salt", "amount": "1/2 tsp", "note": "" },
+      { "name": "── For Topping ──", "amount": "", "note": "" },
+      { "name": "Olive oil", "amount": "2-3 tbsp", "note": "" },
+      { "name": "Garlic cloves", "amount": "3-4", "note": "Crushed" },
+      { "name": "Fresh parsley", "amount": "Handful", "note": "Chopped" }
+    ],
+    "steps": [
+      { "title": "Make dough", "text": "Mix yogurt with baking soda in a large bowl. Add whole wheat flour and salt. Knead just until the dough comes together (add flour if too sticky)." },
+      { "title": "Divide and flatten", "text": "Divide into 4-5 equal balls. Roll each into a flat pita shape." },
+      { "title": "Rest", "text": "Let the pitas rest for 10 minutes (important for texture)." },
+      { "title": "Make topping", "text": "Mix olive oil, 3-4 crushed garlic cloves and chopped parsley." },
+      { "title": "Cook", "text": "Heat a pan with a little oil or butter on heat level 10. Fry each pita for a few minutes, flipping every 30 seconds until puffed and golden on both sides." },
+      { "title": "Finish", "text": "Immediately spread the garlic-parsley mixture generously on both sides of each hot pita." }
+    ],
+    "proTip": "The key is a very hot pan and frequent flipping every 30 seconds. This lets the pita puff up and cook evenly without burning.",
+    "difficulty": "Easy",
+    "category": "Breakfast",
+    "servings": "4-5 pitas"
+  },
+  "15": {
+    "name": "Golden Chicken & Root Vegetable Roast",
+    "description": "A colorful one-pan family meal. Chicken, sweet potato, potato, zucchini, onion and roasted lemon with turmeric and paprika.",
+    "intro": "Everything in one pan, straight to the oven. Chicken roasted with root vegetables in a golden turmeric-paprika-cumin seasoning. The roasted lemon at the end ties it all together with an incredible caramelized citrus flavor.",
+    "ingredients": ["Chicken drumsticks", "Sweet potato", "Potato", "Zucchini", "Onion", "Garlic", "Lemon", "Turmeric", "Paprika", "Cumin"],
+    "detailedIngredients": [
+      { "name": "Chicken drumsticks", "amount": "1 kg", "note": "" },
+      { "name": "Sweet potato", "amount": "2 medium", "note": "Cut into chunks" },
+      { "name": "Potato", "amount": "3 medium", "note": "Quartered" },
+      { "name": "Zucchini", "amount": "2", "note": "Half-moon slices" },
+      { "name": "Onion", "amount": "2", "note": "Wedges" },
+      { "name": "Whole garlic head", "amount": "1", "note": "Halved" },
+      { "name": "Lemon", "amount": "1", "note": "Halved" },
+      { "name": "── Seasoning ──", "amount": "", "note": "" },
+      { "name": "Olive oil", "amount": "1/4 cup", "note": "" },
+      { "name": "Turmeric", "amount": "1 tbsp", "note": "" },
+      { "name": "Sweet paprika", "amount": "1 tbsp", "note": "" },
+      { "name": "Cumin", "amount": "1 tsp", "note": "" },
+      { "name": "Salt", "amount": "1.5 tsp", "note": "" },
+      { "name": "Black pepper", "amount": "1/2 tsp", "note": "" }
+    ],
+    "steps": [
+      { "title": "Make seasoning", "text": "Mix 1/4 cup olive oil, 1 tbsp turmeric, 1 tbsp paprika, 1 tsp cumin, 1.5 tsp salt and 1/2 tsp black pepper." },
+      { "title": "Prep chicken", "text": "Place 1 kg chicken drumsticks in a large baking dish. Pour half the seasoning over the chicken and massage well." },
+      { "title": "Add vegetables", "text": "Add all vegetables: sweet potatoes, potatoes, zucchini, onion wedges, halved garlic head and halved lemon. Pour remaining seasoning and toss." },
+      { "title": "Roast", "text": "Preheat oven to 200C. Roast for 60 minutes until chicken is golden and vegetables are tender. Stir vegetables once halfway through." },
+      { "title": "Finish", "text": "Remove from oven. Squeeze the roasted lemon over everything and serve directly from the pan." }
+    ],
+    "proTip": "The roasted lemon is the secret! Roasting transforms it into something sweet and deep. Squeeze it generously over everything before serving.",
+    "difficulty": "Easy",
+    "category": "Dinner",
+    "servings": "4-5 servings"
+  },
+  "16": {
+    "name": "Green Goddess Egg Salad on Sourdough",
+    "description": "Rich egg salad with avocado, pickles and fresh herbs on toasted sourdough. A balancing dinner that nourishes blood and clears heat.",
+    "intro": "A light, refreshing dinner combining rich eggs with creamy avocado, crunchy pickles and aromatic fresh herbs. The dill and mustard activate digestion, the arugula clears liver heat, and the pickles break down heaviness from previous meals.",
+    "ingredients": ["Eggs", "Avocado", "Pickled cucumber", "Dill", "Arugula", "Sourdough bread", "Mayo", "Mustard", "Olive oil", "Lemon"],
+    "detailedIngredients": [
+      { "name": "Hard boiled eggs", "amount": "6", "note": "Peeled" },
+      { "name": "Ripe avocado", "amount": "1", "note": "Half mashed, half cubed" },
+      { "name": "Salt-pickled cucumber", "amount": "2", "note": "Finely chopped" },
+      { "name": "Fresh dill", "amount": "Generous handful", "note": "Chopped" },
+      { "name": "Arugula leaves", "amount": "Handful", "note": "Fresh" },
+      { "name": "Celery (optional)", "amount": "1 stalk", "note": "Peeled and micro-diced. Drains fluids and clears stomach heat." },
+      { "name": "── Dressing ──", "amount": "", "note": "" },
+      { "name": "Mayonnaise", "amount": "1 tbsp", "note": "" },
+      { "name": "Mustard", "amount": "1 tsp", "note": "" },
+      { "name": "Olive oil", "amount": "1 tbsp", "note": "" },
+      { "name": "Fresh lemon juice", "amount": "1/4 lemon", "note": "" },
+      { "name": "Coarse black pepper", "amount": "To taste", "note": "" },
+      { "name": "Sea salt", "amount": "To taste", "note": "" },
+      { "name": "── Base ──", "amount": "", "note": "" },
+      { "name": "Sourdough bread", "amount": "2-3 slices", "note": "Toasted" }
+    ],
+    "steps": [
+      { "title": "Prep eggs", "text": "Roughly mash 6 peeled hard boiled eggs with a fork (keep it chunky for texture)." },
+      { "title": "Make dressing", "text": "Mix 1 tbsp mayo, 1 tsp mustard, 1 tbsp olive oil, juice of 1/4 lemon, black pepper and sea salt." },
+      { "title": "Combine", "text": "Add half a mashed avocado, 2 chopped pickled cucumbers, chopped dill and celery (if using) to the eggs. Gently fold in the dressing." },
+      { "title": "Assemble & serve", "text": "Toast the sourdough slices. Top each generously with egg salad. Scatter avocado cubes, arugula leaves and freshly cracked black pepper on top." }
+    ],
+    "proTip": "Celery is optional but makes a real difference! Peel the outer fibers and dice microscopically so you get the crunch and drainage benefit without it dominating the flavor.",
+    "difficulty": "Easy",
+    "category": "Dinner",
+    "servings": "2-3 servings"
+  }
+}
