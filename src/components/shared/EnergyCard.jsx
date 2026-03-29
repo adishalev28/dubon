@@ -1,4 +1,4 @@
-import { TCM_FLAVORS, TCM_NATURES } from '../../data/tcm-ingredients'
+import { TCM_FLAVORS, TCM_MOISTURE, PREPARATION_MODIFIERS, TCM_FLAGS } from '../../data/tcm-ingredients'
 
 const NATURE_STYLES = {
   'לוהט': { emoji: '🔥🔥', bg: 'bg-red-50', text: 'text-red-700', border: 'border-red-200' },
@@ -24,6 +24,8 @@ export default function EnergyCard({ tcm }) {
   if (!tcm) return null
 
   const natureStyle = NATURE_STYLES[tcm.nature] || NATURE_STYLES['ניטרלי']
+  const moisture = tcm.moisture ? TCM_MOISTURE[tcm.moisture] : null
+  const prep = tcm.preparation ? PREPARATION_MODIFIERS[tcm.preparation] : null
 
   return (
     <div className="bg-white rounded-2xl border border-olive-100 p-4 space-y-3 text-right" dir="rtl">
@@ -32,7 +34,7 @@ export default function EnergyCard({ tcm }) {
         <h3 className="text-sm font-bold text-olive-800">☯ פרופיל אנרגטי</h3>
       </div>
 
-      {/* Nature + Season row */}
+      {/* Nature + Season + Moisture row */}
       <div className="flex gap-2 flex-wrap">
         <span className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium border ${natureStyle.bg} ${natureStyle.text} ${natureStyle.border}`}>
           {natureStyle.emoji} {tcm.nature}
@@ -42,7 +44,22 @@ export default function EnergyCard({ tcm }) {
             {SEASON_EMOJI[tcm.season] || '🌿'} {tcm.season}
           </span>
         )}
+        {moisture && (
+          <span className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium ${moisture.bg} ${moisture.color} border border-opacity-30`}>
+            {moisture.emoji} {moisture.he}
+          </span>
+        )}
       </div>
+
+      {/* Preparation method */}
+      {prep && (
+        <div className="flex items-center gap-2">
+          <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium bg-warm-brown-50 text-warm-brown-600 border border-warm-brown-200">
+            {prep.emoji} {prep.he}
+          </span>
+          <span className="text-[10px] text-gray-400">{prep.note}</span>
+        </div>
+      )}
 
       {/* Flavors */}
       <div className="flex gap-1.5 flex-wrap">
@@ -66,6 +83,22 @@ export default function EnergyCard({ tcm }) {
         <div className="text-xs text-gray-500">
           <span className="font-medium">איבר מטרה:</span>{' '}
           {tcm.organs.join(' · ')}
+        </div>
+      )}
+
+      {/* Clinical flags - good for */}
+      {tcm.clinicalFlags && tcm.clinicalFlags.length > 0 && (
+        <div className="text-xs text-green-700">
+          <span className="font-medium">✅ מתאים ל:</span>{' '}
+          {tcm.clinicalFlags.map(f => TCM_FLAGS[f]?.he || f).join(' · ')}
+        </div>
+      )}
+
+      {/* Caution flags */}
+      {tcm.caution && tcm.caution.length > 0 && (
+        <div className="text-xs text-amber-600">
+          <span className="font-medium">⚠️ זהירות ב:</span>{' '}
+          {tcm.caution.map(f => TCM_FLAGS[f]?.he || f).join(' · ')}
         </div>
       )}
     </div>

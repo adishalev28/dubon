@@ -5,6 +5,8 @@
  * nature: לוהט | חם | ניטרלי | קריר | קר
  * organ: איבר מטרה עיקרי
  * movement: מעלה | מוריד | מפזר | אוסף | מעגן | מניע
+ * moisture: drying | moisturizing | damp-forming
+ * clinicalFlags: wind | damp | heat | cold | phlegm | stagnation | deficiency
  */
 
 export const TCM_FLAVORS = {
@@ -35,6 +37,89 @@ export const TCM_MOVEMENTS = {
   drying: { he: 'מייבש', emoji: '🏜️' },
 }
 
+// Moisture Impact - השפעת לחות
+export const TCM_MOISTURE = {
+  drying: { he: 'מייבש', emoji: '🏜️', color: 'text-amber-600', bg: 'bg-amber-50' },
+  moisturizing: { he: 'מלחלח', emoji: '💧', color: 'text-sky-600', bg: 'bg-sky-50' },
+  'damp-forming': { he: 'מייצר לחות', emoji: '💦', color: 'text-indigo-600', bg: 'bg-indigo-50' },
+  neutral: { he: 'ניטרלי', emoji: '⚖️', color: 'text-gray-500', bg: 'bg-gray-50' },
+}
+
+// Clinical Flags - תגיות קליניות
+export const TCM_FLAGS = {
+  wind: { he: 'רוח', emoji: '🌀', warning: 'לא מומלץ בסחרחורת' },
+  damp: { he: 'לחות', emoji: '💦', warning: 'עלול להחמיר כבדות' },
+  heat: { he: 'חום', emoji: '🔥', warning: 'עלול להחמיר דלקתיות' },
+  cold: { he: 'קור', emoji: '❄️', warning: 'עלול להחמיר קור פנימי' },
+  phlegm: { he: 'ליחה', emoji: '🫧', warning: 'עלול לייצר ליחה' },
+  stagnation: { he: 'סטגנציה', emoji: '🚫', warning: 'עלול לגרום לתקיעות' },
+  deficiency: { he: 'חסר', emoji: '⬇️', warning: 'לא מספיק מזין' },
+}
+
+/**
+ * Preparation Modifiers - איך שיטת הבישול משנה את האנרגיה
+ * natureShift: כמה להוסיף/להוריד מציון הטמפרטורה (1-5)
+ * moistureShift: איך משתנה השפעת הלחות
+ */
+export const PREPARATION_MODIFIERS = {
+  raw: {
+    he: 'נא / חי',
+    emoji: '🥗',
+    natureShift: -1,      // מקרר
+    moistureEffect: 'moisturizing',
+    note: 'שומר על אנזימים, מקרר את הגוף',
+  },
+  steamed: {
+    he: 'מאודה',
+    emoji: '♨️',
+    natureShift: 0,       // ניטרלי
+    moistureEffect: 'moisturizing',
+    note: 'שיטה מאזנת, שומרת על לחות',
+  },
+  stir_fried: {
+    he: 'מוקפץ',
+    emoji: '🍳',
+    natureShift: +1,      // מחמם קצת
+    moistureEffect: 'drying',
+    note: 'חימום מהיר, מייבש קלות',
+  },
+  deep_fried: {
+    he: 'מטוגן עמוק',
+    emoji: '🫕',
+    natureShift: +2,      // מחמם מאוד
+    moistureEffect: 'damp-forming',
+    note: 'יוצר חום ולחות, עומס על כיס מרה',
+  },
+  grilled: {
+    he: 'צלוי / גריל',
+    emoji: '🔥',
+    natureShift: +2,      // מחמם מאוד
+    moistureEffect: 'drying',
+    note: 'חום ישיר, מייבש, מחמם',
+  },
+  long_cooked: {
+    he: 'בישול ארוך',
+    emoji: '🍲',
+    natureShift: +1,      // מחמם
+    moistureEffect: 'moisturizing',
+    note: 'מחמם ומזין, בונה צ\'י',
+  },
+  baked: {
+    he: 'אפוי',
+    emoji: '🍞',
+    natureShift: +1,      // מחמם
+    moistureEffect: 'drying',
+    note: 'מייבש, מחמם בעדינות',
+  },
+  fermented: {
+    he: 'מותסס',
+    emoji: '🫙',
+    natureShift: 0,       // ניטרלי
+    moistureEffect: 'drying',
+    note: 'מפרק לחות, תומך בעיכול',
+  },
+}
+
 // 20 רכיבי ליבה עם סיווג מלא
 export const tcmIngredients = {
   'ginger': {
@@ -43,6 +128,8 @@ export const tcmIngredients = {
     nature: 'warm',
     organs: ['קיבה', 'ריאות'],
     movement: ['ascending', 'dispersing'],
+    moisture: 'drying',
+    clinicalFlags: ['cold', 'damp', 'phlegm'],
     antidoteFor: ['cold', 'dampness'],
   },
   'lemon': {
@@ -51,6 +138,8 @@ export const tcmIngredients = {
     nature: 'cool',
     organs: ['כבד', 'כיס מרה'],
     movement: ['collecting'],
+    moisture: 'drying',
+    clinicalFlags: ['heat', 'stagnation'],
     antidoteFor: ['heat', 'fat'],
   },
   'egg': {
@@ -59,6 +148,8 @@ export const tcmIngredients = {
     nature: 'neutral',
     organs: ['כליות', 'לב'],
     movement: ['grounding'],
+    moisture: 'moisturizing',
+    clinicalFlags: ['deficiency'],
     antidoteFor: [],
   },
   'sauerkraut': {
@@ -67,6 +158,8 @@ export const tcmIngredients = {
     nature: 'cool',
     organs: ['קיבה', 'מעי גס'],
     movement: ['descending', 'moving'],
+    moisture: 'drying',
+    clinicalFlags: ['damp', 'stagnation'],
     antidoteFor: ['fat', 'stagnation'],
   },
   'beef': {
@@ -75,6 +168,9 @@ export const tcmIngredients = {
     nature: 'warm',
     organs: ['טחול', 'קיבה'],
     movement: ['building', 'grounding'],
+    moisture: 'damp-forming',
+    clinicalFlags: ['deficiency'],
+    caution: ['heat', 'damp'],
     antidoteFor: ['deficiency'],
   },
   'cucumber': {
@@ -83,6 +179,8 @@ export const tcmIngredients = {
     nature: 'cool',
     organs: ['קיבה', 'שלפוחית שתן'],
     movement: ['descending'],
+    moisture: 'moisturizing',
+    clinicalFlags: ['heat'],
     antidoteFor: ['heat', 'dryness'],
   },
   'coffee': {
@@ -91,6 +189,9 @@ export const tcmIngredients = {
     nature: 'warm',
     organs: ['לב', 'מעי גס'],
     movement: ['descending', 'drying'],
+    moisture: 'drying',
+    clinicalFlags: ['damp'],
+    caution: ['heat', 'wind'],
     antidoteFor: ['dampness'],
   },
   'honey': {
@@ -99,6 +200,9 @@ export const tcmIngredients = {
     nature: 'neutral',
     organs: ['ריאות', 'טחול'],
     movement: ['moistening'],
+    moisture: 'moisturizing',
+    clinicalFlags: ['deficiency'],
+    caution: ['damp', 'phlegm'],
     antidoteFor: ['dryness'],
   },
   'mint': {
@@ -107,6 +211,8 @@ export const tcmIngredients = {
     nature: 'cool',
     organs: ['כבד', 'ריאות'],
     movement: ['ascending', 'dispersing'],
+    moisture: 'drying',
+    clinicalFlags: ['heat', 'stagnation'],
     antidoteFor: ['liver-stagnation', 'heat'],
   },
   'walnut': {
@@ -115,6 +221,8 @@ export const tcmIngredients = {
     nature: 'warm',
     organs: ['כליות', 'ריאות'],
     movement: ['collecting', 'grounding'],
+    moisture: 'moisturizing',
+    clinicalFlags: ['cold', 'deficiency'],
     antidoteFor: ['cold', 'kidney-deficiency'],
   },
   'tomato': {
@@ -123,6 +231,9 @@ export const tcmIngredients = {
     nature: 'cool',
     organs: ['כבד', 'קיבה'],
     movement: ['descending'],
+    moisture: 'moisturizing',
+    clinicalFlags: ['heat'],
+    caution: ['cold'],
     antidoteFor: ['heat'],
   },
   'garlic': {
@@ -131,6 +242,9 @@ export const tcmIngredients = {
     nature: 'warm',
     organs: ['טחול', 'קיבה', 'ריאות'],
     movement: ['moving'],
+    moisture: 'drying',
+    clinicalFlags: ['cold', 'phlegm', 'stagnation'],
+    caution: ['heat'],
     antidoteFor: ['cold', 'phlegm'],
   },
   'cinnamon': {
@@ -139,6 +253,9 @@ export const tcmIngredients = {
     nature: 'hot',
     organs: ['לב', 'כליות', 'טחול'],
     movement: ['descending'],
+    moisture: 'drying',
+    clinicalFlags: ['cold'],
+    caution: ['heat'],
     antidoteFor: ['deep-cold'],
   },
   'parsley': {
@@ -147,6 +264,8 @@ export const tcmIngredients = {
     nature: 'cool',
     organs: ['כבד', 'קיבה'],
     movement: ['moving'],
+    moisture: 'drying',
+    clinicalFlags: ['damp', 'stagnation'],
     antidoteFor: ['edema', 'stagnation'],
   },
   'white-rice': {
@@ -155,6 +274,9 @@ export const tcmIngredients = {
     nature: 'neutral',
     organs: ['טחול', 'קיבה'],
     movement: ['building'],
+    moisture: 'neutral',
+    clinicalFlags: ['deficiency'],
+    caution: ['damp'],
     antidoteFor: ['deficiency'],
   },
   'green-tea': {
@@ -163,6 +285,9 @@ export const tcmIngredients = {
     nature: 'cool',
     organs: ['לב', 'קיבה'],
     movement: ['descending'],
+    moisture: 'drying',
+    clinicalFlags: ['heat', 'damp'],
+    caution: ['cold', 'deficiency'],
     antidoteFor: ['heat', 'toxins'],
   },
   'onion': {
@@ -171,6 +296,8 @@ export const tcmIngredients = {
     nature: 'warm',
     organs: ['קיבה', 'ריאות'],
     movement: ['dispersing'],
+    moisture: 'drying',
+    clinicalFlags: ['cold', 'phlegm'],
     antidoteFor: ['cold', 'phlegm'],
   },
   'sea-salt': {
@@ -179,6 +306,9 @@ export const tcmIngredients = {
     nature: 'cool',
     organs: ['כליות', 'קיבה'],
     movement: ['descending'],
+    moisture: 'moisturizing',
+    clinicalFlags: [],
+    caution: ['damp'],
     antidoteFor: ['hardness'],
   },
   'pear': {
@@ -187,6 +317,9 @@ export const tcmIngredients = {
     nature: 'cool',
     organs: ['ריאות', 'קיבה'],
     movement: ['moistening', 'descending'],
+    moisture: 'moisturizing',
+    clinicalFlags: ['heat'],
+    caution: ['cold', 'damp'],
     antidoteFor: ['dryness', 'heat'],
   },
   'black-pepper': {
@@ -195,6 +328,9 @@ export const tcmIngredients = {
     nature: 'hot',
     organs: ['קיבה', 'מעי גס'],
     movement: ['moving'],
+    moisture: 'drying',
+    clinicalFlags: ['cold', 'stagnation'],
+    caution: ['heat'],
     antidoteFor: ['deep-cold', 'stagnation'],
   },
 }
