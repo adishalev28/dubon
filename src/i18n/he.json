@@ -18,7 +18,12 @@
     "recommended": "מומלצים עבורך",
     "techniques": "טכניקות בישול",
     "noResults": "לא נמצאו מתכונים",
-    "tryDifferent": "נסה חיפוש אחר או שנה את הסינון"
+    "tryDifferent": "נסה חיפוש אחר או שנה את הסינון",
+    "results": "תוצאות",
+    "goodMorning": "בוקר טוב",
+    "goodAfternoon": "צהריים טובים",
+    "goodEvening": "ערב טוב",
+    "whatToCook": "מה נבשל היום?"
   },
   "meals": {
     "breakfast": "בוקר",
@@ -38,7 +43,22 @@
     "medium": "בינוני",
     "hard": "מורכב",
     "addFavorite": "הוסף למועדפים",
-    "removeFavorite": "הסר ממועדפים"
+    "removeFavorite": "הסר ממועדפים",
+    "notFound": "המתכון לא נמצא",
+    "cookingMode": "מצב בישול",
+    "proTipTitle": "טיפ של מקצוענים",
+    "myNotes": "ההערות שלי",
+    "edit": "עריכה",
+    "add": "+ הוספה",
+    "cancel": "ביטול",
+    "save": "שמירה",
+    "noNotes": "אין הערות עדיין",
+    "notesPlaceholder": "הוסיפו הערות אישיות למתכון... למשל: פחות מלח, יותר מים לפתיתים",
+    "watchVideo": "צפייה בסרטון המתכון",
+    "floatingWindow": "חלונית צפה",
+    "serving": "מנה",
+    "servingsPlural": "מנות",
+    "healthyFood": "אוכל בריא"
   },
   "tcm": {
     "title": "רפואה סינית",
@@ -69,7 +89,8 @@
     "impressive": "מרשים לאורחים",
     "under30": "עד 30 דק׳",
     "under400": "עד 400 קק״ל",
-    "lactoseFree": "ללא לקטוז"
+    "lactoseFree": "ללא לקטוז",
+    "vegan": "טבעוני"
   },
   "onboarding": {
     "welcome": "ברוכים הבאים לדובון",

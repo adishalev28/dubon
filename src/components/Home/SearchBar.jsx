@@ -1,9 +1,11 @@
 import { useState, useEffect, useRef } from 'react'
 import { Search } from 'lucide-react'
 import useAppStore from '../../store/useAppStore'
+import { useLanguage } from '../../i18n/LanguageContext'
 
 export default function SearchBar() {
   const { setSearchQuery } = useAppStore()
+  const { t } = useLanguage()
   const [localQuery, setLocalQuery] = useState('')
   const timerRef = useRef(null)
 
@@ -23,7 +25,7 @@ export default function SearchBar() {
           type="text"
           value={localQuery}
           onChange={(e) => setLocalQuery(e.target.value)}
-          placeholder="חיפוש לפי מתכון, רכיב או קטגוריה..."
+          placeholder={t('home.searchPlaceholder')}
           className="flex-1 text-olive-800 placeholder:text-cream-400 outline-none bg-transparent text-sm"
         />
       </div>

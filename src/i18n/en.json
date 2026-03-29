@@ -18,7 +18,12 @@
     "recommended": "Recommended for You",
     "techniques": "Cooking Techniques",
     "noResults": "No recipes found",
-    "tryDifferent": "Try a different search or change your filters"
+    "tryDifferent": "Try a different search or change your filters",
+    "results": "results",
+    "goodMorning": "Good morning",
+    "goodAfternoon": "Good afternoon",
+    "goodEvening": "Good evening",
+    "whatToCook": "What shall we cook today?"
   },
   "meals": {
     "breakfast": "Breakfast",
@@ -38,7 +43,22 @@
     "medium": "Medium",
     "hard": "Complex",
     "addFavorite": "Add to Favorites",
-    "removeFavorite": "Remove from Favorites"
+    "removeFavorite": "Remove from Favorites",
+    "notFound": "Recipe not found",
+    "cookingMode": "Cooking Mode",
+    "proTipTitle": "Pro Tip",
+    "myNotes": "My Notes",
+    "edit": "Edit",
+    "add": "+ Add",
+    "cancel": "Cancel",
+    "save": "Save",
+    "noNotes": "No notes yet",
+    "notesPlaceholder": "Add personal notes to this recipe... e.g.: less salt, more water for couscous",
+    "watchVideo": "Watch recipe video",
+    "floatingWindow": "Picture in picture",
+    "serving": "serving",
+    "servingsPlural": "servings",
+    "healthyFood": "Healthy food"
   },
   "tcm": {
     "title": "Chinese Medicine",
@@ -69,7 +89,8 @@
     "impressive": "Impressive for Guests",
     "under30": "Under 30 min",
     "under400": "Under 400 cal",
-    "lactoseFree": "Lactose Free"
+    "lactoseFree": "Lactose Free",
+    "vegan": "Vegan"
   },
   "onboarding": {
     "welcome": "Welcome to Dubon",

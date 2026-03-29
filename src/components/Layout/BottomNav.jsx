@@ -12,7 +12,6 @@ export default function BottomNav() {
     { path: '/categories', icon: LayoutGrid, label: t('nav.categories') },
     { path: '/nutrition', icon: Activity, label: t('nav.nutrition') },
     { path: '/favorites', icon: Bookmark, label: t('nav.favorites') },
-    { path: '/profile', icon: User, label: t('nav.profile') },
   ]
 
   return (

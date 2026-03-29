@@ -3,6 +3,8 @@ import Fuse from 'fuse.js'
 import { recipes, quickFilters } from '../../data/recipes'
 import useAppStore from '../../store/useAppStore'
 import RecipeCard from '../shared/RecipeCard'
+import { useLanguage } from '../../i18n/LanguageContext'
+import { useTranslatedRecipes } from '../../i18n/useTranslatedRecipe'
 
 const fuse = new Fuse(recipes, {
   keys: [
@@ -18,6 +20,7 @@ const fuse = new Fuse(recipes, {
 
 export default function RecommendedRecipes() {
   const { searchQuery, activeFilters, activeMealCategory } = useAppStore()
+  const { t, isRTL } = useLanguage()
 
   const filtered = useMemo(() => {
     let result = searchQuery
@@ -45,19 +48,21 @@ export default function RecommendedRecipes() {
     return result
   }, [searchQuery, activeFilters, activeMealCategory])
 
+  const translatedFiltered = useTranslatedRecipes(filtered)
+
   return (
     <div className="mt-6">
       <h2 className="text-lg font-bold text-olive-800 px-4 mb-3">
         {searchQuery || activeFilters.length > 0 || activeMealCategory
-          ? `${filtered.length} תוצאות`
-          : 'מומלצים עבורך'}
+          ? `${filtered.length} ${t('home.results')}`
+          : t('home.recommended')}
       </h2>
 
       {filtered.length === 0 ? (
-        <p className="text-cream-600 text-center py-8 px-4">לא נמצאו מתכונים מתאימים</p>
+        <p className="text-cream-600 text-center py-8 px-4">{t('home.noResults')}</p>
       ) : (
-        <div className="flex gap-4 overflow-x-auto px-4 pb-4 scrollbar-hide" style={{ direction: 'rtl' }}>
-          {filtered.map((recipe) => (
+        <div className="flex gap-4 overflow-x-auto px-4 pb-4 scrollbar-hide" style={{ direction: isRTL ? 'rtl' : 'ltr' }}>
+          {translatedFiltered.map((recipe) => (
             <RecipeCard key={recipe.id} recipe={recipe} />
           ))}
         </div>

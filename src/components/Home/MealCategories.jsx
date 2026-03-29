@@ -1,11 +1,21 @@
 import { Sun, Salad, Moon, Cookie, Droplets } from 'lucide-react'
 import { mealCategories } from '../../data/recipes'
 import useAppStore from '../../store/useAppStore'
+import { useLanguage } from '../../i18n/LanguageContext'
 
 const iconMap = { Sun, Salad, Moon, Cookie, Droplets }
 
+const labelKeyMap = {
+  breakfast: 'meals.breakfast',
+  lunch: 'meals.lunch',
+  dinner: 'meals.dinner',
+  snack: 'meals.snack',
+  dip: 'meals.dip',
+}
+
 export default function MealCategories() {
   const { activeMealCategory, setMealCategory } = useAppStore()
+  const { t } = useLanguage()
 
   return (
     <div className="px-4 mt-6">
@@ -22,7 +32,7 @@ export default function MealCategories() {
               `}
             >
               <Icon size={22} />
-              <span className="text-[11px] font-medium">{cat.label}</span>
+              <span className="text-[11px] font-medium">{t(labelKeyMap[cat.id]) || cat.label}</span>
             </button>
           )
         })}

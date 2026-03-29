@@ -1,8 +1,18 @@
 import { quickFilters } from '../../data/recipes'
 import useAppStore from '../../store/useAppStore'
+import { useLanguage } from '../../i18n/LanguageContext'
+
+const filterKeyMap = {
+  'gluten-free': 'filters.glutenFree',
+  'vegan': 'filters.vegan',
+  'under-30': 'filters.under30',
+  'under-400': 'filters.under400',
+  'lactose-free': 'filters.lactoseFree',
+}
 
 export default function QuickFilters() {
   const { activeFilters, toggleFilter } = useAppStore()
+  const { t } = useLanguage()
 
   return (
     <div className="px-4 mt-4">
@@ -21,7 +31,7 @@ export default function QuickFilters() {
                 }
               `}
             >
-              {filter.label}
+              {t(filterKeyMap[filter.id]) || filter.label}
             </button>
           )
         })}

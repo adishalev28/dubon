@@ -7,24 +7,28 @@ import EnergyCard from '../shared/EnergyCard'
 import { useState, useRef, useEffect } from 'react'
 import { scaleAmount, parseAmount } from '../../utils/parseAmount'
 import FocusMode from './FocusMode'
+import { useLanguage } from '../../i18n/LanguageContext'
+import { useTranslatedRecipe } from '../../i18n/useTranslatedRecipe'
 
 export default function RecipePage() {
   const { id } = useParams()
   const navigate = useNavigate()
-  const recipe = recipes.find(r => r.id === Number(id))
+  const { t, isRTL } = useLanguage()
+  const rawRecipe = recipes.find(r => r.id === Number(id))
+  const recipe = useTranslatedRecipe(rawRecipe)
   const { favorites, toggleFavorite, checkedIngredients, toggleIngredientCheck, recipeNotes, setRecipeNote } = useAppStore()
   const [noteText, setNoteText] = useState('')
   const [noteEditing, setNoteEditing] = useState(false)
   const isFavorite = recipe ? favorites.includes(recipe.id) : false
   const [isPlaying, setIsPlaying] = useState(false)
   const videoRef = useRef(null)
-  const [servingCount, setServingCount] = useState(recipe?.baseServings || 1)
+  const [servingCount, setServingCount] = useState(rawRecipe?.baseServings || 1)
   const [focusModeOpen, setFocusModeOpen] = useState(false)
 
   if (!recipe) {
     return (
       <div className="flex items-center justify-center min-h-screen">
-        <p className="text-cream-600 text-lg">המתכון לא נמצא</p>
+        <p className="text-cream-600 text-lg">{t('recipe.notFound')}</p>
       </div>
     )
   }
@@ -67,7 +71,7 @@ export default function RecipePage() {
   }
 
   return (
-    <div className="max-w-lg mx-auto bg-cream-50 min-h-screen pb-8">
+    <div className="max-w-lg mx-auto bg-cream-50 min-h-screen pb-8" dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Header with back button */}
       <div className="sticky top-0 z-20 bg-cream-50/95 backdrop-blur-sm">
         <div className="flex items-center justify-between px-4 py-3">
@@ -125,7 +129,7 @@ export default function RecipePage() {
                   }
                 }}
                 className="absolute top-2 left-2 bg-black/50 text-white rounded-full p-2"
-                title="חלונית צפה"
+                title={t('recipe.floatingWindow')}
               >
                 <PictureInPicture2 size={18} />
               </button>
@@ -144,7 +148,7 @@ export default function RecipePage() {
       <div className="flex items-center justify-center gap-3 px-4 mt-4 flex-wrap">
         <div className="flex items-center gap-1.5 bg-white rounded-full px-3 py-2 shadow-sm">
           <Clock size={16} className="text-warm-orange-600" />
-          <span className="text-sm font-medium text-olive-800">{recipe.time} דק׳</span>
+          <span className="text-sm font-medium text-olive-800">{recipe.time} {t('recipe.minutes')}</span>
         </div>
         <div className="flex items-center gap-1.5 bg-white rounded-full px-3 py-2 shadow-sm">
           <ChefHat size={16} className="text-warm-orange-600" />
@@ -163,7 +167,7 @@ export default function RecipePage() {
             <div className="flex items-center gap-1 px-1">
               <Users size={14} className="text-warm-orange-600" />
               <span className="text-sm font-bold text-olive-800 min-w-[20px] text-center">{servingCount}</span>
-              <span className="text-xs text-cream-600">{servingCount === 1 ? 'מנה' : 'מנות'}</span>
+              <span className="text-xs text-cream-600">{servingCount === 1 ? t('recipe.serving') : t('recipe.servingsPlural')}</span>
             </div>
             <button
               onClick={() => setServingCount(prev => Math.min(20, prev + 1))}
@@ -202,7 +206,7 @@ export default function RecipePage() {
             className="flex items-center justify-center gap-2 bg-warm-brown-50 text-warm-brown-600 rounded-xl py-3 px-4 text-sm font-medium border border-warm-brown-100"
           >
             <Play size={16} fill="currentColor" />
-            צפייה בסרטון המתכון
+            {t('recipe.watchVideo')}
             <ExternalLink size={14} />
           </a>
         </div>
@@ -230,7 +234,7 @@ export default function RecipePage() {
       {hasDetailedIngredients ? (
         <div className="mx-4 mt-5">
           <div className="flex items-center justify-between mb-3">
-            <h2 className="font-bold text-olive-800 text-base">🧾 מרכיבים</h2>
+            <h2 className="font-bold text-olive-800 text-base">🧾 {t('recipe.ingredients')}</h2>
             {multiplier !== 1 && (
               <span className="text-xs text-warm-orange-600 bg-warm-orange-50 px-2 py-1 rounded-full">
                 ×{multiplier.toFixed(1).replace(/\.0$/, '')}
@@ -297,7 +301,7 @@ export default function RecipePage() {
       ) : (
         /* Simple ingredients list */
         <div className="mx-4 mt-5">
-          <h2 className="font-bold text-olive-800 text-base mb-3">🧾 מרכיבים</h2>
+          <h2 className="font-bold text-olive-800 text-base mb-3">🧾 {t('recipe.ingredients')}</h2>
           <div className="bg-white rounded-2xl p-4 shadow-sm">
             <div className="flex flex-wrap gap-2">
               {recipe.ingredients.map(ing => (
@@ -314,13 +318,13 @@ export default function RecipePage() {
       {hasDetailedContent && (
         <div className="mx-4 mt-5">
           <div className="flex items-center justify-between mb-3">
-            <h2 className="font-bold text-olive-800 text-base">👨‍🍳 שלבי הכנה</h2>
+            <h2 className="font-bold text-olive-800 text-base">👨‍🍳 {t('recipe.steps')}</h2>
             <button
               onClick={() => setFocusModeOpen(true)}
               className="flex items-center gap-1.5 bg-olive-600 text-white px-3 py-2 rounded-xl text-xs font-medium shadow-sm cursor-pointer active:bg-olive-800 transition-colors"
             >
               <CookingPot size={14} />
-              מצב בישול
+              {t('recipe.cookingMode')}
             </button>
           </div>
           <div className="space-y-3">
@@ -347,7 +351,7 @@ export default function RecipePage() {
           <div className="flex items-start gap-3">
             <Lightbulb size={20} className="text-warm-orange-600 flex-shrink-0 mt-0.5" />
             <div>
-              <h3 className="font-bold text-warm-orange-600 text-sm mb-1">טיפ של מקצוענים</h3>
+              <h3 className="font-bold text-warm-orange-600 text-sm mb-1">{t('recipe.proTipTitle')}</h3>
               <p className="text-sm text-warm-brown-600 leading-relaxed">{recipe.proTip}</p>
             </div>
           </div>
@@ -359,7 +363,7 @@ export default function RecipePage() {
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-2">
             <Pencil size={20} className="text-olive-600" />
-            <h3 className="font-bold text-olive-600">ההערות שלי</h3>
+            <h3 className="font-bold text-olive-600">{t('recipe.myNotes')}</h3>
           </div>
           {!noteEditing && (
             <button
@@ -369,7 +373,7 @@ export default function RecipePage() {
               }}
               className="text-xs text-olive-600 bg-white px-3 py-1.5 rounded-full border border-olive-100"
             >
-              {recipeNotes[recipe.id] ? 'עריכה' : '+ הוספה'}
+              {recipeNotes[recipe.id] ? t('recipe.edit') : t('recipe.add')}
             </button>
           )}
         </div>
@@ -378,7 +382,7 @@ export default function RecipePage() {
             <textarea
               value={noteText}
               onChange={(e) => setNoteText(e.target.value)}
-              placeholder="הוסיפו הערות אישיות למתכון... למשל: פחות מלח, יותר מים לפתיתים"
+              placeholder={t('recipe.notesPlaceholder')}
               className="w-full border border-cream-100 rounded-xl p-3 text-sm text-warm-brown-600 resize-none focus:outline-none focus:border-olive-400 placeholder:text-warm-brown-400"
               rows={3}
               autoFocus
@@ -388,7 +392,7 @@ export default function RecipePage() {
                 onClick={() => setNoteEditing(false)}
                 className="text-xs text-warm-brown-400 px-3 py-1.5 rounded-full"
               >
-                ביטול
+                {t('recipe.cancel')}
               </button>
               <button
                 onClick={() => {
@@ -397,14 +401,14 @@ export default function RecipePage() {
                 }}
                 className="text-xs text-white bg-olive-600 px-4 py-1.5 rounded-full"
               >
-                שמירה
+                {t('recipe.save')}
               </button>
             </div>
           </div>
         ) : recipeNotes[recipe.id] ? (
           <p className="text-sm text-warm-brown-600 leading-relaxed whitespace-pre-wrap">{recipeNotes[recipe.id]}</p>
         ) : (
-          <p className="text-sm text-warm-brown-400 italic">אין הערות עדיין</p>
+          <p className="text-sm text-warm-brown-400 italic">{t('recipe.noNotes')}</p>
         )}
       </div>
 

@@ -4,6 +4,8 @@ import { useNavigate } from 'react-router-dom'
 import NutritionPills from './NutritionPills'
 import useAppStore from '../../store/useAppStore'
 import { TCM_FLAVORS, TCM_MOISTURE, PREPARATION_MODIFIERS, TCM_FLAGS } from '../../data/tcm-ingredients'
+import { useLanguage } from '../../i18n/LanguageContext'
+import { useTranslatedRecipe } from '../../i18n/useTranslatedRecipe'
 
 const NATURE_STYLES = {
   'לוהט': { emoji: '🔥🔥', color: 'text-red-600' },
@@ -58,6 +60,7 @@ function MiniEnergyInfo({ tcm }) {
 
 function InfoToggle({ recipe }) {
   const [mode, setMode] = useState(null) // null | 'western' | 'chinese'
+  const { t } = useLanguage()
 
   return (
     <div>
@@ -71,7 +74,7 @@ function InfoToggle({ recipe }) {
               : 'bg-olive-50 text-olive-700 border-olive-200 hover:bg-olive-100'
           }`}
         >
-          🍽️ תזונה מערבית
+          🍽️ {t('tcm.western')}
         </button>
         <button
           onClick={(e) => { e.stopPropagation(); setMode(mode === 'chinese' ? null : 'chinese') }}
@@ -81,7 +84,7 @@ function InfoToggle({ recipe }) {
               : 'bg-warm-orange-50 text-warm-orange-700 border-warm-orange-200 hover:bg-warm-orange-100'
           }`}
         >
-          ☯ רפואה סינית
+          ☯ {t('tcm.title')}
         </button>
       </div>
 
@@ -102,6 +105,8 @@ function InfoToggle({ recipe }) {
 
 export default function RecipeCard({ recipe, variant = 'compact' }) {
   const { favorites, toggleFavorite } = useAppStore()
+  const { t } = useLanguage()
+  const translatedRecipe = useTranslatedRecipe(recipe)
   const isFavorite = favorites.includes(recipe.id)
   const navigate = useNavigate()
 
@@ -115,15 +120,15 @@ export default function RecipeCard({ recipe, variant = 'compact' }) {
         {/* Image */}
         <div className="relative h-[130px]">
           <img
-            src={recipe.image}
-            alt={recipe.name}
+            src={translatedRecipe.image}
+            alt={translatedRecipe.name}
             className="w-full h-full object-cover"
             loading="lazy"
           />
           {/* Time badge */}
           <span className="absolute top-2 left-2 bg-white/90 backdrop-blur-sm text-olive-800 text-xs font-medium px-2 py-1 rounded-full flex items-center gap-1">
             <Clock size={12} />
-            {recipe.time} דק׳
+            {translatedRecipe.time} {t('recipe.minutes')}
           </span>
           {/* Favorite */}
           <button
@@ -142,11 +147,11 @@ export default function RecipeCard({ recipe, variant = 'compact' }) {
 
         {/* Content */}
         <div className="p-3">
-          <h3 className="font-bold text-olive-800 text-sm mb-1 line-clamp-1">{recipe.name}</h3>
+          <h3 className="font-bold text-olive-800 text-sm mb-1 line-clamp-1">{translatedRecipe.name}</h3>
           <p className="text-xs text-cream-600 mb-2">
-            {recipe.difficulty} · {recipe.category}
+            {translatedRecipe.difficulty} · {translatedRecipe.category}
           </p>
-          <InfoToggle recipe={recipe} />
+          <InfoToggle recipe={translatedRecipe} />
         </div>
       </div>
     )
@@ -157,14 +162,14 @@ export default function RecipeCard({ recipe, variant = 'compact' }) {
     <div onClick={handleClick} className="bg-white rounded-2xl overflow-hidden shadow-sm cursor-pointer active:scale-[0.98] transition-transform">
       <div className="relative h-[180px]">
         <img
-          src={recipe.image}
-          alt={recipe.name}
+          src={translatedRecipe.image}
+          alt={translatedRecipe.name}
           className="w-full h-full object-cover"
           loading="lazy"
         />
         <span className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm text-olive-800 text-sm font-medium px-3 py-1.5 rounded-full flex items-center gap-1">
           <Clock size={14} />
-          {recipe.time} דק׳
+          {translatedRecipe.time} {t('recipe.minutes')}
         </span>
         <button
           onClick={(e) => {
@@ -180,12 +185,12 @@ export default function RecipeCard({ recipe, variant = 'compact' }) {
         </button>
       </div>
       <div className="p-4">
-        <h3 className="font-bold text-olive-800 text-lg mb-1">{recipe.name}</h3>
+        <h3 className="font-bold text-olive-800 text-lg mb-1">{translatedRecipe.name}</h3>
         <p className="text-sm text-cream-600 mb-2">
-          {recipe.difficulty} · {recipe.category}
+          {translatedRecipe.difficulty} · {translatedRecipe.category}
         </p>
-        <p className="text-sm text-cream-400 mb-3">{recipe.description}</p>
-        <InfoToggle recipe={recipe} />
+        <p className="text-sm text-cream-400 mb-3">{translatedRecipe.description}</p>
+        <InfoToggle recipe={translatedRecipe} />
       </div>
     </div>
   )
