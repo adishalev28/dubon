@@ -5,8 +5,15 @@ import useAppStore from '../../store/useAppStore'
 import RecipeCard from '../shared/RecipeCard'
 
 const fuse = new Fuse(recipes, {
-  keys: ['name', 'description', 'ingredients', 'tags', 'category'],
-  threshold: 0.4,
+  keys: [
+    { name: 'name', weight: 3 },
+    { name: 'ingredients', weight: 2 },
+    { name: 'description', weight: 1 },
+    { name: 'tags', weight: 1 },
+    { name: 'category', weight: 0.5 },
+  ],
+  threshold: 0.25,
+  ignoreLocation: true,
 })
 
 export default function RecommendedRecipes() {
