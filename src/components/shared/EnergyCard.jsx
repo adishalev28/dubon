@@ -26,14 +26,14 @@ export default function EnergyCard({ tcm }) {
   const natureStyle = NATURE_STYLES[tcm.nature] || NATURE_STYLES['ניטרלי']
 
   return (
-    <div className="bg-white rounded-2xl border border-olive-100 p-4 space-y-3">
+    <div className="bg-white rounded-2xl border border-olive-100 p-4 space-y-3 text-right" dir="rtl">
       {/* Header */}
-      <div className="flex items-center gap-2 justify-end">
+      <div className="flex items-center gap-2">
         <h3 className="text-sm font-bold text-olive-800">☯ פרופיל אנרגטי</h3>
       </div>
 
       {/* Nature + Season row */}
-      <div className="flex gap-2 justify-end flex-wrap">
+      <div className="flex gap-2 flex-wrap">
         <span className={`inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-medium border ${natureStyle.bg} ${natureStyle.text} ${natureStyle.border}`}>
           {natureStyle.emoji} {tcm.nature}
         </span>
@@ -45,7 +45,7 @@ export default function EnergyCard({ tcm }) {
       </div>
 
       {/* Flavors */}
-      <div className="flex gap-1.5 justify-end flex-wrap">
+      <div className="flex gap-1.5 flex-wrap">
         {tcm.flavors.map(f => {
           const flavor = TCM_FLAVORS[f]
           if (!flavor) return null
@@ -63,7 +63,7 @@ export default function EnergyCard({ tcm }) {
 
       {/* Target organs */}
       {tcm.organs && tcm.organs.length > 0 && (
-        <div className="text-xs text-gray-500 text-right">
+        <div className="text-xs text-gray-500">
           <span className="font-medium">איבר מטרה:</span>{' '}
           {tcm.organs.join(' · ')}
         </div>
