@@ -3,6 +3,7 @@ import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play, Minus, Pl
 import { recipes } from '../../data/recipes'
 import useAppStore from '../../store/useAppStore'
 import NutritionPills from '../shared/NutritionPills'
+import EnergyCard from '../shared/EnergyCard'
 import { useState, useRef, useEffect } from 'react'
 import { scaleAmount, parseAmount } from '../../utils/parseAmount'
 import FocusMode from './FocusMode'
@@ -183,6 +184,13 @@ export default function RecipePage() {
       <div className="flex justify-center mt-3">
         <NutritionPills calories={recipe.calories} protein={recipe.protein} fat={recipe.fat} />
       </div>
+
+      {/* TCM Energy Card */}
+      {recipe.tcm && (
+        <div className="mx-4 mt-4">
+          <EnergyCard tcm={recipe.tcm} />
+        </div>
+      )}
 
       {/* External Link (TikTok etc.) */}
       {recipe.link && (
