@@ -508,7 +508,7 @@ export const recipes = [
   {
     id: 16,
     name: 'סלט ביצים Green Goddess על לחם מחמצת',
-    image: '',
+    image: '/סלט ביצים.jpg',
     time: 20,
     tcm: {
       nature: 'קריר',
