@@ -1,17 +1,19 @@
 import { Home, LayoutGrid, Activity, Bookmark, User } from 'lucide-react'
 import { useLocation, useNavigate } from 'react-router-dom'
-
-const tabs = [
-  { path: '/', icon: Home, label: 'בית' },
-  { path: '/categories', icon: LayoutGrid, label: 'קטגוריות' },
-  { path: '/nutrition', icon: Activity, label: 'תזונה' },
-  { path: '/favorites', icon: Bookmark, label: 'מועדפים' },
-  { path: '/profile', icon: User, label: 'פרופיל' },
-]
+import { useLanguage } from '../../i18n/LanguageContext'
 
 export default function BottomNav() {
   const location = useLocation()
   const navigate = useNavigate()
+  const { t, lang, toggleLanguage } = useLanguage()
+
+  const tabs = [
+    { path: '/', icon: Home, label: t('nav.home') },
+    { path: '/categories', icon: LayoutGrid, label: t('nav.categories') },
+    { path: '/nutrition', icon: Activity, label: t('nav.nutrition') },
+    { path: '/favorites', icon: Bookmark, label: t('nav.favorites') },
+    { path: '/profile', icon: User, label: t('nav.profile') },
+  ]
 
   return (
     <nav className="fixed bottom-0 left-0 right-0 bg-white border-t border-olive-50 z-50">
@@ -32,6 +34,14 @@ export default function BottomNav() {
             </button>
           )
         })}
+        {/* Language toggle */}
+        <button
+          onClick={toggleLanguage}
+          className="flex flex-col items-center gap-1 px-3 py-1 cursor-pointer transition-colors text-cream-400 hover:text-olive-600"
+        >
+          <span className="text-lg leading-none">{lang === 'he' ? '🇬🇧' : '🇮🇱'}</span>
+          <span className="text-[10px] font-medium">{lang === 'he' ? 'EN' : 'עב'}</span>
+        </button>
       </div>
       {/* Safe area bottom */}
       <div className="h-[env(safe-area-inset-bottom)]" />
