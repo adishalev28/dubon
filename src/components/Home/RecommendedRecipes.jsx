@@ -19,7 +19,7 @@ export default function RecommendedRecipes() {
 
     // Meal category filter
     if (activeMealCategory) {
-      result = result.filter((r) => r.meal === activeMealCategory)
+      result = result.filter((r) => r.meal === activeMealCategory || (r.meals && r.meals.includes(activeMealCategory)))
     }
 
     // Quick filters (AND logic)

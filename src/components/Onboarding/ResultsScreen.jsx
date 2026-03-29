@@ -5,7 +5,7 @@ import RecipeCard from '../shared/RecipeCard'
 export default function ResultsScreen({ answers, onGoHome }) {
   const filtered = recipes.filter((recipe) => {
     // Filter by meal type
-    if (answers.meal && recipe.meal !== answers.meal) return false
+    if (answers.meal && recipe.meal !== answers.meal && !(recipe.meals && recipe.meals.includes(answers.meal))) return false
 
     // Filter by time
     if (answers.time && recipe.time > answers.time) return false
