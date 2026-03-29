@@ -438,7 +438,7 @@ export const recipes = [
   {
     id: 15,
     name: 'עוף בזהב ופפריקה עם ירקות שורש',
-    image: '/עוף בזהב ופפריקה.jpg',
+    image: '/עוף לימוני בתנור.jfif',
     time: 75,
     tcm: {
       nature: 'חם',
