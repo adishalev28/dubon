@@ -38,8 +38,8 @@ function HomePage() {
       <SearchBar />
       <MealCategories />
       <QuickFilters />
-      <TechniquesBanner />
       <RecommendedRecipes />
+      <TechniquesBanner />
     </div>
   )
 }
