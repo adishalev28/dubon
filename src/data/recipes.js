@@ -456,6 +456,7 @@ export const recipes = [
     difficulty: 'קל',
     category: 'ערב',
     meal: 'dinner',
+    meals: ['lunch', 'dinner'],
     tags: ['ללא גלוטן', 'עשיר בחלבון', 'מרשים לאורחים'],
     calories: 480,
     protein: 34,
