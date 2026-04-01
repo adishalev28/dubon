@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play, Minus, Plus, Check, CookingPot, Pencil, ExternalLink, PictureInPicture2 } from 'lucide-react'
+import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play, Minus, Plus, Check, CookingPot, Pencil, ExternalLink, PictureInPicture2, Sun } from 'lucide-react'
 import { recipes } from '../../data/recipes'
 import useAppStore from '../../store/useAppStore'
 import NutritionPills from '../shared/NutritionPills'
@@ -29,6 +29,37 @@ export default function RecipePage() {
   const videoRef = useRef(null)
   const [servingCount, setServingCount] = useState(rawRecipe?.baseServings || 1)
   const [focusModeOpen, setFocusModeOpen] = useState(false)
+
+  // Wake Lock — keep screen on while cooking
+  const [wakeLock, setWakeLock] = useState(null)
+  const [screenOn, setScreenOn] = useState(false)
+
+  const toggleScreenOn = async () => {
+    if (screenOn && wakeLock) {
+      await wakeLock.release()
+      setWakeLock(null)
+      setScreenOn(false)
+    } else {
+      try {
+        const lock = await navigator.wakeLock.request('screen')
+        setWakeLock(lock)
+        setScreenOn(true)
+        lock.addEventListener('release', () => {
+          setScreenOn(false)
+          setWakeLock(null)
+        })
+      } catch {
+        // Wake Lock not supported or denied
+      }
+    }
+  }
+
+  // Release wake lock on unmount
+  useEffect(() => {
+    return () => {
+      if (wakeLock) wakeLock.release()
+    }
+  }, [wakeLock])
 
   if (!recipe) {
     return (
@@ -80,15 +111,26 @@ export default function RecipePage() {
       {/* Header with back button */}
       <div className="sticky top-0 z-20 bg-cream-50/95 backdrop-blur-sm">
         <div className="flex items-center justify-between px-4 py-3">
-          <button
-            onClick={() => toggleFavorite(recipe.id)}
-            className="p-2 rounded-full bg-white shadow-sm cursor-pointer"
-          >
-            <Bookmark
-              size={20}
-              className={isFavorite ? 'fill-warm-orange-600 text-warm-orange-600' : 'text-cream-400'}
-            />
-          </button>
+          <div className="flex items-center gap-2">
+            {'wakeLock' in navigator && (
+              <button
+                onClick={toggleScreenOn}
+                className={`p-2 rounded-full shadow-sm cursor-pointer transition-colors ${screenOn ? 'bg-warm-orange-100' : 'bg-white'}`}
+                title={screenOn ? 'המסך דולק — לחץ לכיבוי' : 'השאר מסך דלוק בזמן בישול'}
+              >
+                <Sun size={20} className={screenOn ? 'text-warm-orange-600' : 'text-cream-400'} />
+              </button>
+            )}
+            <button
+              onClick={() => toggleFavorite(recipe.id)}
+              className="p-2 rounded-full bg-white shadow-sm cursor-pointer"
+            >
+              <Bookmark
+                size={20}
+                className={isFavorite ? 'fill-warm-orange-600 text-warm-orange-600' : 'text-cream-400'}
+              />
+            </button>
+          </div>
           <h1 className="font-bold text-olive-800 text-lg">{recipe.name}</h1>
           <button
             onClick={() => navigate(-1)}
