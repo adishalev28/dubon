@@ -30,6 +30,22 @@ export default function RecipePage() {
   const [servingCount, setServingCount] = useState(rawRecipe?.baseServings || 1)
   const [focusModeOpen, setFocusModeOpen] = useState(false)
 
+  // Push/pop history for focus mode so back button closes it
+  const openFocusMode = () => {
+    setFocusModeOpen(true)
+    window.history.pushState({ focusMode: true }, '')
+  }
+
+  useEffect(() => {
+    const onPopState = (e) => {
+      if (focusModeOpen) {
+        setFocusModeOpen(false)
+      }
+    }
+    window.addEventListener('popstate', onPopState)
+    return () => window.removeEventListener('popstate', onPopState)
+  }, [focusModeOpen])
+
   // Wake Lock — keep screen on while cooking
   const [wakeLock, setWakeLock] = useState(null)
   const [screenOn, setScreenOn] = useState(false)
@@ -195,7 +211,7 @@ export default function RecipePage() {
       {/* Header with back button */}
       <div className="sticky top-0 z-20 bg-cream-50/95 backdrop-blur-sm">
         <div className="flex items-center justify-between px-4 py-3">
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5">
             {'speechSynthesis' in window && (
               <button
                 onClick={toggleSpeaking}
@@ -203,8 +219,8 @@ export default function RecipePage() {
                 title={isSpeaking ? 'הפסק הקראה' : 'הקרא את המתכון'}
               >
                 {isSpeaking
-                  ? <VolumeX size={20} className="text-olive-600" />
-                  : <Volume2 size={20} className="text-cream-400" />
+                  ? <VolumeX size={18} className="text-olive-600" />
+                  : <Volume2 size={18} className="text-cream-400" />
                 }
               </button>
             )}
@@ -214,26 +230,28 @@ export default function RecipePage() {
                 className={`p-2 rounded-full shadow-sm cursor-pointer transition-colors ${screenOn ? 'bg-warm-orange-100' : 'bg-white'}`}
                 title={screenOn ? 'המסך דולק — לחץ לכיבוי' : 'השאר מסך דלוק בזמן בישול'}
               >
-                <Sun size={20} className={screenOn ? 'text-warm-orange-600' : 'text-cream-400'} />
+                <Sun size={18} className={screenOn ? 'text-warm-orange-600' : 'text-cream-400'} />
               </button>
             )}
+          </div>
+          <h1 className="font-bold text-olive-800 text-base flex-1 text-center px-2 truncate">{recipe.name}</h1>
+          <div className="flex items-center gap-1.5">
             <button
               onClick={() => toggleFavorite(recipe.id)}
               className="p-2 rounded-full bg-white shadow-sm cursor-pointer"
             >
               <Bookmark
-                size={20}
+                size={18}
                 className={isFavorite ? 'fill-warm-orange-600 text-warm-orange-600' : 'text-cream-400'}
               />
             </button>
+            <button
+              onClick={() => navigate(-1)}
+              className="p-2 rounded-full bg-white shadow-sm cursor-pointer"
+            >
+              <ArrowRight size={20} className="text-olive-800" />
+            </button>
           </div>
-          <h1 className="font-bold text-olive-800 text-lg">{recipe.name}</h1>
-          <button
-            onClick={() => navigate(-1)}
-            className="p-2 rounded-full bg-white shadow-sm cursor-pointer"
-          >
-            <ArrowRight size={20} className="text-olive-800" />
-          </button>
         </div>
       </div>
 
@@ -463,7 +481,7 @@ export default function RecipePage() {
           <div className="flex items-center justify-between mb-3">
             <h2 className="font-bold text-olive-800 text-base">👨‍🍳 {t('recipe.steps')}</h2>
             <button
-              onClick={() => setFocusModeOpen(true)}
+              onClick={openFocusMode}
               className="flex items-center gap-1.5 bg-olive-600 text-white px-3 py-2 rounded-xl text-xs font-medium shadow-sm cursor-pointer active:bg-olive-800 transition-colors"
             >
               <CookingPot size={14} />
@@ -563,7 +581,7 @@ export default function RecipePage() {
         <FocusMode
           steps={recipe.steps}
           recipeName={recipe.name}
-          onClose={() => setFocusModeOpen(false)}
+          onClose={() => { window.history.back() }}
         />
       )}
     </div>
