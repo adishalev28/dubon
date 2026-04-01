@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play, Minus, Plus, Check, CookingPot, Pencil, ExternalLink, PictureInPicture2, Sun } from 'lucide-react'
+import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play, Minus, Plus, Check, CookingPot, Pencil, ExternalLink, PictureInPicture2, Sun, Volume2, VolumeX } from 'lucide-react'
 import { recipes } from '../../data/recipes'
 import useAppStore from '../../store/useAppStore'
 import NutritionPills from '../shared/NutritionPills'
@@ -61,6 +61,90 @@ export default function RecipePage() {
     }
   }, [wakeLock])
 
+  // ── Text-to-Speech — read recipe aloud ──
+  const [isSpeaking, setIsSpeaking] = useState(false)
+  const [speakingStepIdx, setSpeakingStepIdx] = useState(-1)
+  const utterancesRef = useRef([])
+
+  const buildSpeechText = () => {
+    if (!recipe) return []
+    const parts = []
+    // Recipe name
+    parts.push({ text: recipe.name, label: 'שם המתכון' })
+    // Ingredients
+    if (recipe.detailedIngredients) {
+      const ingText = 'מצרכים: ' + recipe.detailedIngredients
+        .filter(i => !i.name.startsWith('──'))
+        .map(i => `${i.name}${i.amount ? ', ' + i.amount : ''}`)
+        .join('. ')
+      parts.push({ text: ingText, label: 'מצרכים' })
+    }
+    // Steps
+    if (recipe.steps) {
+      recipe.steps.forEach((step, i) => {
+        parts.push({ text: `שלב ${i + 1}: ${step.title}. ${step.text}`, label: `שלב ${i + 1}` })
+      })
+    }
+    // Pro tip
+    if (recipe.proTip) {
+      parts.push({ text: 'טיפ: ' + recipe.proTip, label: 'טיפ' })
+    }
+    return parts
+  }
+
+  const startSpeaking = () => {
+    window.speechSynthesis.cancel()
+    const parts = buildSpeechText()
+    if (parts.length === 0) return
+
+    // Find Hebrew voice
+    const voices = window.speechSynthesis.getVoices()
+    const hebrewVoice = voices.find(v => v.lang.startsWith('he'))
+
+    utterancesRef.current = parts.map((part, idx) => {
+      const u = new SpeechSynthesisUtterance(part.text)
+      u.lang = 'he-IL'
+      u.rate = 0.9
+      if (hebrewVoice) u.voice = hebrewVoice
+      u.onstart = () => setSpeakingStepIdx(idx)
+      u.onend = () => {
+        if (idx === parts.length - 1) {
+          setIsSpeaking(false)
+          setSpeakingStepIdx(-1)
+        }
+      }
+      return u
+    })
+
+    setIsSpeaking(true)
+    utterancesRef.current.forEach(u => window.speechSynthesis.speak(u))
+  }
+
+  const stopSpeaking = () => {
+    window.speechSynthesis.cancel()
+    setIsSpeaking(false)
+    setSpeakingStepIdx(-1)
+  }
+
+  const toggleSpeaking = () => {
+    if (isSpeaking) {
+      stopSpeaking()
+    } else {
+      startSpeaking()
+    }
+  }
+
+  // Stop speech on unmount
+  useEffect(() => {
+    return () => window.speechSynthesis.cancel()
+  }, [])
+
+  // Load voices (needed on some browsers)
+  useEffect(() => {
+    window.speechSynthesis.getVoices()
+    window.speechSynthesis.onvoiceschanged = () => window.speechSynthesis.getVoices()
+  }, [])
+
   if (!recipe) {
     return (
       <div className="flex items-center justify-center min-h-screen">
@@ -112,6 +196,18 @@ export default function RecipePage() {
       <div className="sticky top-0 z-20 bg-cream-50/95 backdrop-blur-sm">
         <div className="flex items-center justify-between px-4 py-3">
           <div className="flex items-center gap-2">
+            {'speechSynthesis' in window && (
+              <button
+                onClick={toggleSpeaking}
+                className={`p-2 rounded-full shadow-sm cursor-pointer transition-colors ${isSpeaking ? 'bg-olive-100' : 'bg-white'}`}
+                title={isSpeaking ? 'הפסק הקראה' : 'הקרא את המתכון'}
+              >
+                {isSpeaking
+                  ? <VolumeX size={20} className="text-olive-600" />
+                  : <Volume2 size={20} className="text-cream-400" />
+                }
+              </button>
+            )}
             {'wakeLock' in navigator && (
               <button
                 onClick={toggleScreenOn}
@@ -375,11 +471,13 @@ export default function RecipePage() {
             </button>
           </div>
           <div className="space-y-3">
-            {recipe.steps.map((step, i) => (
-              <div key={i} className="bg-white rounded-2xl p-4 shadow-sm">
+            {recipe.steps.map((step, i) => {
+              const isBeingRead = isSpeaking && speakingStepIdx === i + 2 // offset: 0=name, 1=ingredients, 2+=steps
+              return (
+              <div key={i} className={`rounded-2xl p-4 shadow-sm transition-colors ${isBeingRead ? 'bg-olive-50 ring-2 ring-olive-400' : 'bg-white'}`}>
                 <div className="flex items-start gap-3">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-olive-50 flex items-center justify-center">
-                    <span className="text-olive-600 font-bold text-sm">{i + 1}</span>
+                  <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${isBeingRead ? 'bg-olive-600 text-white' : 'bg-olive-50'}`}>
+                    <span className={`font-bold text-sm ${isBeingRead ? 'text-white' : 'text-olive-600'}`}>{isBeingRead ? '🔊' : i + 1}</span>
                   </div>
                   <div className="flex-1">
                     <h3 className="font-bold text-olive-800 text-sm mb-1">{step.title}</h3>
@@ -387,7 +485,8 @@ export default function RecipePage() {
                   </div>
                 </div>
               </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       )}
