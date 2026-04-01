@@ -28,12 +28,12 @@ export default function MealCategories() {
             <button
               key={cat.id}
               onClick={() => setMealCategory(cat.id)}
-              className={`shrink-0 flex flex-col items-center gap-1.5 px-4 py-2.5 rounded-2xl transition-all cursor-pointer
+              className={`shrink-0 flex flex-col items-center gap-2 px-5 py-3.5 rounded-2xl transition-all cursor-pointer
                 ${isActive ? 'bg-olive-600 text-white shadow-md' : `${cat.bgColor} text-olive-800 hover:shadow-sm`}
               `}
             >
-              <Icon size={20} />
-              <span className="text-[11px] font-medium whitespace-nowrap">{t(labelKeyMap[cat.id]) || cat.label}</span>
+              <Icon size={24} />
+              <span className="text-xs font-medium whitespace-nowrap">{t(labelKeyMap[cat.id]) || cat.label}</span>
             </button>
           )
         })}
