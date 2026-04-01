@@ -1,9 +1,9 @@
-import { Sun, Salad, Moon, Cookie, Droplets } from 'lucide-react'
+import { Sun, Salad, Moon, Cookie, Droplets, Beaker } from 'lucide-react'
 import { mealCategories } from '../../data/recipes'
 import useAppStore from '../../store/useAppStore'
 import { useLanguage } from '../../i18n/LanguageContext'
 
-const iconMap = { Sun, Salad, Moon, Cookie, Droplets }
+const iconMap = { Sun, Salad, Moon, Cookie, Droplets, Beaker }
 
 const labelKeyMap = {
   breakfast: 'meals.breakfast',
@@ -11,6 +11,7 @@ const labelKeyMap = {
   dinner: 'meals.dinner',
   snack: 'meals.snack',
   dip: 'meals.dip',
+  ferment: 'meals.ferment',
 }
 
 export default function MealCategories() {

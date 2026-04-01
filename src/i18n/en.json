@@ -30,7 +30,8 @@
     "lunch": "Lunch",
     "dinner": "Dinner",
     "snack": "Snacks",
-    "dip": "Dips"
+    "dip": "Dips",
+    "ferment": "Fermented"
   },
   "recipe": {
     "minutes": "min",
