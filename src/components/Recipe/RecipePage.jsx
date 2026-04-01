@@ -211,29 +211,15 @@ export default function RecipePage() {
       {/* Header with back button */}
       <div className="sticky top-0 z-20 bg-cream-50/95 backdrop-blur-sm">
         <div className="flex items-center justify-between px-4 py-3">
-          <div className="flex items-center gap-1.5">
-            {'speechSynthesis' in window && (
-              <button
-                onClick={toggleSpeaking}
-                className={`p-2 rounded-full shadow-sm cursor-pointer transition-colors ${isSpeaking ? 'bg-olive-100' : 'bg-white'}`}
-                title={isSpeaking ? 'הפסק הקראה' : 'הקרא את המתכון'}
-              >
-                {isSpeaking
-                  ? <VolumeX size={18} className="text-olive-600" />
-                  : <Volume2 size={18} className="text-cream-400" />
-                }
-              </button>
-            )}
-            {'wakeLock' in navigator && (
-              <button
-                onClick={toggleScreenOn}
-                className={`p-2 rounded-full shadow-sm cursor-pointer transition-colors ${screenOn ? 'bg-warm-orange-100' : 'bg-white'}`}
-                title={screenOn ? 'המסך דולק — לחץ לכיבוי' : 'השאר מסך דלוק בזמן בישול'}
-              >
-                <Sun size={18} className={screenOn ? 'text-warm-orange-600' : 'text-cream-400'} />
-              </button>
-            )}
-          </div>
+          {'wakeLock' in navigator && (
+            <button
+              onClick={toggleScreenOn}
+              className={`p-2 rounded-full shadow-sm cursor-pointer transition-colors ${screenOn ? 'bg-warm-orange-100' : 'bg-white'}`}
+              title={screenOn ? 'המסך דולק — לחץ לכיבוי' : 'השאר מסך דלוק בזמן בישול'}
+            >
+              <Sun size={18} className={screenOn ? 'text-warm-orange-600' : 'text-cream-400'} />
+            </button>
+          )}
           <h1 className="font-bold text-olive-800 text-base flex-1 text-center px-2 truncate">{recipe.name}</h1>
           <div className="flex items-center gap-1.5">
             <button
@@ -575,6 +561,23 @@ export default function RecipePage() {
           <p className="text-sm text-warm-brown-400 italic">{t('recipe.noNotes')}</p>
         )}
       </div>
+
+      {/* Floating speaker button */}
+      {'speechSynthesis' in window && (
+        <button
+          onClick={toggleSpeaking}
+          className={`fixed top-20 right-4 z-30 flex items-center gap-2 px-4 py-2.5 rounded-full shadow-lg cursor-pointer transition-all
+            ${isSpeaking
+              ? 'bg-olive-600 text-white shadow-olive-600/30'
+              : 'bg-white text-olive-700 border border-olive-200 hover:shadow-xl'
+            }`}
+        >
+          {isSpeaking
+            ? <><VolumeX size={20} /> <span className="text-sm font-bold">הפסק</span></>
+            : <><Volume2 size={20} /> <span className="text-sm font-bold">הקרא לי</span></>
+          }
+        </button>
+      )}
 
       {/* Focus Mode Overlay */}
       {focusModeOpen && hasDetailedContent && (
