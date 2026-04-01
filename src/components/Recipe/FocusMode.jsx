@@ -101,23 +101,9 @@ export default function FocusMode({ steps, recipeName, onClose }) {
       {/* Top bar */}
       <div className="flex-shrink-0 px-4 pt-3 pb-2">
         <div className="flex items-center justify-between mb-3">
-          <div className="flex items-center gap-2">
-            <span className="text-sm font-medium text-cream-600">
-              שלב {currentStep + 1} מתוך {total}
-            </span>
-            {'speechSynthesis' in window && (
-              <button
-                onClick={toggleAutoRead}
-                className={`p-1.5 rounded-full cursor-pointer transition-colors ${autoRead ? 'bg-olive-100' : 'bg-white shadow-sm'}`}
-                title={autoRead ? 'הפסק הקראה אוטומטית' : 'הקרא כל שלב אוטומטית'}
-              >
-                {autoRead
-                  ? <VolumeX size={16} className="text-olive-600" />
-                  : <Volume2 size={16} className="text-cream-400" />
-                }
-              </button>
-            )}
-          </div>
+          <span className="text-sm font-medium text-cream-600">
+            שלב {currentStep + 1} מתוך {total}
+          </span>
           <span className="text-xs text-cream-400 truncate max-w-[40%]">{recipeName}</span>
           <button
             onClick={onClose}
@@ -126,6 +112,23 @@ export default function FocusMode({ steps, recipeName, onClose }) {
             <X size={20} className="text-olive-800" />
           </button>
         </div>
+
+        {/* Speaker button — prominent */}
+        {'speechSynthesis' in window && (
+          <button
+            onClick={toggleAutoRead}
+            className={`w-full flex items-center justify-center gap-2 py-2.5 rounded-xl mb-2 cursor-pointer transition-all
+              ${autoRead
+                ? 'bg-olive-600 text-white shadow-md'
+                : 'bg-white border-2 border-olive-200 text-olive-700 hover:border-olive-400'
+              }`}
+          >
+            {autoRead
+              ? <><VolumeX size={20} /> <span className="font-bold text-sm">הפסק הקראה</span></>
+              : <><Volume2 size={20} /> <span className="font-bold text-sm">🔊 הקרא לי את השלב</span></>
+            }
+          </button>
+        )}
 
         {/* Progress bar */}
         <div className="h-1 bg-cream-100 rounded-full overflow-hidden">
