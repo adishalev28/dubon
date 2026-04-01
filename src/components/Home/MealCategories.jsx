@@ -20,7 +20,7 @@ export default function MealCategories() {
 
   return (
     <div className="px-4 mt-6">
-      <div className="flex gap-2">
+      <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
         {mealCategories.map((cat) => {
           const Icon = iconMap[cat.icon]
           const isActive = activeMealCategory === cat.id
@@ -28,12 +28,12 @@ export default function MealCategories() {
             <button
               key={cat.id}
               onClick={() => setMealCategory(cat.id)}
-              className={`flex-1 min-w-0 flex flex-col items-center gap-2 py-3 rounded-2xl transition-all cursor-pointer
+              className={`shrink-0 flex flex-col items-center gap-1.5 px-4 py-2.5 rounded-2xl transition-all cursor-pointer
                 ${isActive ? 'bg-olive-600 text-white shadow-md' : `${cat.bgColor} text-olive-800 hover:shadow-sm`}
               `}
             >
-              <Icon size={22} />
-              <span className="text-[11px] font-medium">{t(labelKeyMap[cat.id]) || cat.label}</span>
+              <Icon size={20} />
+              <span className="text-[11px] font-medium whitespace-nowrap">{t(labelKeyMap[cat.id]) || cat.label}</span>
             </button>
           )
         })}
