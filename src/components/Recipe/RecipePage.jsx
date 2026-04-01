@@ -13,6 +13,11 @@ import { useTranslatedRecipe } from '../../i18n/useTranslatedRecipe'
 export default function RecipePage() {
   const { id } = useParams()
   const navigate = useNavigate()
+
+  // Scroll to top when entering a recipe
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [id])
   const { t, isRTL } = useLanguage()
   const rawRecipe = recipes.find(r => r.id === Number(id))
   const recipe = useTranslatedRecipe(rawRecipe)
