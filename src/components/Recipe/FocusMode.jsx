@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react'
-import { X, ChevronLeft, ChevronRight } from 'lucide-react'
+import { X, ChevronLeft, ChevronRight, Volume2, VolumeX } from 'lucide-react'
 
 export default function FocusMode({ steps, recipeName, onClose }) {
   const [currentStep, setCurrentStep] = useState(0)
@@ -7,6 +7,52 @@ export default function FocusMode({ steps, recipeName, onClose }) {
   const [animKey, setAnimKey] = useState(0)
   const touchStartRef = useRef(null)
   const total = steps.length
+
+  // ── Text-to-Speech for focus mode ──
+  const [isSpeaking, setIsSpeaking] = useState(false)
+  const [autoRead, setAutoRead] = useState(false)
+
+  const speakStep = (stepIdx) => {
+    window.speechSynthesis.cancel()
+    const step = steps[stepIdx]
+    if (!step) return
+
+    const u = new SpeechSynthesisUtterance(`שלב ${stepIdx + 1}: ${step.title}. ${step.text}`)
+    u.lang = 'he-IL'
+    u.rate = 0.9
+    const voices = window.speechSynthesis.getVoices()
+    const hebrewVoice = voices.find(v => v.lang.startsWith('he'))
+    if (hebrewVoice) u.voice = hebrewVoice
+    u.onstart = () => setIsSpeaking(true)
+    u.onend = () => setIsSpeaking(false)
+    window.speechSynthesis.speak(u)
+  }
+
+  const toggleAutoRead = () => {
+    if (autoRead) {
+      setAutoRead(false)
+      window.speechSynthesis.cancel()
+      setIsSpeaking(false)
+    } else {
+      setAutoRead(true)
+      speakStep(currentStep)
+    }
+  }
+
+  // Auto-read when step changes (if autoRead is on)
+  useEffect(() => {
+    if (autoRead) speakStep(currentStep)
+  }, [currentStep, autoRead])
+
+  // Stop speech on unmount
+  useEffect(() => {
+    return () => window.speechSynthesis.cancel()
+  }, [])
+
+  // Load voices
+  useEffect(() => {
+    window.speechSynthesis.getVoices()
+  }, [])
 
   // Lock body scroll
   useEffect(() => {
@@ -55,10 +101,24 @@ export default function FocusMode({ steps, recipeName, onClose }) {
       {/* Top bar */}
       <div className="flex-shrink-0 px-4 pt-3 pb-2">
         <div className="flex items-center justify-between mb-3">
-          <span className="text-sm font-medium text-cream-600">
-            שלב {currentStep + 1} מתוך {total}
-          </span>
-          <span className="text-xs text-cream-400 truncate max-w-[50%]">{recipeName}</span>
+          <div className="flex items-center gap-2">
+            <span className="text-sm font-medium text-cream-600">
+              שלב {currentStep + 1} מתוך {total}
+            </span>
+            {'speechSynthesis' in window && (
+              <button
+                onClick={toggleAutoRead}
+                className={`p-1.5 rounded-full cursor-pointer transition-colors ${autoRead ? 'bg-olive-100' : 'bg-white shadow-sm'}`}
+                title={autoRead ? 'הפסק הקראה אוטומטית' : 'הקרא כל שלב אוטומטית'}
+              >
+                {autoRead
+                  ? <VolumeX size={16} className="text-olive-600" />
+                  : <Volume2 size={16} className="text-cream-400" />
+                }
+              </button>
+            )}
+          </div>
+          <span className="text-xs text-cream-400 truncate max-w-[40%]">{recipeName}</span>
           <button
             onClick={onClose}
             className="p-2 rounded-full bg-white shadow-sm cursor-pointer active:bg-cream-100"
@@ -85,8 +145,8 @@ export default function FocusMode({ steps, recipeName, onClose }) {
         <div key={animKey} className="animate-fade-in">
           {/* Step number circle */}
           <div className="flex justify-center mb-6">
-            <div className="w-16 h-16 rounded-full bg-olive-600 flex items-center justify-center shadow-lg">
-              <span className="text-white font-bold text-2xl">{currentStep + 1}</span>
+            <div className={`w-16 h-16 rounded-full bg-olive-600 flex items-center justify-center shadow-lg transition-all ${isSpeaking ? 'ring-4 ring-olive-300 ring-opacity-50' : ''}`}>
+              <span className="text-white font-bold text-2xl">{isSpeaking ? '🔊' : currentStep + 1}</span>
             </div>
           </div>
 
