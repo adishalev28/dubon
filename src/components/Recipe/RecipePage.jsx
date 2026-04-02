@@ -1,5 +1,5 @@
 import { useParams, useNavigate } from 'react-router-dom'
-import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play, Minus, Plus, Check, CookingPot, Pencil, ExternalLink, PictureInPicture2, Sun, Volume2, VolumeX } from 'lucide-react'
+import { ArrowRight, Clock, ChefHat, Users, Bookmark, Lightbulb, Play, Minus, Plus, Check, CookingPot, Pencil, ExternalLink, PictureInPicture2, Sun, Volume2, VolumeX, Send } from 'lucide-react'
 import { recipes } from '../../data/recipes'
 import useAppStore from '../../store/useAppStore'
 import NutritionPills from '../shared/NutritionPills'
@@ -177,6 +177,39 @@ export default function RecipePage() {
   const recipeChecked = checkedIngredients[recipe.id] || []
 
   const isSeparator = (ing) => ing.name.includes('──')
+
+  // Build WhatsApp share text
+  const shareToWhatsApp = () => {
+    let text = `🍽️ *${recipe.name}*\n`
+    text += `⏱️ ${recipe.time} דק׳ · ${recipe.difficulty}\n\n`
+
+    if (recipe.detailedIngredients) {
+      text += `📝 *מצרכים:*\n`
+      recipe.detailedIngredients.forEach(ing => {
+        if (ing.name.includes('──')) {
+          text += `\n${ing.name.replace(/──/g, '').trim()}:\n`
+        } else {
+          text += `• ${ing.name}${ing.amount ? ' — ' + ing.amount : ''}${ing.note ? ' (' + ing.note + ')' : ''}\n`
+        }
+      })
+    }
+
+    if (recipe.steps) {
+      text += `\n👨‍🍳 *הכנה:*\n`
+      recipe.steps.forEach((step, i) => {
+        text += `\n*${i + 1}. ${step.title}*\n${step.text}\n`
+      })
+    }
+
+    if (recipe.proTip) {
+      text += `\n💡 *טיפ:* ${recipe.proTip}\n`
+    }
+
+    text += `\n_נשלח מאפליקציית דובון_ 🧸`
+
+    const url = `https://wa.me/?text=${encodeURIComponent(text)}`
+    window.open(url, '_blank')
+  }
 
   // Merge duplicate ingredients by name
   const mergedIngredients = hasDetailedIngredients ? (() => {
@@ -507,6 +540,17 @@ export default function RecipePage() {
           </div>
         </div>
       )}
+
+      {/* Share to WhatsApp */}
+      <div className="mx-4 mt-5">
+        <button
+          onClick={shareToWhatsApp}
+          className="w-full flex items-center justify-center gap-2 py-3 rounded-2xl bg-[#25D366] text-white font-bold text-sm shadow-sm cursor-pointer active:bg-[#1da851] transition-colors"
+        >
+          <Send size={18} />
+          {t('recipe.shareWhatsApp')}
+        </button>
+      </div>
 
       {/* Personal Notes */}
       <div className="mx-4 mt-6 mb-24 bg-olive-50 rounded-2xl p-4 border border-olive-100">
