@@ -59,7 +59,13 @@
     "floatingWindow": "חלונית צפה",
     "serving": "מנה",
     "servingsPlural": "מנות",
-    "healthyFood": "אוכל בריא"
+    "healthyFood": "אוכל בריא",
+    "readAloud": "הקרא לי",
+    "stopReading": "הפסק",
+    "readStep": "🔊 הקרא לי את השלב",
+    "stopReadingStep": "הפסק הקראה",
+    "screenOn": "מסך דלוק",
+    "screenOff": "כבה מסך"
   },
   "tcm": {
     "title": "רפואה סינית",

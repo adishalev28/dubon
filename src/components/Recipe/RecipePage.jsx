@@ -573,8 +573,8 @@ export default function RecipePage() {
             }`}
         >
           {isSpeaking
-            ? <><VolumeX size={20} /> <span className="text-sm font-bold">הפסק</span></>
-            : <><Volume2 size={20} /> <span className="text-sm font-bold">הקרא לי</span></>
+            ? <><VolumeX size={20} /> <span className="text-sm font-bold">{t('recipe.stopReading')}</span></>
+            : <><Volume2 size={20} /> <span className="text-sm font-bold">{t('recipe.readAloud')}</span></>
           }
         </button>
       )}

@@ -59,7 +59,13 @@
     "floatingWindow": "Picture in picture",
     "serving": "serving",
     "servingsPlural": "servings",
-    "healthyFood": "Healthy food"
+    "healthyFood": "Healthy food",
+    "readAloud": "Read aloud",
+    "stopReading": "Stop",
+    "readStep": "🔊 Read this step",
+    "stopReadingStep": "Stop reading",
+    "screenOn": "Screen on",
+    "screenOff": "Screen off"
   },
   "tcm": {
     "title": "Chinese Medicine",

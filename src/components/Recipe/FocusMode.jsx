@@ -1,7 +1,9 @@
 import { useState, useEffect, useRef } from 'react'
 import { X, ChevronLeft, ChevronRight, Volume2, VolumeX } from 'lucide-react'
+import { useLanguage } from '../../i18n/LanguageContext'
 
 export default function FocusMode({ steps, recipeName, onClose }) {
+  const { t } = useLanguage()
   const [currentStep, setCurrentStep] = useState(0)
   const [direction, setDirection] = useState('next') // for animation direction
   const [animKey, setAnimKey] = useState(0)
@@ -124,8 +126,8 @@ export default function FocusMode({ steps, recipeName, onClose }) {
               }`}
           >
             {autoRead
-              ? <><VolumeX size={20} /> <span className="font-bold text-sm">הפסק הקראה</span></>
-              : <><Volume2 size={20} /> <span className="font-bold text-sm">🔊 הקרא לי את השלב</span></>
+              ? <><VolumeX size={20} /> <span className="font-bold text-sm">{t('recipe.stopReadingStep')}</span></>
+              : <><Volume2 size={20} /> <span className="font-bold text-sm">{t('recipe.readStep')}</span></>
             }
           </button>
         )}
