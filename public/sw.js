@@ -1,4 +1,4 @@
-const CACHE_NAME = 'dubon-v1'
+const CACHE_NAME = 'dubon-v2'
 
 self.addEventListener('install', () => {
   self.skipWaiting()
