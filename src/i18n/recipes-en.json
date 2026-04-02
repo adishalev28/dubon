@@ -32,31 +32,33 @@
     "servings": "4 servings"
   },
   "9": {
-    "name": "Chicken & Orzo Bake",
-    "description": "One-pan family dinner. Chicken thighs with crispy orzo in tomato sauce and warming spices.",
-    "intro": "The ultimate comfort food. Chicken thighs roasted on a bed of orzo that absorbs all the juices and becomes irresistibly crispy on top. One pan, no fuss, feeds the whole family.",
-    "ingredients": ["Chicken thighs", "Orzo pasta", "Crushed tomatoes", "Onion", "Garlic", "Paprika"],
+    "name": "Kid-Friendly Spaghetti Bolognese",
+    "description": "Rich Bolognese with root vegetable soffritto 'hidden' in the sauce — nutritious, delicious and picky-eater approved.",
+    "intro": "A good Bolognese needs depth of flavor. For kids, the challenge is texture and acidity. The technique here is blending root vegetables (soffritto) to an almost invisible texture — natural sweetness that balances the tomato acidity.",
+    "ingredients": ["Ground beef", "Spaghetti", "Crushed tomatoes", "Carrot", "Onion", "Celery", "Garlic", "Tomato paste"],
     "detailedIngredients": [
-      { "name": "Chicken thighs with skin", "amount": "6 pieces", "note": "" },
-      { "name": "Orzo pasta", "amount": "2 cups", "note": "" },
+      { "name": "Ground beef", "amount": "500g", "note": "Not too lean" },
+      { "name": "Spaghetti", "amount": "400g", "note": "" },
       { "name": "Crushed tomatoes", "amount": "1 can (400g)", "note": "" },
-      { "name": "Boiling water", "amount": "2 cups", "note": "" },
-      { "name": "Diced onion", "amount": "1 large", "note": "" },
-      { "name": "Crushed garlic", "amount": "4 cloves", "note": "" },
-      { "name": "Sweet paprika", "amount": "1 tbsp", "note": "" },
-      { "name": "Cumin", "amount": "1 tsp", "note": "" },
-      { "name": "Salt & pepper", "amount": "To taste", "note": "" },
-      { "name": "Olive oil", "amount": "3 tbsp", "note": "" }
+      { "name": "Tomato paste", "amount": "2 tbsp", "note": "" },
+      { "name": "Carrot", "amount": "1 large", "note": "Grated finely" },
+      { "name": "Onion", "amount": "1 large", "note": "Finely diced" },
+      { "name": "Celery", "amount": "1 stalk", "note": "Finely diced" },
+      { "name": "Garlic", "amount": "3 cloves", "note": "Minced" },
+      { "name": "Olive oil", "amount": "3 tbsp", "note": "" },
+      { "name": "Salt & pepper", "amount": "To taste", "note": "" }
     ],
     "steps": [
-      { "title": "Sear chicken", "text": "Season chicken thighs with salt, pepper and paprika. Sear skin-side down in a hot pan with olive oil until golden, about 5 minutes." },
-      { "title": "Build the base", "text": "In a baking dish, mix 2 cups orzo, crushed tomatoes, 2 cups boiling water, diced onion, garlic, cumin and salt." },
-      { "title": "Assemble", "text": "Place the seared chicken thighs skin-side up on top of the orzo mixture." },
-      { "title": "Bake", "text": "Bake at 200°C for 45 minutes until the chicken is golden and the orzo is crispy on the edges." }
+      { "title": "Soffritto", "text": "Heat olive oil and sauté onion, grated carrot and celery on medium heat for 8-10 minutes until very soft and golden." },
+      { "title": "Brown the meat", "text": "Add 500g ground beef, break into very small pieces with a fork. Brown well for 5-7 minutes." },
+      { "title": "Add tomatoes", "text": "Add garlic, tomato paste, crushed tomatoes. Season with salt and pepper." },
+      { "title": "Simmer", "text": "Reduce heat to low, cover and simmer for at least 30 minutes, stirring occasionally." },
+      { "title": "Cook pasta", "text": "Cook spaghetti al dente according to package. Save 1/2 cup pasta water." },
+      { "title": "Combine", "text": "Toss pasta with sauce, adding pasta water as needed for silky consistency." }
     ],
-    "proTip": "Don't stir during baking! The crispy orzo layer on the edges is the best part.",
+    "proTip": "Break the meat into the smallest pieces possible — big chunks are the main reason kids reject Bolognese.",
     "difficulty": "Easy",
-    "category": "Dinner",
+    "category": "Lunch",
     "servings": "4-5 servings"
   },
   "10": {
@@ -91,32 +93,31 @@
     "servings": "1 serving"
   },
   "12": {
-    "name": "Classic Homemade Bolognese",
-    "description": "Rich, slow-cooked meat sauce with a depth of flavor that only time can create. Worth every minute.",
-    "intro": "A true Bolognese is not a quick tomato sauce with meat. It's a slow, patient process where the flavors develop layer by layer. The wine, the milk, the long simmer - each step adds complexity.",
-    "ingredients": ["Ground beef", "Onion", "Carrots", "Celery", "Crushed tomatoes", "Red wine", "Milk", "Pasta"],
+    "name": "One-Pot Chicken & Orzo Bake",
+    "description": "One-pan family dinner. Chicken thighs with crispy orzo in tomato sauce and warming spices.",
+    "intro": "The ultimate comfort food. Chicken thighs roasted on a bed of orzo that absorbs all the juices and becomes irresistibly crispy on top. One pan, no fuss, feeds the whole family.",
+    "ingredients": ["Chicken thighs", "Orzo pasta", "Crushed tomatoes", "Onion", "Garlic", "Paprika", "Hawaij", "Silan"],
     "detailedIngredients": [
-      { "name": "Ground beef", "amount": "500g", "note": "20% fat" },
-      { "name": "Onion", "amount": "1 large", "note": "Finely diced" },
-      { "name": "Carrots", "amount": "2", "note": "Finely diced" },
-      { "name": "Celery", "amount": "2 stalks", "note": "Finely diced" },
-      { "name": "Crushed tomatoes", "amount": "1 can (400g)", "note": "" },
-      { "name": "Tomato paste", "amount": "2 tbsp", "note": "" },
-      { "name": "Red wine", "amount": "1 cup", "note": "Dry" },
-      { "name": "Whole milk", "amount": "1/2 cup", "note": "" },
+      { "name": "Chicken thighs", "amount": "6 pieces", "note": "" },
+      { "name": "Orzo pasta (ptitim)", "amount": "2 cups", "note": "" },
+      { "name": "Onion", "amount": "1 large", "note": "Diced" },
+      { "name": "Garlic", "amount": "4 cloves", "note": "Crushed" },
+      { "name": "Paprika", "amount": "1 tsp", "note": "" },
+      { "name": "Hawaij spice", "amount": "1 tsp", "note": "" },
+      { "name": "Date syrup (Silan)", "amount": "1 tbsp", "note": "" },
+      { "name": "Chicken broth", "amount": "1 tsp", "note": "Powder" },
       { "name": "Olive oil", "amount": "3 tbsp", "note": "" },
-      { "name": "Pasta of choice", "amount": "400g", "note": "Pappardelle or tagliatelle" }
+      { "name": "Fresh cilantro", "amount": "Handful", "note": "For garnish" }
     ],
     "steps": [
-      { "title": "Soffritto", "text": "Heat olive oil and saut onion, carrots and celery for 10 minutes on medium heat until soft and golden." },
-      { "title": "Brown the meat", "text": "Add 500g ground beef, break into small pieces and cook until browned, about 8 minutes." },
-      { "title": "Deglaze", "text": "Pour 1 cup red wine and cook until almost evaporated, about 5 minutes." },
-      { "title": "Add tomatoes", "text": "Add crushed tomatoes, tomato paste and 1/2 cup milk. Season with salt and pepper." },
-      { "title": "Slow simmer", "text": "Reduce heat to lowest setting. Cover and simmer for at least 2 hours, stirring occasionally." },
-      { "title": "Serve", "text": "Cook pasta al dente. Toss with the sauce and serve immediately." }
+      { "title": "Season chicken", "text": "Season chicken with salt, paprika, hawaij and a drizzle of olive oil." },
+      { "title": "Sear chicken", "text": "Sear chicken in a hot pan skin-side down for 5 minutes until golden. Set aside." },
+      { "title": "Build base", "text": "In same pan, sauté onion and garlic until golden. Add orzo and toast with spices and oil." },
+      { "title": "Add liquids", "text": "Add boiling water, chicken broth powder and silan. Place chicken on top." },
+      { "title": "Bake", "text": "Cover and bake at 180°C for 45 minutes until orzo is cooked and chicken is done." }
     ],
-    "proTip": "The milk is the secret. It softens the acidity of the tomatoes and gives the sauce a velvety richness.",
-    "difficulty": "Medium",
+    "proTip": "Coat orzo in oil and spices before adding liquid — this keeps each piece separate and flavorful.",
+    "difficulty": "Easy",
     "category": "Lunch",
     "servings": "4-5 servings"
   },
@@ -238,5 +239,31 @@
     "difficulty": "Easy",
     "category": "Dinner",
     "servings": "2-3 servings"
+  },
+  "17": {
+    "name": "Fermented Purple Cabbage with Lemon, Garlic & Honey",
+    "description": "Homemade fermented cabbage rich in probiotics. Garlic and lemon boost immunity, honey balances. Ready in 10 days.",
+    "intro": "A simple homemade fermentation process rich in natural probiotics. The combination of purple cabbage with garlic, lemon and honey creates a complex, surprising flavor — sour-sweet-spicy. Perfect as a topping on toast with egg, in salads, or alongside any main dish.",
+    "ingredients": ["Purple cabbage", "Garlic", "Lemon", "Honey", "Sea salt"],
+    "detailedIngredients": [
+      { "name": "Purple (or green) cabbage", "amount": "1 medium", "note": "Sliced very thin (mandoline works great)" },
+      { "name": "Garlic cloves", "amount": "2", "note": "Whole or halved" },
+      { "name": "Lemon zest", "amount": "From 1 lemon", "note": "Yellow part only" },
+      { "name": "Fresh lemon juice", "amount": "From 1 lemon", "note": "" },
+      { "name": "Honey", "amount": "1-2 tbsp", "note": "Balances saltiness and aids fermentation" },
+      { "name": "Sea salt", "amount": "1 tsp per 500g cabbage", "note": "Draws out liquid" }
+    ],
+    "steps": [
+      { "title": "Prep cabbage", "text": "Slice 1 medium purple cabbage very thin. Transfer to a large bowl and sprinkle with salt." },
+      { "title": "Massage (critical!)", "text": "Massage the cabbage firmly with your hands for 5-10 minutes. Goal: break down cell walls until the cabbage releases plenty of liquid. This liquid becomes the brine." },
+      { "title": "Season", "text": "Add lemon zest, fresh lemon juice, 2 garlic cloves and 1-2 tbsp honey. Mix well." },
+      { "title": "Pack into jar", "text": "Transfer to a clean glass jar. Press down firmly until liquid rises above the cabbage. Place a weight or whole cabbage leaf on top." },
+      { "title": "Ferment", "text": "Close the jar (preferably with airlock lid, or open once daily). Leave on counter in a shaded spot for about 10 days at room temperature." },
+      { "title": "Store", "text": "After 10 days the flavors have intensified and the cabbage is ready. Store in the fridge — keeps for months." }
+    ],
+    "proTip": "The cabbage must stay below the liquid line to prevent mold! If not enough liquid, add a bit of brine (1 tsp salt per cup water).",
+    "difficulty": "Easy",
+    "category": "Fermented",
+    "servings": "1 liter jar"
   }
 }
