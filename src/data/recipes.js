@@ -663,8 +663,8 @@ export const recipes = [
       caution: ['damp', 'phlegm'],
     },
     difficulty: 'בינוני',
-    category: 'נשנושים',
-    meal: 'snack',
+    category: 'קינוחים',
+    meal: 'dessert',
     tags: ['מתוק', 'מרשים לאורחים'],
     calories: 350,
     protein: 8,
@@ -722,6 +722,7 @@ export const mealCategories = [
   { id: 'lunch', label: 'צהריים', icon: 'Salad', bgColor: 'bg-olive-50' },
   { id: 'dinner', label: 'ערב', icon: 'Moon', bgColor: 'bg-warm-brown-50' },
   { id: 'snack', label: 'נשנושים', icon: 'Cookie', bgColor: 'bg-warm-orange-50' },
+  { id: 'dessert', label: 'קינוחים', icon: 'CakeSlice', bgColor: 'bg-cream-100' },
   { id: 'dip', label: 'מטבלים', icon: 'Droplets', bgColor: 'bg-olive-50' },
   { id: 'ferment', label: 'התססה', icon: 'Beaker', bgColor: 'bg-warm-orange-50' },
 ]
