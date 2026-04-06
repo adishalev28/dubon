@@ -287,5 +287,38 @@
     "difficulty": "Easy",
     "category": "Fermented",
     "servings": "1 liter jar"
+  },
+  "18": {
+    "name": "Classic Cheesecake Loaf with White Topping",
+    "description": "Classic cheesecake in a loaf pan — crunchy petit beurre base, creamy cheese filling and a silky sour cream topping.",
+    "intro": "An elegant cheesecake baked in a loaf pan — compact, beautiful and perfect for slicing. Crunchy cookie base, delicate vanilla cheese filling, and a white sour cream topping that gives it the perfect look. Slow baking at 160°C keeps it creamy without cracks.",
+    "ingredients": ["Petit beurre cookies", "Butter", "Cream cheese", "Sour cream", "Sugar", "Eggs", "Vanilla pudding", "Cornstarch"],
+    "detailedIngredients": [
+      { "name": "── Base ──", "amount": "", "note": "" },
+      { "name": "Petit beurre cookies", "amount": "100g", "note": "Half a package, crushed to fine crumbs" },
+      { "name": "Melted butter", "amount": "50g", "note": "" },
+      { "name": "── Cheese Filling ──", "amount": "", "note": "" },
+      { "name": "Cream cheese", "amount": "375g", "note": "1.5 tubs of 250g" },
+      { "name": "Sour cream", "amount": "100ml", "note": "Half a tub" },
+      { "name": "Sugar", "amount": "1/2 cup", "note": "" },
+      { "name": "Eggs", "amount": "2", "note": "" },
+      { "name": "Vanilla pudding powder", "amount": "2 tbsp", "note": "" },
+      { "name": "Cornstarch", "amount": "1 tbsp", "note": "" },
+      { "name": "── White Topping ──", "amount": "", "note": "" },
+      { "name": "Sour cream", "amount": "200ml", "note": "1 full tub" },
+      { "name": "Sugar", "amount": "1.5 tbsp", "note": "" },
+      { "name": "Vanilla extract", "amount": "A little", "note": "" }
+    ],
+    "steps": [
+      { "title": "Make the base", "text": "Crush 100g petit beurre cookies to fine crumbs and mix with 50g melted butter until it resembles wet sand. Press firmly into the bottom of a loaf pan and freeze for 10 minutes to set." },
+      { "title": "Make the filling", "text": "Preheat oven to 160°C. In a bowl, whisk by hand 375g cream cheese, 100ml sour cream and 1/2 cup sugar. Add 2 eggs one at a time, whisking just until absorbed. Fold in 2 tbsp vanilla pudding powder and 1 tbsp cornstarch until smooth." },
+      { "title": "First bake", "text": "Remove pan from freezer, pour the cheese filling over the cookie base and bake for 40-45 minutes. The cake is ready when the edges are set and the center still jiggles slightly (like jelly)." },
+      { "title": "White topping", "text": "While the cake bakes, mix 200ml sour cream, 1.5 tbsp sugar and a little vanilla extract. When the first bake is done, remove the cake (don't turn off the oven!), spread the topping evenly and return to the oven for 10 more minutes." },
+      { "title": "Cool and set", "text": "Remove from oven and let cool completely at room temperature. Refrigerate for at least 6 hours (overnight is best) before slicing. Cooling is critical for the cake's structure." }
+    ],
+    "proTip": "Never over-mix! Excessive mixing incorporates air into the batter and creates cracks. A hand whisk is better than a mixer — cheesecake loves gentleness.",
+    "difficulty": "Medium",
+    "category": "Snacks",
+    "servings": "8-10 slices"
   }
 }
