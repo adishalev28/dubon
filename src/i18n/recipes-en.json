@@ -138,13 +138,14 @@
     "name": "Classic Shepherd's Pie",
     "description": "Rich seasoned meat filling topped with creamy mashed potatoes, baked until golden. Pure comfort food.",
     "intro": "The ultimate comfort dish. A rich, savory meat filling with onion, garlic and root vegetables, topped with a generous layer of creamy mashed potatoes and baked until golden on top. One of those dishes that makes the whole house smell amazing.",
-    "ingredients": ["Ground beef", "Red onion", "Carrots", "Garlic", "Potatoes", "Olive oil", "Paprika"],
+    "ingredients": ["Ground beef", "Red onion", "Carrots", "Garlic", "Tomato paste", "Potatoes", "Olive oil", "Paprika", "Parsley"],
     "detailedIngredients": [
       { "name": "Ground beef", "amount": "500g", "note": "" },
       { "name": "Red onion", "amount": "1 large", "note": "Diced" },
       { "name": "Carrots", "amount": "2", "note": "Small cubes" },
       { "name": "Garlic", "amount": "5 cloves", "note": "Minced" },
       { "name": "Olive oil", "amount": "2 tbsp", "note": "" },
+      { "name": "Tomato paste", "amount": "1 tbsp", "note": "" },
       { "name": "Sweet paprika", "amount": "1 tsp", "note": "" },
       { "name": "Cumin", "amount": "½ tsp", "note": "" },
       { "name": "Salt", "amount": "1 tsp", "note": "" },
@@ -153,14 +154,16 @@
       { "name": "Butter", "amount": "2 tbsp", "note": "" },
       { "name": "Milk", "amount": "¼ cup", "note": "" },
       { "name": "Olive oil", "amount": "1 tbsp", "note": "" },
-      { "name": "Salt", "amount": "½ tsp", "note": "" }
+      { "name": "Salt", "amount": "½ tsp", "note": "" },
+      { "name": "── Garnish ──", "amount": "", "note": "" },
+      { "name": "Fresh parsley", "amount": "Handful", "note": "Chopped, for serving" }
     ],
     "steps": [
-      { "title": "Cook filling", "text": "Heat 2 tbsp olive oil. Sauté diced red onion, 2 diced carrots and 5 minced garlic cloves until soft. Add 500g ground beef and brown well. Season with paprika, cumin and salt. Add ½ cup water and simmer 15 minutes." },
+      { "title": "Cook filling", "text": "Heat 2 tbsp olive oil. Sauté diced red onion, 2 diced carrots and 5 minced garlic cloves until soft. Add 500g ground beef and brown well. Add 1 tbsp tomato paste and fry for a minute. Season with paprika, salt and pepper. Add ½ cup water and simmer 15 minutes." },
       { "title": "Make mash", "text": "Boil 5 quartered potatoes until very soft (~20 min). Drain and mash with 2 tbsp butter, ¼ cup milk, 1 tbsp olive oil and ½ tsp salt until creamy and smooth." },
       { "title": "Assemble", "text": "Pour the meat filling into a baking dish. Spread the mashed potatoes evenly on top. Score the surface with a fork for golden peaks." },
-      { "title": "Bake", "text": "Bake at 180°C for 25-30 minutes until the top is golden." },
-      { "title": "Serve", "text": "Let cool for 5 minutes before serving. Great with a simple green salad." }
+      { "title": "Bake", "text": "Drizzle olive oil over the mash. Bake at 180°C for 25-30 minutes until the top is golden." },
+      { "title": "Serve", "text": "Remove from oven and scatter chopped fresh parsley on top. Let cool 5 minutes before serving." }
     ],
     "proTip": "Add a sprig of fresh thyme to the meat filling while simmering — it adds an incredible aromatic depth that takes the dish to the next level.",
     "difficulty": "Easy",
