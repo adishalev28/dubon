@@ -647,7 +647,7 @@ export const recipes = [
   {
     id: 18,
     name: 'עוגת גבינה "פס" עם ציפוי לבן',
-    image: 'https://images.unsplash.com/photo-1524351199678-941a58a3df50?w=600&h=400&fit=crop',
+    image: '/עוגת גבינה אפויה.jpg',
     time: 75,
     tcm: {
       nature: 'קריר',
