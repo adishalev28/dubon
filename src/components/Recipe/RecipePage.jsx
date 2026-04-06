@@ -85,25 +85,26 @@ export default function RecipePage() {
   const buildSpeechText = () => {
     if (!recipe) return []
     const parts = []
+    const isEn = !isRTL
     // Recipe name
-    parts.push({ text: recipe.name, label: 'שם המתכון' })
+    parts.push({ text: recipe.name, label: isEn ? 'Recipe' : 'שם המתכון' })
     // Ingredients
     if (recipe.detailedIngredients) {
-      const ingText = 'מצרכים: ' + recipe.detailedIngredients
+      const ingText = (isEn ? 'Ingredients: ' : 'מצרכים: ') + recipe.detailedIngredients
         .filter(i => !i.name.startsWith('──'))
         .map(i => `${i.name}${i.amount ? ', ' + i.amount : ''}`)
         .join('. ')
-      parts.push({ text: ingText, label: 'מצרכים' })
+      parts.push({ text: ingText, label: isEn ? 'Ingredients' : 'מצרכים' })
     }
     // Steps
     if (recipe.steps) {
       recipe.steps.forEach((step, i) => {
-        parts.push({ text: `שלב ${i + 1}: ${step.title}. ${step.text}`, label: `שלב ${i + 1}` })
+        parts.push({ text: isEn ? `Step ${i + 1}: ${step.title}. ${step.text}` : `שלב ${i + 1}: ${step.title}. ${step.text}`, label: isEn ? `Step ${i + 1}` : `שלב ${i + 1}` })
       })
     }
     // Pro tip
     if (recipe.proTip) {
-      parts.push({ text: 'טיפ: ' + recipe.proTip, label: 'טיפ' })
+      parts.push({ text: (isEn ? 'Tip: ' : 'טיפ: ') + recipe.proTip, label: isEn ? 'Tip' : 'טיפ' })
     }
     return parts
   }
@@ -113,15 +114,16 @@ export default function RecipePage() {
     const parts = buildSpeechText()
     if (parts.length === 0) return
 
-    // Find Hebrew voice
+    const isEn = !isRTL
     const voices = window.speechSynthesis.getVoices()
-    const hebrewVoice = voices.find(v => v.lang.startsWith('he'))
+    const lang = isEn ? 'en-US' : 'he-IL'
+    const voice = voices.find(v => v.lang === lang) || voices.find(v => v.lang.startsWith(isEn ? 'en' : 'he'))
 
     utterancesRef.current = parts.map((part, idx) => {
       const u = new SpeechSynthesisUtterance(part.text)
-      u.lang = 'he-IL'
+      u.lang = lang
       u.rate = 0.9
-      if (hebrewVoice) u.voice = hebrewVoice
+      if (voice) u.voice = voice
       u.onstart = () => setSpeakingStepIdx(idx)
       u.onend = () => {
         if (idx === parts.length - 1) {

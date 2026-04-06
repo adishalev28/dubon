@@ -14,17 +14,22 @@ export default function FocusMode({ steps, recipeName, onClose }) {
   const [isSpeaking, setIsSpeaking] = useState(false)
   const [autoRead, setAutoRead] = useState(false)
 
+  const { isRTL } = useLanguage()
+
   const speakStep = (stepIdx) => {
     window.speechSynthesis.cancel()
     const step = steps[stepIdx]
     if (!step) return
 
-    const u = new SpeechSynthesisUtterance(`שלב ${stepIdx + 1}: ${step.title}. ${step.text}`)
-    u.lang = 'he-IL'
+    const isEn = !isRTL
+    const text = isEn ? `Step ${stepIdx + 1}: ${step.title}. ${step.text}` : `שלב ${stepIdx + 1}: ${step.title}. ${step.text}`
+    const u = new SpeechSynthesisUtterance(text)
+    const lang = isEn ? 'en-US' : 'he-IL'
+    u.lang = lang
     u.rate = 0.9
     const voices = window.speechSynthesis.getVoices()
-    const hebrewVoice = voices.find(v => v.lang.startsWith('he'))
-    if (hebrewVoice) u.voice = hebrewVoice
+    const voice = voices.find(v => v.lang === lang) || voices.find(v => v.lang.startsWith(isEn ? 'en' : 'he'))
+    if (voice) u.voice = voice
     u.onstart = () => setIsSpeaking(true)
     u.onend = () => setIsSpeaking(false)
     window.speechSynthesis.speak(u)
