@@ -17,11 +17,11 @@ const labelKeyMap = {
 
 export default function MealCategories() {
   const { activeMealCategory, setMealCategory } = useAppStore()
-  const { t } = useLanguage()
+  const { t, isRTL } = useLanguage()
 
   return (
     <div className="px-4 mt-6">
-      <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide">
+      <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hide" dir={isRTL ? 'rtl' : 'ltr'}>
         {mealCategories.map((cat) => {
           const Icon = iconMap[cat.icon]
           const isActive = activeMealCategory === cat.id
