@@ -648,6 +648,7 @@ export const recipes = [
     id: 18,
     name: 'עוגת גבינה "פס" עם ציפוי לבן',
     image: '/עוגת גבינה אפויה.jpg',
+    video: '/עוגת גבינה אפויה.mp4',
     time: 75,
     tcm: {
       nature: 'קריר',
