@@ -729,6 +729,7 @@ export const mealCategories = [
   { id: 'dessert', label: 'קינוחים', icon: 'CakeSlice', bgColor: 'bg-cream-100' },
   { id: 'dip', label: 'מטבלים', icon: 'Droplets', bgColor: 'bg-olive-50' },
   { id: 'ferment', label: 'התססה', icon: 'Beaker', bgColor: 'bg-warm-orange-50' },
+  { id: 'shake', label: 'שייקים', icon: 'GlassWater', bgColor: 'bg-olive-50' },
 ]
 
 export const quickFilters = [

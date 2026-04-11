@@ -32,7 +32,8 @@
     "snack": "Snacks",
     "dessert": "Desserts",
     "dip": "Dips",
-    "ferment": "Fermented"
+    "ferment": "Fermented",
+    "shake": "Shakes"
   },
   "recipe": {
     "minutes": "min",
