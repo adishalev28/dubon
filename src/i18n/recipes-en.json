@@ -323,5 +323,29 @@
     "difficulty": "Medium",
     "category": "Snacks",
     "servings": "8-10 slices"
+  },
+  "19": {
+    "name": "Fruit \"Boost\" Shake (refreshing after meat)",
+    "description": "A refreshing balanced fruit shake — fresh pear, strawberries, mango and banana. Perfect after a meaty meal to ease digestion and add freshness.",
+    "intro": "A light and refreshing shake that combines sweet and tangy flavors. The pear adds moisture and softness, the strawberries and mango bring fruity sweetness, the banana provides a velvety texture, and the lemon balances everything. Ideal after a heavy meal — especially after meat — as the coolness and freshness aid digestion and relieve heaviness.",
+    "ingredients": ["Pear", "Frozen strawberries", "Frozen mango", "Banana", "Lemon", "Water", "Ice"],
+    "detailedIngredients": [
+      { "name": "Fresh pear", "amount": "1", "note": "With skin (more fiber)" },
+      { "name": "Frozen strawberries", "amount": "A handful", "note": "About 8-10 strawberries" },
+      { "name": "Frozen mango", "amount": "A little", "note": "2-3 cubes" },
+      { "name": "Fresh banana", "amount": "1/2", "note": "Ripe for maximum sweetness" },
+      { "name": "Lemon juice", "amount": "1 tsp", "note": "Freshly squeezed" },
+      { "name": "Cold water", "amount": "1 cup", "note": "Or more for desired texture" },
+      { "name": "Ice", "amount": "4-5 cubes", "note": "" }
+    ],
+    "steps": [
+      { "title": "Start with frozen items", "text": "In a blender, first add the handful of frozen strawberries, the 2-3 frozen mango cubes, the ice and the cup of cold water. Blend for about 30 seconds until the frozen items break down and combine with the water into a uniform texture." },
+      { "title": "Add the fresh items", "text": "Add the fresh pear (with skin, cut into cubes), the half banana, and the teaspoon of lemon juice. Continue blending until completely velvety and smooth — about another 30-45 seconds." },
+      { "title": "Check texture and serve", "text": "If the shake is too thick, add a little more cold water and blend again. If too thin, add another ice cube or more frozen fruit. Pour into tall glasses and serve immediately." }
+    ],
+    "proTip": "Always blend the frozen ingredients with the liquid first before adding the fresh ones — this ensures a smooth texture without lumps. For an extra cold shake, you can also freeze the pear for 30 minutes before preparing.",
+    "difficulty": "Easy",
+    "category": "Shakes",
+    "servings": "2 cups"
   }
 }
