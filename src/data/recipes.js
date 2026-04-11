@@ -722,7 +722,7 @@ export const recipes = [
   {
     id: 19,
     name: 'שייק "בוסט" פירות (מרענן אחרי בשר)',
-    image: '/שייק מרענן תות-מנגו בננה אגס בננה לימון.jfif',
+    image: '/shake-fruit-boost.jfif',
     time: 5,
     tcm: {
       nature: 'קריר',
