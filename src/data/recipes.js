@@ -931,7 +931,7 @@ export const recipes = [
   {
     id: 22,
     name: 'קוסקוס במיקרוגל',
-    image: '/קוסקוס.png',
+    image: '/קוסקוס.jpg',
     time: 15,
     tcm: {
       nature: 'ניטרלי',
