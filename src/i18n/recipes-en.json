@@ -347,5 +347,28 @@
     "difficulty": "Easy",
     "category": "Shakes",
     "servings": "2 cups"
+  },
+  "22": {
+    "name": "Microwave Couscous",
+    "description": "Fluffy, perfect couscous made in the microwave in minutes. No pot, no stove — just a bowl, a fork and patience.",
+    "intro": "Fluffy, perfect couscous made in the microwave in minutes. No pot, no stove — just a bowl, a fork and patience. The method is simple: olive oil, microwave, water, microwave, mix — and repeat. The result? Separate, airy grains just like grandma used to make.",
+    "ingredients": ["Couscous semolina", "Olive oil", "Water", "Salt"],
+    "detailedIngredients": [
+      { "name": "Couscous semolina", "amount": "2 cups", "note": "" },
+      { "name": "Olive oil", "amount": "⅓ cup", "note": "" },
+      { "name": "Water", "amount": "1 cup", "note": "⅓ cup × 3 rounds" },
+      { "name": "Salt", "amount": "1 tsp", "note": "" }
+    ],
+    "steps": [
+      { "title": "Olive oil and first round", "text": "Pour 2 cups of couscous semolina into a microwave-safe bowl. Make a well in the center and pour in ⅓ cup olive oil. Microwave for 2 and a half minutes." },
+      { "title": "First mix", "text": "Remove from the microwave and mix thoroughly with a fork, breaking up all clumps." },
+      { "title": "First water round", "text": "Pour ⅓ cup water along the sides of the bowl (not directly onto the semolina). Microwave for 2 and a half minutes. Remove and mix with a fork." },
+      { "title": "Second water round", "text": "Again ⅓ cup water along the sides, 2 and a half minutes in the microwave, and mix with a fork." },
+      { "title": "Third water round and salt", "text": "Pour the last ⅓ cup water along the sides, 2 and a half minutes in the microwave. Remove, add a teaspoon of salt and mix thoroughly with a fork." }
+    ],
+    "proTip": "Always pour the water along the sides of the bowl and not directly onto the semolina — this way the grains absorb gradually and don't become sticky.",
+    "difficulty": "Easy",
+    "category": "Lunch",
+    "servings": "4 servings"
   }
 }
