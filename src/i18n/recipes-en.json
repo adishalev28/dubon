@@ -370,5 +370,134 @@
     "difficulty": "Easy",
     "category": "Lunch",
     "servings": "4 servings"
+  },
+  "20": {
+    "name": "Maple-Caramelized Nuts with Rosemary and Sage",
+    "description": "Fresh herbs, caramel sweetness and a pronounced saltiness. An addictive snack worthy of any table.",
+    "intro": "The full, precise version: fresh herbs, caramel sweetness and pronounced saltiness. A snack that honors any table and disappears within minutes.",
+    "ingredients": ["Pecans", "Cashews", "Almonds", "Walnuts", "Hazelnuts", "Pumpkin seeds", "Maple syrup", "Olive oil", "Brown sugar", "Salt", "Crushed chili", "Fresh sage", "Fresh rosemary"],
+    "detailedIngredients": [
+      { "name": "── Nut Mix (raw only) ──", "amount": "", "note": "" },
+      { "name": "Pecans", "amount": "100g", "note": "" },
+      { "name": "Cashews", "amount": "100g", "note": "" },
+      { "name": "Almonds", "amount": "100g", "note": "" },
+      { "name": "Walnuts", "amount": "100g", "note": "" },
+      { "name": "Hazelnuts", "amount": "100g", "note": "" },
+      { "name": "Pumpkin seeds", "amount": "100g", "note": "" },
+      { "name": "── For the Coating (the 'marinade') ──", "amount": "", "note": "" },
+      { "name": "Quality natural maple syrup", "amount": "3 tbsp", "note": "" },
+      { "name": "Extra virgin olive oil", "amount": "3 tbsp", "note": "" },
+      { "name": "Dark brown sugar", "amount": "1 tbsp", "note": "" },
+      { "name": "Fine salt", "amount": "2 tsp", "note": "" },
+      { "name": "Crushed chili flakes", "amount": "1 tsp", "note": "To taste" },
+      { "name": "Fresh sage leaves", "amount": "A handful", "note": "Finely chopped" },
+      { "name": "Fresh rosemary leaves", "amount": "About 2 sprigs", "note": "Finely chopped" },
+      { "name": "Water", "amount": "2 tbsp", "note": "" },
+      { "name": "── To Finish ──", "amount": "", "note": "" },
+      { "name": "Coarse salt", "amount": "1 tsp", "note": "Atlantic or Maldon" },
+      { "name": "Fresh rosemary and sage", "amount": "A little", "note": "Finely chopped" }
+    ],
+    "steps": [
+      { "title": "Preheat", "text": "Heat the oven to 170°C (top and bottom heat). Line a wide baking tray with parchment paper." },
+      { "title": "Prepare the seasoning mix", "text": "In a small bowl, mix well 3 tbsp maple syrup, 3 tbsp olive oil, 1 tbsp dark brown sugar, 2 tsp fine salt, 1 tsp crushed chili, a handful of finely chopped sage leaves, the finely chopped rosemary leaves from 2 sprigs, and 2 tbsp water. Stir until the sugar and salt begin to dissolve into the liquid." },
+      { "title": "Coat the nuts", "text": "Place 100g of each type (pecans, cashews, almonds, walnuts, hazelnuts and pumpkin seeds) in a large bowl. Pour in the seasoning mix and stir well for a full minute, until every nut is coated in a glossy, even layer." },
+      { "title": "Bake", "text": "Spread the nuts on the tray in a single layer (important that there are no piles). Bake 30-40 minutes. The critical rule: remove and stir thoroughly every 10 minutes exactly. This ensures they don't burn and that the liquids evaporate evenly." },
+      { "title": "Finish and season", "text": "Remove from the oven. While the nuts are hot and sticky, sprinkle 1 tsp coarse salt and a little freshly chopped rosemary and sage. Stir lightly on the tray." },
+      { "title": "Full cooling", "text": "Leave to cool completely on the tray, 20-30 minutes. During this time the coating sets into a crisp, crackly crust. Transfer to an airtight glass jar only after the nuts have reached room temperature." }
+    ],
+    "proTip": "The sage adds an earthy, slightly bitter layer that perfectly balances the maple sweetness. Combined with rosemary it creates a depth of flavor you won't get from a single herb. Storing too early creates moisture that ruins the crunch, so always wait for complete cooling.",
+    "difficulty": "Easy",
+    "category": "Snacks",
+    "servings": "~600g (6 servings)"
+  },
+  "21": {
+    "name": "Chicken Sofrito with Red Wine and Date Syrup",
+    "description": "A deep home-style stew with a wine and date syrup sauce that reduces to a glossy syrup. The precise version for 500g.",
+    "intro": "A deep home-style stew with a wine and date syrup sauce that reduces to a glossy syrup. The precise version for 500g, perfect for a dinner for two or a hungry trio.",
+    "ingredients": ["Chicken thighs", "Potatoes", "Carrot", "White onion", "Garlic", "Olive oil", "Red wine", "Date syrup", "Turmeric"],
+    "detailedIngredients": [
+      { "name": "Boneless chicken thighs", "amount": "500g", "note": "Cleaned, cut into large cubes" },
+      { "name": "Potatoes", "amount": "2 medium", "note": "Cut into cubes" },
+      { "name": "Large carrot", "amount": "1", "note": "Sliced into thick rounds" },
+      { "name": "White onion", "amount": "1 small/medium", "note": "Roughly chopped" },
+      { "name": "Whole garlic cloves", "amount": "3-4", "note": "" },
+      { "name": "Olive oil", "amount": "3 tbsp", "note": "For searing" },
+      { "name": "── For the Sauce ──", "amount": "", "note": "" },
+      { "name": "Dry red wine", "amount": "½ cup", "note": "" },
+      { "name": "Date syrup (silan)", "amount": "1 heaping tbsp", "note": "" },
+      { "name": "Boiling water", "amount": "¾ cup", "note": "" },
+      { "name": "── Seasoning ──", "amount": "", "note": "" },
+      { "name": "Salt", "amount": "½ tsp", "note": "" },
+      { "name": "Ground black pepper", "amount": "½ tsp", "note": "" },
+      { "name": "Turmeric", "amount": "¼ tsp", "note": "" }
+    ],
+    "steps": [
+      { "title": "Sear the chicken", "text": "In a relatively small wide pot (sauté pan), heat 3 tbsp olive oil. Sear the 500g of chicken thighs until nicely browned on both sides. Remove to a bowl and set aside." },
+      { "title": "Caramelize the vegetables", "text": "To the same oil add the chopped onion, sliced carrot and 3-4 garlic cloves. Fry about 5 minutes until the onion turns golden and absorbs the meat drippings." },
+      { "title": "Fry the potatoes", "text": "Add the 2 cut potatoes to the pot. Fry together with the vegetables for another 5 minutes until they 'seal' and take on a little color." },
+      { "title": "Wine and date syrup", "text": "Pour in ½ cup red wine. Scrape the bottom with a wooden spoon. Add 1 heaping tbsp date syrup, ½ tsp salt, ½ tsp black pepper and ¼ tsp turmeric." },
+      { "title": "Cook", "text": "Return the chicken to the pot and add ¾ cup boiling water (the liquid should reach roughly halfway up the ingredients). Bring to a boil, lower the flame, cover and cook for about an hour." },
+      { "title": "Reduce the sauce", "text": "In the last ten minutes, uncover so the sauce reduces and turns into a glossy syrup." }
+    ],
+    "proTip": "Since this is a smaller batch, watch that the liquid doesn't evaporate too quickly. If the pot dries out before the potatoes are tender, add a quarter cup of boiling water.",
+    "difficulty": "Medium",
+    "category": "Lunch",
+    "servings": "2-3 servings"
+  },
+  "23": {
+    "name": "Hotel-Style Baked Cheesecake",
+    "description": "A hotel-style baked cheesecake — creamy, soft and white. Slow baking at 140°C keeps the texture silky, with no browning and no cracks.",
+    "intro": "A classic hotel-style cheesecake — white, soft and creamy. The secret is slow baking at 140°C, which keeps the cake pale and delicate without browning. No crust, no topping, just the clean taste of cheese and cream. Best at room temperature, but also excellent cold from the fridge or slightly warm.",
+    "ingredients": ["White cheese", "Whipping cream", "Eggs", "Sugar", "Cornstarch", "Vanilla pudding", "Lemon zest"],
+    "detailedIngredients": [
+      { "name": "White cheese 5%-9%", "amount": "1 kg", "note": "" },
+      { "name": "Whipping cream 38%", "amount": "250 ml", "note": "One container" },
+      { "name": "Eggs", "amount": "5", "note": "" },
+      { "name": "Sugar", "amount": "1 cup", "note": "" },
+      { "name": "Cornstarch", "amount": "1/2 cup", "note": "" },
+      { "name": "Instant vanilla pudding", "amount": "80g", "note": "One packet" },
+      { "name": "Lemon zest", "amount": "1/2 tbsp", "note": "Fresh" }
+    ],
+    "steps": [
+      { "title": "Heat the oven", "text": "Heat the oven to 140°C, top and bottom heat. The low temperature is the secret to the creamy texture and the white color of the cake." },
+      { "title": "Cheese and cream base", "text": "In a large bowl place 1 kg white cheese, one container of whipping cream (250 ml) and a cup of sugar. Mix well with a hand whisk until all the sugar has dissolved completely and no grains remain." },
+      { "title": "Add the powders", "text": "Add 1/2 cup cornstarch and a packet of vanilla pudding (80g). Mix well until you get a completely uniform mixture with no lumps. It's important to scatter the powders so they blend in." },
+      { "title": "Eggs and lemon zest", "text": "Add 5 eggs and 1/2 tbsp lemon zest. Mix well until uniform and smooth. Don't overmix, just enough for the batter to be even." },
+      { "title": "Bake", "text": "Pour the batter into the baking pan and tap the pan lightly on the counter to release air bubbles. Bake one hour to an hour and a quarter, until the edges set (and turn slightly golden) while the center still wobbles a little. Note: the cake shouldn't brown, it should stay white." },
+      { "title": "Cool and serve", "text": "Cool completely before slicing. Cooling is critical for the cake to set. Tastiest at room temperature, neither hot nor cold. You can also serve it cold from the fridge, or warm it briefly in the oven or for a few seconds in the microwave (but let it cool first so it sets)." }
+    ],
+    "proTip": "The secret is patience. 140°C is a deliberate temperature that prevents browning and preserves the creamy texture. If you see the cake starting to brown, lower the heat slightly. The center should wobble when baking ends, it will set completely as it cools.",
+    "difficulty": "Easy",
+    "category": "Desserts",
+    "servings": "10-12 slices"
+  },
+  "24": {
+    "name": "Crunchy Homemade Granola with Maple and Date Syrup",
+    "description": "Crunchy homemade granola with thick rolled oats, nuts and seeds, coated in olive oil, maple and date syrup in balanced proportions — neither greasy nor overly sweet.",
+    "intro": "The final, precise and balanced recipe for crunchy homemade granola. The combination of olive oil, maple, date syrup and cinnamon in the right proportions guarantees perfect crunch without the granola turning greasy or too sweet. The real secret to the crunch is actually the complete cooling after baking.",
+    "ingredients": ["Thick rolled oats", "Nuts", "Pumpkin seeds", "Cinnamon", "Olive oil", "Maple syrup", "Date syrup"],
+    "detailedIngredients": [
+      { "name": "── Dry Ingredients and Spices ──", "amount": "", "note": "" },
+      { "name": "Thick rolled oats", "amount": "3 cups", "note": "Whole / thick-cut oats" },
+      { "name": "Nut and seed mix", "amount": "1 cup", "note": "Almonds, pecans, walnuts, pumpkin seeds — measure whole, then roughly chop" },
+      { "name": "Ground cinnamon", "amount": "1 level tsp", "note": "" },
+      { "name": "Salt", "amount": "A pinch", "note": "" },
+      { "name": "── Liquids and Sweeteners ──", "amount": "", "note": "" },
+      { "name": "Olive oil", "amount": "4 tbsp", "note": "A mild-flavored one is recommended" },
+      { "name": "Natural maple syrup", "amount": "¼ cup", "note": "" },
+      { "name": "Natural date syrup (silan)", "amount": "¼ cup", "note": "No added sugar" }
+    ],
+    "steps": [
+      { "title": "Mix the dry ingredients", "text": "Heat the oven to 160°C (convection mode recommended). In a large bowl mix well 3 cups thick rolled oats, 1 cup roughly chopped nuts, 1 level tsp cinnamon and a pinch of salt, so the spices distribute evenly." },
+      { "title": "Coat with the liquids", "text": "Add 4 tbsp olive oil, ¼ cup maple syrup and ¼ cup date syrup to the bowl. Mix well for a full minute, until every oat flake and nut is completely coated and the whole mixture is moist and glossy." },
+      { "title": "Arrange on the tray", "text": "Line a large baking tray with parchment paper. Transfer the mixture to it and spread in an even layer. To get crunchy granola clusters, press the mixture lightly into the tray with the back of a spoon." },
+      { "title": "Controlled baking and stirring", "text": "Bake in the preheated oven for 20-25 minutes total. After 10-12 minutes (halfway through) carefully remove and stir once, moving the edges to the center and vice versa, to prevent the edges from scorching. Press lightly again and return to finish baking. The granola is ready when it's nicely browned." },
+      { "title": "Complete cooling (the crunch secret)", "text": "Remove the tray from the oven. The granola will still feel a bit soft and that's completely normal. Leave it to cool completely on the tray for about 45 to 60 minutes. As it cools, the natural sugars from the maple and date syrup harden, and the granola becomes super crunchy." },
+      { "title": "Break up and store", "text": "Once fully cooled, break the granola by hand into clusters the size you like and transfer to an airtight jar. Enjoy!" }
+    ],
+    "proTip": "Don't skip the full cooling on the tray, it's the secret to the crunch. As long as the granola is warm it will feel soft, and the crispness only builds as the sugars harden while cooling. A mild-flavored olive oil keeps the balance so the granola doesn't turn greasy.",
+    "difficulty": "Easy",
+    "category": "Breakfast",
+    "servings": "About 8 servings"
   }
 }

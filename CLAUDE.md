@@ -19,7 +19,9 @@ src/
   main.jsx                   # Entry (React + BrowserRouter)
   index.css                  # Tailwind + custom colors + RTL
   store/useAppStore.js       # Zustand (onboarding, search, filters, favorites)
-  data/recipes.js            # כל המתכונים
+  data/recipes.js            # כל המתכונים (עברית)
+  i18n/en.json               # תרגומי UI
+  i18n/recipes-en.json       # תרגומי מתכונים, ממופה לפי id
   components/
     Onboarding/  WelcomeScreen / QuizFlow / ResultsScreen
     Home/        HeroSection / SearchBar / MealCategories / QuickFilters / RecommendedRecipes
@@ -52,6 +54,7 @@ src/
 
 ## כללים
 - RTL + עברית בלבד בכל ה-UI
+- **כל מתכון חדש מתורגם מיד ל-`src/i18n/recipes-en.json`** (מפתח = id). נאכף ע"י hook: `node scripts/check-i18n-parity.cjs`
 - אין TypeScript
 - **כמויות מרכיבים משובצות בתוך שלבי ההכנה** (לא בנפרד)
 - Zustand keys ב-localStorage: prefix `nourish_`
