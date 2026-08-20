@@ -499,5 +499,48 @@
     "difficulty": "Easy",
     "category": "Breakfast",
     "servings": "About 8 servings"
+  },
+  "25": {
+    "name": "One-Pot Chicken Breast and Rice with Vegetables",
+    "description": "A one-pot dish for two: juicy chicken breast in smoked paprika and hawaij, over rice that soaks up all the flavors along with carrot, red pepper and scallions.",
+    "intro": "A balanced homemade one-pot meal that saves dishes without compromising on flavor. A quick sear seals the chicken, then it returns to the pot to steam on top of the rice instead of cooking inside it - that is how the breast stays juicy and the rice comes out grain by grain, soaked in hawaij and smoked paprika.",
+    "ingredients": ["Chicken breast", "Basmati rice", "Red bell pepper", "Carrot", "Onion", "Smoked paprika", "Hawaij soup spice"],
+    "detailedIngredients": [
+      { "name": "── For the Chicken and Marinade ──", "amount": "", "note": "" },
+      { "name": "Chicken breast", "amount": "320 g", "note": "Cut into even cubes about 3 cm" },
+      { "name": "Olive oil", "amount": "1 tbsp", "note": "Heaping" },
+      { "name": "Smoked paprika", "amount": "½ tsp", "note": "" },
+      { "name": "Hawaij soup spice", "amount": "½ tsp", "note": "" },
+      { "name": "Garlic powder", "amount": "¼ tsp", "note": "" },
+      { "name": "Salt and ground black pepper", "amount": "A generous pinch", "note": "" },
+      { "name": "── For the Rice and Vegetables ──", "amount": "", "note": "" },
+      { "name": "Basmati or Persian rice", "amount": "¾ cup", "note": "Well rinsed and fully drained" },
+      { "name": "White or red onion", "amount": "1 small", "note": "Finely chopped" },
+      { "name": "Carrot", "amount": "1 medium", "note": "Small dice or thin strips" },
+      { "name": "Red bell pepper", "amount": "1 small", "note": "Cut into small cubes" },
+      { "name": "Garlic", "amount": "2 cloves", "note": "Crushed or thinly sliced" },
+      { "name": "Boiling water", "amount": "1⅓ cups", "note": "" },
+      { "name": "Salt", "amount": "½ tsp", "note": "Level, for the rice" },
+      { "name": "Hawaij soup spice", "amount": "A pinch", "note": "For color and flavor in the rice" },
+      { "name": "Black pepper", "amount": "A pinch", "note": "" },
+      { "name": "Oil for sauteing the vegetables", "amount": "1-2 tsp", "note": "" },
+      { "name": "── To Serve ──", "amount": "", "note": "" },
+      { "name": "Scallions", "amount": "2 stalks", "note": "Finely chopped, white and green parts" }
+    ],
+    "steps": [
+      { "title": "Season the chicken", "text": "In a medium bowl, mix 320 g of cubed chicken breast with 1 tbsp olive oil, ½ tsp smoked paprika, ½ tsp hawaij soup spice, ¼ tsp garlic powder, salt and black pepper - until every piece is well coated." },
+      { "title": "Rinse the rice", "text": "Rinse ¾ cup of rice in a strainer under running water until the water runs clear (removing starch), then drain thoroughly. Fully drained rice is what keeps it from turning to mush." },
+      { "title": "Quick sear the chicken", "text": "Heat a medium heavy-bottomed or non-stick pot over high heat with a teaspoon of oil. Once very hot, lay the chicken cubes in a single layer, sear for a minute and a half to two minutes on one side, flip and sear one more minute. The chicken should not be cooked through at this stage. Transfer to a plate and keep the juices that collect on it." },
+      { "title": "Saute the vegetables", "text": "Lower to medium heat. In the same pot, with all the chicken fond, add 1-2 tsp oil and add 1 chopped onion and 1 carrot. Saute 3-4 minutes until the onion is translucent and softened. Add 1 chopped red bell pepper and 2 crushed garlic cloves and continue about 2 more minutes, stirring." },
+      { "title": "Toast the rice", "text": "Add the ¾ cup of rinsed, drained rice to the pot, season with ½ tsp salt, a pinch of pepper and a pinch of hawaij, and saute while stirring for about 2 minutes - until the grains are hot and coated in oil and the color of the vegetables." },
+      { "title": "Combine and cook", "text": "Pour in 1⅓ cups boiling water and gently scrape the bottom of the pot with a wooden spoon to release the fond. Return the chicken cubes and the juices from the plate, placing them gently on top of the rice layer - do not stir them in. Bring to a full boil, close with a tight lid, lower to the lowest heat and cook for exactly 18 minutes without lifting the lid." },
+      { "title": "Rest and serve", "text": "Turn off the heat and leave the lid closed for another 10 minutes - the steam finishes softening the rice and keeps the chicken juicy. Open, scatter 2 chopped scallions on top and gently fluff the rice with a fork." }
+    ],
+    "proTip": "Do not skip the 10 minutes of resting with the heat off - it is the difference between dry chicken breast and a tender piece, and it is what keeps the rice from sticking so it comes out grain by grain. Just as important: the chicken stays on top of the rice and is not stirred in, otherwise it overcooks.",
+    "tags": ["High protein", "Gluten free", "Lactose free"],
+    "moods": ["High protein", "Family meal", "Comfort food"],
+    "difficulty": "Medium",
+    "category": "Lunch",
+    "servings": "2 servings"
   }
 }
