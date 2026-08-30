@@ -54,6 +54,7 @@ export const TCM_FLAGS = {
   phlegm: { he: 'ליחה', emoji: '🫧', warning: 'עלול לייצר ליחה' },
   stagnation: { he: 'סטגנציה', emoji: '🚫', warning: 'עלול לגרום לתקיעות' },
   deficiency: { he: 'חסר', emoji: '⬇️', warning: 'לא מספיק מזין' },
+  dryness: { he: 'יובש', emoji: '🏜️', warning: 'עלול לייבש' },
 }
 
 /**

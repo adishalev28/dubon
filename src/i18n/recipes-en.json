@@ -3,39 +3,159 @@
     "name": "Grilled Chicken with Fluffy Jasmine Rice",
     "description": "A classic family lunch. Chicken in smoked paprika marinade alongside jasmine rice that always turns out perfect.",
     "intro": "A classic family lunch. Chicken in smoked paprika marinade alongside jasmine rice that always turns out perfect. The marinade adds depth, and frying the rice in oil before cooking is the secret to separate, fluffy grains.",
-    "ingredients": ["Chicken", "Olive oil", "Lemon", "Garlic", "Smoked paprika", "Jasmine rice", "Parsley", "Cilantro", "Red wine vinegar"],
+    "ingredients": [
+      "Chicken",
+      "Olive oil",
+      "Lemon",
+      "Garlic",
+      "Smoked paprika",
+      "Jasmine rice",
+      "Parsley",
+      "Cilantro",
+      "Red wine vinegar"
+    ],
     "detailedIngredients": [
-      { "name": "Chicken (drumsticks or thighs)", "amount": "1 kg", "note": "" },
-      { "name": "Olive oil", "amount": "1/4 cup", "note": "For marinade" },
-      { "name": "Fresh lemon juice", "amount": "1/2 lemon", "note": "" },
-      { "name": "Lemon zest", "amount": "1 tsp", "note": "" },
-      { "name": "Crushed garlic", "amount": "3 cloves", "note": "" },
-      { "name": "Smoked paprika", "amount": "1 tbsp", "note": "Heaping" },
-      { "name": "Fine salt", "amount": "1.5 tsp", "note": "Split between chicken and rice" },
-      { "name": "Ground black pepper", "amount": "1/2 tsp", "note": "" },
-      { "name": "── For Rice ──", "amount": "", "note": "" },
-      { "name": "Jasmine rice", "amount": "2 cups", "note": "" },
-      { "name": "Boiling water", "amount": "3.5 cups", "note": "" },
-      { "name": "Vegetable oil", "amount": "3 tbsp", "note": "For frying rice" },
-      { "name": "── Chimichurri (optional) ──", "amount": "", "note": "" },
-      { "name": "Fresh parsley", "amount": "1 large bunch", "note": "Leaves only, finely chopped" },
-      { "name": "Fresh cilantro", "amount": "1/2 bunch", "note": "Optional, adds a lot" },
-      { "name": "Garlic", "amount": "3 large cloves", "note": "Crushed or very finely chopped" },
-      { "name": "Red onion", "amount": "1/4 medium", "note": "Tiny cubes" },
-      { "name": "Extra virgin olive oil", "amount": "1/2 cup", "note": "" },
-      { "name": "Red wine vinegar", "amount": "3 tbsp", "note": "Or fresh lemon juice" },
-      { "name": "Dried oregano", "amount": "1 tsp", "note": "" },
-      { "name": "Crushed chili flakes", "amount": "1/2 tsp", "note": "Or more to taste" },
-      { "name": "Coarse salt", "amount": "1 tsp", "note": "Start with 3/4, taste" },
-      { "name": "Black pepper", "amount": "1/2 tsp", "note": "" }
+      {
+        "name": "Chicken (drumsticks or thighs)",
+        "amount": "1 kg",
+        "note": ""
+      },
+      {
+        "name": "Olive oil",
+        "amount": "1/4 cup",
+        "note": "For marinade"
+      },
+      {
+        "name": "Fresh lemon juice",
+        "amount": "1/2 lemon",
+        "note": ""
+      },
+      {
+        "name": "Lemon zest",
+        "amount": "1 tsp",
+        "note": ""
+      },
+      {
+        "name": "Crushed garlic",
+        "amount": "3 cloves",
+        "note": ""
+      },
+      {
+        "name": "Smoked paprika",
+        "amount": "1 tbsp",
+        "note": "Heaping"
+      },
+      {
+        "name": "Fine salt",
+        "amount": "1.5 tsp",
+        "note": "Split between chicken and rice"
+      },
+      {
+        "name": "Ground black pepper",
+        "amount": "1/2 tsp",
+        "note": ""
+      },
+      {
+        "name": "── For Rice ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Jasmine rice",
+        "amount": "2 cups",
+        "note": ""
+      },
+      {
+        "name": "Boiling water",
+        "amount": "3.5 cups",
+        "note": ""
+      },
+      {
+        "name": "Vegetable oil",
+        "amount": "3 tbsp",
+        "note": "For frying rice"
+      },
+      {
+        "name": "── Chimichurri (optional) ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Fresh parsley",
+        "amount": "1 large bunch",
+        "note": "Leaves only, finely chopped"
+      },
+      {
+        "name": "Fresh cilantro",
+        "amount": "1/2 bunch",
+        "note": "Optional, adds a lot"
+      },
+      {
+        "name": "Garlic",
+        "amount": "3 large cloves",
+        "note": "Crushed or very finely chopped"
+      },
+      {
+        "name": "Red onion",
+        "amount": "1/4 medium",
+        "note": "Tiny cubes"
+      },
+      {
+        "name": "Extra virgin olive oil",
+        "amount": "1/2 cup",
+        "note": ""
+      },
+      {
+        "name": "Red wine vinegar",
+        "amount": "3 tbsp",
+        "note": "Or fresh lemon juice"
+      },
+      {
+        "name": "Dried oregano",
+        "amount": "1 tsp",
+        "note": ""
+      },
+      {
+        "name": "Crushed chili flakes",
+        "amount": "1/2 tsp",
+        "note": "Or more to taste"
+      },
+      {
+        "name": "Coarse salt",
+        "amount": "1 tsp",
+        "note": "Start with 3/4, taste"
+      },
+      {
+        "name": "Black pepper",
+        "amount": "1/2 tsp",
+        "note": ""
+      }
     ],
     "steps": [
-      { "title": "Marinade", "text": "Mix 1/4 cup olive oil, juice of half a lemon, lemon zest, 3 crushed garlic cloves, 1 tbsp smoked paprika, 1 tsp salt and 1/2 tsp black pepper." },
-      { "title": "Marinate chicken", "text": "Coat 1 kg chicken pieces well with the marinade. Marinate for at least 30 minutes (up to overnight in the fridge)." },
-      { "title": "Rice base", "text": "Heat 3 tbsp oil in a pot. Add 2 cups dry jasmine rice and fry for 2 minutes, stirring constantly, until the grains become translucent." },
-      { "title": "Cook rice", "text": "Add 3.5 cups boiling water and 1/2 tsp salt. Bring to a boil, cover and reduce to lowest heat for 18 minutes. Turn off heat and leave covered 5 more minutes." },
-      { "title": "Grill chicken", "text": "Heat a grill or grill pan to high. Grill chicken 10-15 minutes per side (depending on thickness) until deep golden char marks appear." },
-      { "title": "Chimichurri (optional)", "text": "Hand-chop (not food processor!) 1 bunch parsley, 1/2 bunch cilantro, 3 garlic cloves and 1/4 red onion. Mix with 1 tsp oregano, 1/2 tsp chili, 1 tsp salt, 1/2 tsp pepper, 3 tbsp red wine vinegar and 1/2 cup olive oil. Let rest 30 minutes before serving — the flavors need to merge." }
+      {
+        "title": "Marinade",
+        "text": "Mix 1/4 cup olive oil, juice of half a lemon, lemon zest, 3 crushed garlic cloves, 1 tbsp smoked paprika, 1 tsp salt and 1/2 tsp black pepper."
+      },
+      {
+        "title": "Marinate chicken",
+        "text": "Coat 1 kg chicken pieces well with the marinade. Marinate for at least 30 minutes (up to overnight in the fridge)."
+      },
+      {
+        "title": "Rice base",
+        "text": "Heat 3 tbsp oil in a pot. Add 2 cups dry jasmine rice and fry for 2 minutes, stirring constantly, until the grains become translucent."
+      },
+      {
+        "title": "Cook rice",
+        "text": "Add 3.5 cups boiling water and 1/2 tsp salt. Bring to a boil, cover and reduce to lowest heat for 18 minutes. Turn off heat and leave covered 5 more minutes."
+      },
+      {
+        "title": "Grill chicken",
+        "text": "Heat a grill or grill pan to high. Grill chicken 10-15 minutes per side (depending on thickness) until deep golden char marks appear."
+      },
+      {
+        "title": "Chimichurri (optional)",
+        "text": "Hand-chop (not food processor!) 1 bunch parsley, 1/2 bunch cilantro, 3 garlic cloves and 1/4 red onion. Mix with 1 tsp oregano, 1/2 tsp chili, 1 tsp salt, 1/2 tsp pepper, 3 tbsp red wine vinegar and 1/2 cup olive oil. Let rest 30 minutes before serving — the flavors need to merge."
+      }
     ],
     "proTip": "Take the chicken out of the fridge 20 minutes before grilling — room temperature chicken grills more evenly. The chimichurri improves overnight in the fridge.",
     "difficulty": "Medium",
@@ -46,28 +166,106 @@
     "name": "Kid-Friendly Spaghetti Bolognese",
     "description": "Rich Bolognese with root vegetable soffritto 'hidden' in the sauce — nutritious, delicious and picky-eater approved.",
     "intro": "A good Bolognese needs depth of flavor. For kids, the challenge is texture and acidity. The technique here is blending root vegetables (soffritto) to an almost invisible texture — natural sweetness that balances the tomato acidity.",
-    "ingredients": ["Ground beef", "White onion", "Carrot", "Celery", "Tomato paste", "Crushed tomatoes", "Olive oil", "Date syrup", "Sweet paprika", "Oregano"],
+    "ingredients": [
+      "Ground beef",
+      "White onion",
+      "Carrot",
+      "Celery",
+      "Tomato paste",
+      "Crushed tomatoes",
+      "Olive oil",
+      "Date syrup",
+      "Sweet paprika",
+      "Oregano"
+    ],
     "detailedIngredients": [
-      { "name": "Ground beef", "amount": "500g", "note": "Not too lean" },
-      { "name": "White onion", "amount": "1", "note": "Finely grated on thin grater" },
-      { "name": "Carrot", "amount": "2", "note": "Finely grated on thin grater" },
-      { "name": "Celery stalk", "amount": "1", "note": "Finely diced" },
-      { "name": "Tomato paste", "amount": "2 heaping tbsp", "note": "" },
-      { "name": "Crushed tomatoes", "amount": "1 can (400g)", "note": "" },
-      { "name": "Olive oil", "amount": "3 tbsp", "note": "" },
-      { "name": "Date syrup (silan)", "amount": "1 tbsp", "note": "Secret ingredient — balances acidity" },
-      { "name": "Sweet paprika", "amount": "1 tsp", "note": "" },
-      { "name": "Dried oregano", "amount": "1 tsp", "note": "" },
-      { "name": "Salt", "amount": "1 tsp", "note": "" },
-      { "name": "── For Serving ──", "amount": "", "note": "" },
-      { "name": "Spaghetti", "amount": "400g", "note": "" }
+      {
+        "name": "Ground beef",
+        "amount": "500g",
+        "note": "Not too lean"
+      },
+      {
+        "name": "White onion",
+        "amount": "1",
+        "note": "Finely grated on thin grater"
+      },
+      {
+        "name": "Carrot",
+        "amount": "2",
+        "note": "Finely grated on thin grater"
+      },
+      {
+        "name": "Celery stalk",
+        "amount": "1",
+        "note": "Finely diced"
+      },
+      {
+        "name": "Tomato paste",
+        "amount": "2 heaping tbsp",
+        "note": ""
+      },
+      {
+        "name": "Crushed tomatoes",
+        "amount": "1 can (400g)",
+        "note": ""
+      },
+      {
+        "name": "Olive oil",
+        "amount": "3 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Date syrup (silan)",
+        "amount": "1 tbsp",
+        "note": "Secret ingredient — balances acidity"
+      },
+      {
+        "name": "Sweet paprika",
+        "amount": "1 tsp",
+        "note": ""
+      },
+      {
+        "name": "Dried oregano",
+        "amount": "1 tsp",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "amount": "1 tsp",
+        "note": ""
+      },
+      {
+        "name": "── For Serving ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Spaghetti",
+        "amount": "400g",
+        "note": ""
+      }
     ],
     "steps": [
-      { "title": "Soffritto", "text": "Heat 3 tbsp olive oil in a wide pot. Sauté grated onion, 2 grated carrots and diced celery on medium-low heat. The goal is to soften them into a sweet paste — this is the nutritional and flavor base." },
-      { "title": "Brown the meat", "text": "Turn up heat and add 500g ground beef. Break into the smallest pieces possible with a fork — big chunks are the #1 reason kids reject it. Brown until color changes." },
-      { "title": "Build the sauce", "text": "Add 2 heaping tbsp tomato paste and fry for 1 minute. Add crushed tomatoes, 1 tsp paprika, 1 tsp oregano and 1 tsp salt." },
-      { "title": "Secret ingredient + simmer", "text": "Add 1 tbsp date syrup (silan) — this is the secret that balances acidity. Add ½ cup water, stir well. Cover and simmer on low for at least 30 minutes." },
-      { "title": "Cook & serve", "text": "Cook spaghetti al dente. Check sauce consistency — add water if too thick, cook uncovered if too thin. Toss pasta with sauce and serve." }
+      {
+        "title": "Soffritto",
+        "text": "Heat 3 tbsp olive oil in a wide pot. Sauté grated onion, 2 grated carrots and diced celery on medium-low heat. The goal is to soften them into a sweet paste — this is the nutritional and flavor base."
+      },
+      {
+        "title": "Brown the meat",
+        "text": "Turn up heat and add 500g ground beef. Break into the smallest pieces possible with a fork — big chunks are the #1 reason kids reject it. Brown until color changes."
+      },
+      {
+        "title": "Build the sauce",
+        "text": "Add 2 heaping tbsp tomato paste and fry for 1 minute. Add crushed tomatoes, 1 tsp paprika, 1 tsp oregano and 1 tsp salt."
+      },
+      {
+        "title": "Secret ingredient + simmer",
+        "text": "Add 1 tbsp date syrup (silan) — this is the secret that balances acidity. Add ½ cup water, stir well. Cover and simmer on low for at least 30 minutes."
+      },
+      {
+        "title": "Cook & serve",
+        "text": "Cook spaghetti al dente. Check sauce consistency — add water if too thick, cook uncovered if too thin. Toss pasta with sauce and serve."
+      }
     ],
     "proTip": "If kids are texture-sensitive — blend the onion and carrot in a blender with a little water before frying. They'll vanish into the sauce while adding tons of vitamins and sweetness.",
     "difficulty": "Easy",
@@ -78,27 +276,98 @@
     "name": "Caramelized Rice Paper Malawach",
     "description": "Light and crispy malawach made from rice paper with egg batter and date syrup. Golden color, caramel aroma and delicate sweetness.",
     "intro": "Rice paper malawach is the lighter, crispier, faster version of the classic Yemeni dish. Using rice paper instead of oily dough makes it airy, while the date syrup in the batter gives it a deep golden color, amazing caramel aroma and delicate sweetness.",
-    "ingredients": ["Rice paper", "Egg", "Date syrup", "Cinnamon", "Olive oil", "Hard boiled eggs", "Tomatoes"],
+    "ingredients": [
+      "Rice paper",
+      "Egg",
+      "Date syrup",
+      "Cinnamon",
+      "Olive oil",
+      "Hard boiled eggs",
+      "Tomatoes"
+    ],
     "detailedIngredients": [
-      { "name": "Rice paper sheets", "amount": "3-4", "note": "Large (22cm diameter)" },
-      { "name": "Egg", "amount": "1 large", "note": "Well beaten" },
-      { "name": "Water or milk", "amount": "2 tbsp", "note": "To thin the batter" },
-      { "name": "Date syrup (silan)", "amount": "1 level tsp", "note": "Important!" },
-      { "name": "Cinnamon", "amount": "1/4 tsp", "note": "Optional" },
-      { "name": "── For Serving ──", "amount": "", "note": "" },
-      { "name": "Hard boiled eggs", "amount": "1-2", "note": "Halved" },
-      { "name": "Grated tomatoes", "amount": "2", "note": "Seasoned with salt and olive oil" },
-      { "name": "Olive oil", "amount": "Drizzle", "note": "" },
-      { "name": "Chili flakes", "amount": "Pinch", "note": "" },
-      { "name": "Fresh basil", "amount": "Few leaves", "note": "" },
-      { "name": "Black sesame seeds", "amount": "Sprinkle", "note": "" }
+      {
+        "name": "Rice paper sheets",
+        "amount": "3-4",
+        "note": "Large (22cm diameter)"
+      },
+      {
+        "name": "Egg",
+        "amount": "1 large",
+        "note": "Well beaten"
+      },
+      {
+        "name": "Water or milk",
+        "amount": "2 tbsp",
+        "note": "To thin the batter"
+      },
+      {
+        "name": "Date syrup (silan)",
+        "amount": "1 level tsp",
+        "note": "Important!"
+      },
+      {
+        "name": "Cinnamon",
+        "amount": "1/4 tsp",
+        "note": "Optional"
+      },
+      {
+        "name": "── For Serving ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Hard boiled eggs",
+        "amount": "1-2",
+        "note": "Halved"
+      },
+      {
+        "name": "Grated tomatoes",
+        "amount": "2",
+        "note": "Seasoned with salt and olive oil"
+      },
+      {
+        "name": "Olive oil",
+        "amount": "Drizzle",
+        "note": ""
+      },
+      {
+        "name": "Chili flakes",
+        "amount": "Pinch",
+        "note": ""
+      },
+      {
+        "name": "Fresh basil",
+        "amount": "Few leaves",
+        "note": ""
+      },
+      {
+        "name": "Black sesame seeds",
+        "amount": "Sprinkle",
+        "note": ""
+      }
     ],
     "steps": [
-      { "title": "Make the batter", "text": "Beat 1 egg well. Add 2 tbsp water/milk, 1 level tsp date syrup and 1/4 tsp cinnamon. Mix until smooth." },
-      { "title": "Prepare rice paper", "text": "Briefly dip a rice paper sheet in warm water (2-3 seconds only). Place on a clean surface." },
-      { "title": "Layer and fold", "text": "Brush batter on the sheet. Stack another dipped sheet on top. Fold into a square or triangle." },
-      { "title": "Pan fry", "text": "Heat a non-stick pan with a little olive oil on medium heat. Fry the malawach 2-3 minutes per side until golden and crispy." },
-      { "title": "Serve", "text": "Fold in half and plate. Arrange 1-2 halved hard boiled eggs alongside, a bowl of grated tomato (seasoned with salt and olive oil), drizzle olive oil and garnish with chili flakes, fresh basil and black sesame." }
+      {
+        "title": "Make the batter",
+        "text": "Beat 1 egg well. Add 2 tbsp water/milk, 1 level tsp date syrup and 1/4 tsp cinnamon. Mix until smooth."
+      },
+      {
+        "title": "Prepare rice paper",
+        "text": "Briefly dip a rice paper sheet in warm water (2-3 seconds only). Place on a clean surface."
+      },
+      {
+        "title": "Layer and fold",
+        "text": "Brush batter on the sheet. Stack another dipped sheet on top. Fold into a square or triangle."
+      },
+      {
+        "title": "Pan fry",
+        "text": "Heat a non-stick pan with a little olive oil on medium heat. Fry the malawach 2-3 minutes per side until golden and crispy."
+      },
+      {
+        "title": "Serve",
+        "text": "Fold in half and plate. Arrange 1-2 halved hard boiled eggs alongside, a bowl of grated tomato (seasoned with salt and olive oil), drizzle olive oil and garnish with chili flakes, fresh basil and black sesame."
+      }
     ],
     "proTip": "Use large rice papers (22cm) for crispier results. If you don't have date syrup, use a teaspoon of honey, but silan gives the perfect caramel color.",
     "difficulty": "Easy",
@@ -109,25 +378,89 @@
     "name": "One-Pot Chicken & Orzo Bake",
     "description": "One-pan family dinner. Chicken thighs with crispy orzo in tomato sauce and warming spices.",
     "intro": "The ultimate comfort food. Chicken thighs roasted on a bed of orzo that absorbs all the juices and becomes irresistibly crispy on top. One pan, no fuss, feeds the whole family.",
-    "ingredients": ["Chicken thighs", "Orzo pasta", "Crushed tomatoes", "Onion", "Garlic", "Paprika", "Hawaij", "Silan"],
+    "ingredients": [
+      "Chicken thighs",
+      "Orzo pasta",
+      "Crushed tomatoes",
+      "Onion",
+      "Garlic",
+      "Paprika",
+      "Hawaij",
+      "Silan"
+    ],
     "detailedIngredients": [
-      { "name": "Chicken thighs", "amount": "6 pieces", "note": "" },
-      { "name": "Orzo pasta (ptitim)", "amount": "2 cups", "note": "" },
-      { "name": "Onion", "amount": "1 large", "note": "Diced" },
-      { "name": "Garlic", "amount": "4 cloves", "note": "Crushed" },
-      { "name": "Paprika", "amount": "1 tsp", "note": "" },
-      { "name": "Hawaij spice", "amount": "1 tsp", "note": "" },
-      { "name": "Date syrup (Silan)", "amount": "1 tbsp", "note": "" },
-      { "name": "Chicken broth", "amount": "1 tsp", "note": "Powder" },
-      { "name": "Olive oil", "amount": "3 tbsp", "note": "" },
-      { "name": "Fresh cilantro", "amount": "Handful", "note": "For garnish" }
+      {
+        "name": "Chicken thighs",
+        "amount": "6 pieces",
+        "note": ""
+      },
+      {
+        "name": "Orzo pasta (ptitim)",
+        "amount": "2 cups",
+        "note": ""
+      },
+      {
+        "name": "Onion",
+        "amount": "1 large",
+        "note": "Diced"
+      },
+      {
+        "name": "Garlic",
+        "amount": "4 cloves",
+        "note": "Crushed"
+      },
+      {
+        "name": "Paprika",
+        "amount": "1 tsp",
+        "note": ""
+      },
+      {
+        "name": "Hawaij spice",
+        "amount": "1 tsp",
+        "note": ""
+      },
+      {
+        "name": "Date syrup (Silan)",
+        "amount": "1 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Chicken broth",
+        "amount": "1 tsp",
+        "note": "Powder"
+      },
+      {
+        "name": "Olive oil",
+        "amount": "3 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Fresh cilantro",
+        "amount": "Handful",
+        "note": "For garnish"
+      }
     ],
     "steps": [
-      { "title": "Season chicken", "text": "Season chicken with salt, paprika, hawaij and a drizzle of olive oil." },
-      { "title": "Sear chicken", "text": "Sear chicken in a hot pan skin-side down for 5 minutes until golden. Set aside." },
-      { "title": "Build base", "text": "In same pan, sauté onion and garlic until golden. Add orzo and toast with spices and oil." },
-      { "title": "Add liquids", "text": "Add boiling water, chicken broth powder and silan. Place chicken on top." },
-      { "title": "Bake", "text": "Cover and bake at 180°C for 45 minutes until orzo is cooked and chicken is done." }
+      {
+        "title": "Season chicken",
+        "text": "Season chicken with salt, paprika, hawaij and a drizzle of olive oil."
+      },
+      {
+        "title": "Sear chicken",
+        "text": "Sear chicken in a hot pan skin-side down for 5 minutes until golden. Set aside."
+      },
+      {
+        "title": "Build base",
+        "text": "In same pan, sauté onion and garlic until golden. Add orzo and toast with spices and oil."
+      },
+      {
+        "title": "Add liquids",
+        "text": "Add boiling water, chicken broth powder and silan. Place chicken on top."
+      },
+      {
+        "title": "Bake",
+        "text": "Cover and bake at 180°C for 45 minutes until orzo is cooked and chicken is done."
+      }
     ],
     "proTip": "Coat orzo in oil and spices before adding liquid — this keeps each piece separate and flavorful.",
     "difficulty": "Easy",
@@ -138,32 +471,125 @@
     "name": "Classic Shepherd's Pie",
     "description": "Rich seasoned meat filling topped with creamy mashed potatoes, baked until golden. Pure comfort food.",
     "intro": "The ultimate comfort dish. A rich, savory meat filling with onion, garlic and root vegetables, topped with a generous layer of creamy mashed potatoes and baked until golden on top. One of those dishes that makes the whole house smell amazing.",
-    "ingredients": ["Ground beef", "Red onion", "Carrots", "Garlic", "Tomato paste", "Potatoes", "Olive oil", "Paprika", "Parsley"],
+    "ingredients": [
+      "Ground beef",
+      "Red onion",
+      "Carrots",
+      "Garlic",
+      "Tomato paste",
+      "Potatoes",
+      "Olive oil",
+      "Paprika",
+      "Parsley"
+    ],
     "detailedIngredients": [
-      { "name": "Ground beef", "amount": "500g", "note": "" },
-      { "name": "Red onion", "amount": "1 large", "note": "Diced" },
-      { "name": "Carrots", "amount": "2", "note": "Small cubes" },
-      { "name": "Garlic", "amount": "5 cloves", "note": "Minced" },
-      { "name": "Olive oil", "amount": "2 tbsp", "note": "" },
-      { "name": "Tomato paste", "amount": "1 tbsp", "note": "" },
-      { "name": "Sweet paprika", "amount": "1 tsp", "note": "" },
-      { "name": "Cumin", "amount": "½ tsp", "note": "" },
-      { "name": "Salt", "amount": "1 tsp", "note": "" },
-      { "name": "── For Mashed Potatoes ──", "amount": "", "note": "" },
-      { "name": "Potatoes", "amount": "5 large", "note": "Peeled, quartered" },
-      { "name": "Butter", "amount": "2 tbsp", "note": "" },
-      { "name": "Milk", "amount": "¼ cup", "note": "" },
-      { "name": "Olive oil", "amount": "1 tbsp", "note": "" },
-      { "name": "Salt", "amount": "½ tsp", "note": "" },
-      { "name": "── Garnish ──", "amount": "", "note": "" },
-      { "name": "Fresh parsley", "amount": "Handful", "note": "Chopped, for serving" }
+      {
+        "name": "Ground beef",
+        "amount": "500g",
+        "note": ""
+      },
+      {
+        "name": "Red onion",
+        "amount": "1 large",
+        "note": "Diced"
+      },
+      {
+        "name": "Carrots",
+        "amount": "2",
+        "note": "Small cubes"
+      },
+      {
+        "name": "Garlic",
+        "amount": "5 cloves",
+        "note": "Minced"
+      },
+      {
+        "name": "Olive oil",
+        "amount": "2 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Tomato paste",
+        "amount": "1 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Sweet paprika",
+        "amount": "1 tsp",
+        "note": ""
+      },
+      {
+        "name": "Cumin",
+        "amount": "½ tsp",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "amount": "1 tsp",
+        "note": ""
+      },
+      {
+        "name": "── For Mashed Potatoes ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Potatoes",
+        "amount": "5 large",
+        "note": "Peeled, quartered"
+      },
+      {
+        "name": "Butter",
+        "amount": "2 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Milk",
+        "amount": "¼ cup",
+        "note": ""
+      },
+      {
+        "name": "Olive oil",
+        "amount": "1 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "amount": "½ tsp",
+        "note": ""
+      },
+      {
+        "name": "── Garnish ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Fresh parsley",
+        "amount": "Handful",
+        "note": "Chopped, for serving"
+      }
     ],
     "steps": [
-      { "title": "Cook filling", "text": "Heat 2 tbsp olive oil. Sauté diced red onion, 2 diced carrots and 5 minced garlic cloves until soft. Add 500g ground beef and brown well. Add 1 tbsp tomato paste and fry for a minute. Season with paprika, salt and pepper. Add ½ cup water and simmer 15 minutes." },
-      { "title": "Make mash", "text": "Boil 5 quartered potatoes until very soft (~20 min). Drain and mash with 2 tbsp butter, ¼ cup milk, 1 tbsp olive oil and ½ tsp salt until creamy and smooth." },
-      { "title": "Assemble", "text": "Pour the meat filling into a baking dish. Spread the mashed potatoes evenly on top. Score the surface with a fork for golden peaks." },
-      { "title": "Bake", "text": "Drizzle olive oil over the mash. Bake at 180°C for 25-30 minutes until the top is golden." },
-      { "title": "Serve", "text": "Remove from oven and scatter chopped fresh parsley on top. Let cool 5 minutes before serving." }
+      {
+        "title": "Cook filling",
+        "text": "Heat 2 tbsp olive oil. Sauté diced red onion, 2 diced carrots and 5 minced garlic cloves until soft. Add 500g ground beef and brown well. Add 1 tbsp tomato paste and fry for a minute. Season with paprika, salt and pepper. Add ½ cup water and simmer 15 minutes."
+      },
+      {
+        "title": "Make mash",
+        "text": "Boil 5 quartered potatoes until very soft (~20 min). Drain and mash with 2 tbsp butter, ¼ cup milk, 1 tbsp olive oil and ½ tsp salt until creamy and smooth."
+      },
+      {
+        "title": "Assemble",
+        "text": "Pour the meat filling into a baking dish. Spread the mashed potatoes evenly on top. Score the surface with a fork for golden peaks."
+      },
+      {
+        "title": "Bake",
+        "text": "Drizzle olive oil over the mash. Bake at 180°C for 25-30 minutes until the top is golden."
+      },
+      {
+        "title": "Serve",
+        "text": "Remove from oven and scatter chopped fresh parsley on top. Let cool 5 minutes before serving."
+      }
     ],
     "proTip": "Add a sprig of fresh thyme to the meat filling while simmering — it adds an incredible aromatic depth that takes the dish to the next level.",
     "difficulty": "Easy",
@@ -174,24 +600,81 @@
     "name": "Spelt Pita Bread with Garlic",
     "description": "Simple homemade spelt pitas with a garlic and parsley topping, pan-fried to perfection.",
     "intro": "Simple, satisfying homemade pitas made with spelt flour and yogurt. Pan-fried until puffy and golden, then topped with a generous garlic, olive oil and parsley spread on both sides.",
-    "ingredients": ["Spelt flour", "Yogurt", "Baking soda", "Garlic", "Parsley", "Olive oil"],
+    "ingredients": [
+      "Spelt flour",
+      "Yogurt",
+      "Baking soda",
+      "Garlic",
+      "Parsley",
+      "Olive oil"
+    ],
     "detailedIngredients": [
-      { "name": "Spelt flour", "amount": "2 cups", "note": "" },
-      { "name": "Yogurt", "amount": "200g (1 cup)", "note": "" },
-      { "name": "Baking soda", "amount": "1 level tsp", "note": "" },
-      { "name": "Salt", "amount": "1/2 tsp", "note": "" },
-      { "name": "── For Topping ──", "amount": "", "note": "" },
-      { "name": "Olive oil", "amount": "2-3 tbsp", "note": "" },
-      { "name": "Garlic cloves", "amount": "3-4", "note": "Crushed" },
-      { "name": "Fresh parsley", "amount": "Handful", "note": "Chopped" }
+      {
+        "name": "Spelt flour",
+        "amount": "2 cups",
+        "note": ""
+      },
+      {
+        "name": "Yogurt",
+        "amount": "200g (1 cup)",
+        "note": ""
+      },
+      {
+        "name": "Baking soda",
+        "amount": "1 level tsp",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "amount": "1/2 tsp",
+        "note": ""
+      },
+      {
+        "name": "── For Topping ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Olive oil",
+        "amount": "2-3 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Garlic cloves",
+        "amount": "3-4",
+        "note": "Crushed"
+      },
+      {
+        "name": "Fresh parsley",
+        "amount": "Handful",
+        "note": "Chopped"
+      }
     ],
     "steps": [
-      { "title": "Make dough", "text": "Mix yogurt with baking soda in a large bowl. Add whole wheat flour and salt. Knead just until the dough comes together (add flour if too sticky)." },
-      { "title": "Divide and flatten", "text": "Divide into 4-5 equal balls. Roll each into a flat pita shape." },
-      { "title": "Rest", "text": "Let the pitas rest for 10 minutes (important for texture)." },
-      { "title": "Make topping", "text": "Mix olive oil, 3-4 crushed garlic cloves and chopped parsley." },
-      { "title": "Cook", "text": "Heat a pan with a little oil or butter on heat level 10. Fry each pita for a few minutes, flipping every 30 seconds until puffed and golden on both sides." },
-      { "title": "Finish", "text": "Immediately spread the garlic-parsley mixture generously on both sides of each hot pita." }
+      {
+        "title": "Make dough",
+        "text": "Mix yogurt with baking soda in a large bowl. Add whole wheat flour and salt. Knead just until the dough comes together (add flour if too sticky)."
+      },
+      {
+        "title": "Divide and flatten",
+        "text": "Divide into 4-5 equal balls. Roll each into a flat pita shape."
+      },
+      {
+        "title": "Rest",
+        "text": "Let the pitas rest for 10 minutes (important for texture)."
+      },
+      {
+        "title": "Make topping",
+        "text": "Mix olive oil, 3-4 crushed garlic cloves and chopped parsley."
+      },
+      {
+        "title": "Cook",
+        "text": "Heat a pan with a little oil or butter on heat level 10. Fry each pita for a few minutes, flipping every 30 seconds until puffed and golden on both sides."
+      },
+      {
+        "title": "Finish",
+        "text": "Immediately spread the garlic-parsley mixture generously on both sides of each hot pita."
+      }
     ],
     "proTip": "The key is a very hot pan and frequent flipping every 30 seconds. This lets the pita puff up and cook evenly without burning.",
     "difficulty": "Easy",
@@ -202,30 +685,117 @@
     "name": "Golden Chicken & Root Vegetable Roast",
     "description": "A colorful one-pan family meal. Chicken, sweet potato, potato, zucchini, onion and roasted lemon with turmeric and paprika.",
     "intro": "Everything in one pan, straight to the oven. Chicken roasted with root vegetables in a golden turmeric-paprika-cumin seasoning. The roasted lemon at the end ties it all together with an incredible caramelized citrus flavor.",
-    "ingredients": ["Chicken drumsticks", "Sweet potato", "Potato", "Carrots", "Zucchini", "Onion", "Garlic", "Lemon", "Turmeric", "Paprika", "Cumin"],
+    "ingredients": [
+      "Chicken drumsticks",
+      "Sweet potato",
+      "Potato",
+      "Carrots",
+      "Zucchini",
+      "Onion",
+      "Garlic",
+      "Lemon",
+      "Turmeric",
+      "Paprika",
+      "Cumin"
+    ],
     "detailedIngredients": [
-      { "name": "Chicken drumsticks", "amount": "1 kg", "note": "Or thighs" },
-      { "name": "Sweet potato", "amount": "2 medium", "note": "Cut into chunks" },
-      { "name": "Potato", "amount": "3 medium", "note": "Quartered" },
-      { "name": "Carrots", "amount": "2", "note": "Cut into thick diagonal slices" },
-      { "name": "Zucchini", "amount": "2", "note": "Half-moon slices" },
-      { "name": "Onion", "amount": "2 large", "note": "Wedges" },
-      { "name": "Whole garlic head", "amount": "1", "note": "Halved crosswise" },
-      { "name": "Lemon", "amount": "1.5", "note": "Half for seasoning, 1 whole halved for roasting" },
-      { "name": "── Seasoning ──", "amount": "", "note": "" },
-      { "name": "Smoked paprika", "amount": "1 tbsp", "note": "Heaping" },
-      { "name": "Turmeric", "amount": "1 tsp", "note": "" },
-      { "name": "Cumin", "amount": "1 tsp", "note": "" },
-      { "name": "Coarse salt", "amount": "1.5 tsp", "note": "" },
-      { "name": "Black pepper", "amount": "1/2 tsp", "note": "Cracked" },
-      { "name": "Olive oil", "amount": "1/4 cup", "note": "" }
+      {
+        "name": "Chicken drumsticks",
+        "amount": "1 kg",
+        "note": "Or thighs"
+      },
+      {
+        "name": "Sweet potato",
+        "amount": "2 medium",
+        "note": "Cut into chunks"
+      },
+      {
+        "name": "Potato",
+        "amount": "3 medium",
+        "note": "Quartered"
+      },
+      {
+        "name": "Carrots",
+        "amount": "2",
+        "note": "Cut into thick diagonal slices"
+      },
+      {
+        "name": "Zucchini",
+        "amount": "2",
+        "note": "Half-moon slices"
+      },
+      {
+        "name": "Onion",
+        "amount": "2 large",
+        "note": "Wedges"
+      },
+      {
+        "name": "Whole garlic head",
+        "amount": "1",
+        "note": "Halved crosswise"
+      },
+      {
+        "name": "Lemon",
+        "amount": "1.5",
+        "note": "Half for seasoning, 1 whole halved for roasting"
+      },
+      {
+        "name": "── Seasoning ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Smoked paprika",
+        "amount": "1 tbsp",
+        "note": "Heaping"
+      },
+      {
+        "name": "Turmeric",
+        "amount": "1 tsp",
+        "note": ""
+      },
+      {
+        "name": "Cumin",
+        "amount": "1 tsp",
+        "note": ""
+      },
+      {
+        "name": "Coarse salt",
+        "amount": "1.5 tsp",
+        "note": ""
+      },
+      {
+        "name": "Black pepper",
+        "amount": "1/2 tsp",
+        "note": "Cracked"
+      },
+      {
+        "name": "Olive oil",
+        "amount": "1/4 cup",
+        "note": ""
+      }
     ],
     "steps": [
-      { "title": "Make seasoning", "text": "Mix 1/4 cup olive oil, juice of half a lemon, 1 tbsp smoked paprika, 1 tsp turmeric, 1 tsp cumin, 1.5 tsp salt and 1/2 tsp black pepper." },
-      { "title": "Prep chicken", "text": "Place 1 kg chicken drumsticks in a large baking dish. Pour half the seasoning over the chicken and massage well." },
-      { "title": "Add vegetables", "text": "Add all vegetables: sweet potatoes, potatoes, 2 carrots in diagonal slices, zucchini, onion wedges, halved garlic head and halved lemon. Pour remaining seasoning and toss." },
-      { "title": "Roast", "text": "Preheat oven to 200C. Roast for 60 minutes until chicken is golden and vegetables are tender. Stir vegetables once halfway through." },
-      { "title": "Finish", "text": "Remove from oven. Squeeze the roasted lemon over everything and serve directly from the pan." }
+      {
+        "title": "Make seasoning",
+        "text": "Mix 1/4 cup olive oil, juice of half a lemon, 1 tbsp smoked paprika, 1 tsp turmeric, 1 tsp cumin, 1.5 tsp salt and 1/2 tsp black pepper."
+      },
+      {
+        "title": "Prep chicken",
+        "text": "Place 1 kg chicken drumsticks in a large baking dish. Pour half the seasoning over the chicken and massage well."
+      },
+      {
+        "title": "Add vegetables",
+        "text": "Add all vegetables: sweet potatoes, potatoes, 2 carrots in diagonal slices, zucchini, onion wedges, halved garlic head and halved lemon. Pour remaining seasoning and toss."
+      },
+      {
+        "title": "Roast",
+        "text": "Preheat oven to 200C. Roast for 60 minutes until chicken is golden and vegetables are tender. Stir vegetables once halfway through."
+      },
+      {
+        "title": "Finish",
+        "text": "Remove from oven. Squeeze the roasted lemon over everything and serve directly from the pan."
+      }
     ],
     "proTip": "The roasted lemon is the secret! Roasting transforms it into something sweet and deep. Squeeze it generously over everything before serving.",
     "difficulty": "Easy",
@@ -236,29 +806,112 @@
     "name": "Green Goddess Egg Salad on Sourdough",
     "description": "Rich egg salad with avocado, pickles and fresh herbs on toasted sourdough. A balancing dinner that nourishes blood and clears heat.",
     "intro": "A light, refreshing dinner combining rich eggs with creamy avocado, crunchy pickles and aromatic fresh herbs. The dill and mustard activate digestion, the arugula clears liver heat, and the pickles break down heaviness from previous meals.",
-    "ingredients": ["Eggs", "Avocado", "Pickled cucumber", "Dill", "Arugula", "Sourdough bread", "Mayo", "Mustard", "Olive oil", "Lemon"],
+    "ingredients": [
+      "Eggs",
+      "Avocado",
+      "Pickled cucumber",
+      "Dill",
+      "Arugula",
+      "Sourdough bread",
+      "Mayo",
+      "Mustard",
+      "Olive oil",
+      "Lemon"
+    ],
     "detailedIngredients": [
-      { "name": "Hard boiled eggs", "amount": "6", "note": "Peeled" },
-      { "name": "Ripe avocado", "amount": "1", "note": "Half mashed, half cubed" },
-      { "name": "Salt-pickled cucumber", "amount": "2", "note": "Finely chopped" },
-      { "name": "Fresh dill", "amount": "Generous handful", "note": "Chopped" },
-      { "name": "Arugula leaves", "amount": "Handful", "note": "Fresh" },
-      { "name": "Celery (optional)", "amount": "1 stalk", "note": "Peeled and micro-diced. Drains fluids and clears stomach heat." },
-      { "name": "── Dressing ──", "amount": "", "note": "" },
-      { "name": "Mayonnaise", "amount": "1 tbsp", "note": "" },
-      { "name": "Mustard", "amount": "1 tsp", "note": "" },
-      { "name": "Olive oil", "amount": "1 tbsp", "note": "" },
-      { "name": "Fresh lemon juice", "amount": "1/4 lemon", "note": "" },
-      { "name": "Coarse black pepper", "amount": "To taste", "note": "" },
-      { "name": "Sea salt", "amount": "To taste", "note": "" },
-      { "name": "── Base ──", "amount": "", "note": "" },
-      { "name": "Sourdough bread", "amount": "2-3 slices", "note": "Toasted" }
+      {
+        "name": "Hard boiled eggs",
+        "amount": "6",
+        "note": "Peeled"
+      },
+      {
+        "name": "Ripe avocado",
+        "amount": "1",
+        "note": "Half mashed, half cubed"
+      },
+      {
+        "name": "Salt-pickled cucumber",
+        "amount": "2",
+        "note": "Finely chopped"
+      },
+      {
+        "name": "Fresh dill",
+        "amount": "Generous handful",
+        "note": "Chopped"
+      },
+      {
+        "name": "Arugula leaves",
+        "amount": "Handful",
+        "note": "Fresh"
+      },
+      {
+        "name": "Celery (optional)",
+        "amount": "1 stalk",
+        "note": "Peeled and micro-diced. Drains fluids and clears stomach heat."
+      },
+      {
+        "name": "── Dressing ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Mayonnaise",
+        "amount": "1 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Mustard",
+        "amount": "1 tsp",
+        "note": ""
+      },
+      {
+        "name": "Olive oil",
+        "amount": "1 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Fresh lemon juice",
+        "amount": "1/4 lemon",
+        "note": ""
+      },
+      {
+        "name": "Coarse black pepper",
+        "amount": "To taste",
+        "note": ""
+      },
+      {
+        "name": "Sea salt",
+        "amount": "To taste",
+        "note": ""
+      },
+      {
+        "name": "── Base ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Sourdough bread",
+        "amount": "2-3 slices",
+        "note": "Toasted"
+      }
     ],
     "steps": [
-      { "title": "Prep eggs", "text": "Roughly mash 6 peeled hard boiled eggs with a fork (keep it chunky for texture)." },
-      { "title": "Make dressing", "text": "Mix 1 tbsp mayo, 1 tsp mustard, 1 tbsp olive oil, juice of 1/4 lemon, black pepper and sea salt." },
-      { "title": "Combine", "text": "Add half a mashed avocado, 2 chopped pickled cucumbers, chopped dill and celery (if using) to the eggs. Gently fold in the dressing." },
-      { "title": "Assemble & serve", "text": "Toast the sourdough slices. Top each generously with egg salad. Scatter avocado cubes, arugula leaves and freshly cracked black pepper on top." }
+      {
+        "title": "Prep eggs",
+        "text": "Roughly mash 6 peeled hard boiled eggs with a fork (keep it chunky for texture)."
+      },
+      {
+        "title": "Make dressing",
+        "text": "Mix 1 tbsp mayo, 1 tsp mustard, 1 tbsp olive oil, juice of 1/4 lemon, black pepper and sea salt."
+      },
+      {
+        "title": "Combine",
+        "text": "Add half a mashed avocado, 2 chopped pickled cucumbers, chopped dill and celery (if using) to the eggs. Gently fold in the dressing."
+      },
+      {
+        "title": "Assemble & serve",
+        "text": "Toast the sourdough slices. Top each generously with egg salad. Scatter avocado cubes, arugula leaves and freshly cracked black pepper on top."
+      }
     ],
     "proTip": "Celery is optional but makes a real difference! Peel the outer fibers and dice microscopically so you get the crunch and drainage benefit without it dominating the flavor.",
     "difficulty": "Easy",
@@ -269,22 +922,70 @@
     "name": "Fermented Purple Cabbage with Lemon, Garlic & Honey",
     "description": "Homemade fermented cabbage rich in probiotics. Garlic and lemon boost immunity, honey balances. Ready in 10 days.",
     "intro": "A simple homemade fermentation process rich in natural probiotics. The combination of purple cabbage with garlic, lemon and honey creates a complex, surprising flavor — sour-sweet-spicy. Perfect as a topping on toast with egg, in salads, or alongside any main dish.",
-    "ingredients": ["Purple cabbage", "Garlic", "Lemon", "Honey", "Sea salt"],
+    "ingredients": [
+      "Purple cabbage",
+      "Garlic",
+      "Lemon",
+      "Honey",
+      "Sea salt"
+    ],
     "detailedIngredients": [
-      { "name": "Purple (or green) cabbage", "amount": "1 medium", "note": "Sliced very thin (mandoline works great)" },
-      { "name": "Garlic cloves", "amount": "2", "note": "Whole or halved" },
-      { "name": "Lemon zest", "amount": "From 1 lemon", "note": "Yellow part only" },
-      { "name": "Fresh lemon juice", "amount": "From 1 lemon", "note": "" },
-      { "name": "Honey", "amount": "1-2 tbsp", "note": "Balances saltiness and aids fermentation" },
-      { "name": "Sea salt", "amount": "1 tsp per 500g cabbage", "note": "Draws out liquid" }
+      {
+        "name": "Purple (or green) cabbage",
+        "amount": "1 medium",
+        "note": "Sliced very thin (mandoline works great)"
+      },
+      {
+        "name": "Garlic cloves",
+        "amount": "2",
+        "note": "Whole or halved"
+      },
+      {
+        "name": "Lemon zest",
+        "amount": "From 1 lemon",
+        "note": "Yellow part only"
+      },
+      {
+        "name": "Fresh lemon juice",
+        "amount": "From 1 lemon",
+        "note": ""
+      },
+      {
+        "name": "Honey",
+        "amount": "1-2 tbsp",
+        "note": "Balances saltiness and aids fermentation"
+      },
+      {
+        "name": "Sea salt",
+        "amount": "1 tsp per 500g cabbage",
+        "note": "Draws out liquid"
+      }
     ],
     "steps": [
-      { "title": "Prep cabbage", "text": "Slice 1 medium purple cabbage very thin. Transfer to a large bowl and sprinkle with salt." },
-      { "title": "Massage (critical!)", "text": "Massage the cabbage firmly with your hands for 5-10 minutes. Goal: break down cell walls until the cabbage releases plenty of liquid. This liquid becomes the brine." },
-      { "title": "Season", "text": "Add lemon zest, fresh lemon juice, 2 garlic cloves and 1-2 tbsp honey. Mix well." },
-      { "title": "Pack into jar", "text": "Transfer to a clean glass jar. Press down firmly until liquid rises above the cabbage. Place a weight or whole cabbage leaf on top." },
-      { "title": "Ferment", "text": "Close the jar (preferably with airlock lid, or open once daily). Leave on counter in a shaded spot for about 10 days at room temperature." },
-      { "title": "Store", "text": "After 10 days the flavors have intensified and the cabbage is ready. Store in the fridge — keeps for months." }
+      {
+        "title": "Prep cabbage",
+        "text": "Slice 1 medium purple cabbage very thin. Transfer to a large bowl and sprinkle with salt."
+      },
+      {
+        "title": "Massage (critical!)",
+        "text": "Massage the cabbage firmly with your hands for 5-10 minutes. Goal: break down cell walls until the cabbage releases plenty of liquid. This liquid becomes the brine."
+      },
+      {
+        "title": "Season",
+        "text": "Add lemon zest, fresh lemon juice, 2 garlic cloves and 1-2 tbsp honey. Mix well."
+      },
+      {
+        "title": "Pack into jar",
+        "text": "Transfer to a clean glass jar. Press down firmly until liquid rises above the cabbage. Place a weight or whole cabbage leaf on top."
+      },
+      {
+        "title": "Ferment",
+        "text": "Close the jar (preferably with airlock lid, or open once daily). Leave on counter in a shaded spot for about 10 days at room temperature."
+      },
+      {
+        "title": "Store",
+        "text": "After 10 days the flavors have intensified and the cabbage is ready. Store in the fridge — keeps for months."
+      }
     ],
     "proTip": "The cabbage must stay below the liquid line to prevent mold! If not enough liquid, add a bit of brine (1 tsp salt per cup water).",
     "difficulty": "Easy",
@@ -295,29 +996,109 @@
     "name": "Classic Cheesecake Loaf with White Topping",
     "description": "Classic cheesecake in a loaf pan — crunchy petit beurre base, creamy cheese filling and a silky sour cream topping.",
     "intro": "An elegant cheesecake baked in a loaf pan — compact, beautiful and perfect for slicing. Crunchy cookie base, delicate vanilla cheese filling, and a white sour cream topping that gives it the perfect look. Slow baking at 160°C keeps it creamy without cracks.",
-    "ingredients": ["Petit beurre cookies", "Butter", "Cream cheese", "Sour cream", "Sugar", "Eggs", "Vanilla pudding", "Cornstarch"],
+    "ingredients": [
+      "Petit beurre cookies",
+      "Butter",
+      "Cream cheese",
+      "Sour cream",
+      "Sugar",
+      "Eggs",
+      "Vanilla pudding",
+      "Cornstarch"
+    ],
     "detailedIngredients": [
-      { "name": "── Base ──", "amount": "", "note": "" },
-      { "name": "Petit beurre cookies", "amount": "100g", "note": "Half a package, crushed to fine crumbs" },
-      { "name": "Melted butter", "amount": "50g", "note": "" },
-      { "name": "── Cheese Filling ──", "amount": "", "note": "" },
-      { "name": "Cream cheese", "amount": "375g", "note": "1.5 tubs of 250g" },
-      { "name": "Sour cream", "amount": "100ml", "note": "Half a tub" },
-      { "name": "Sugar", "amount": "1/2 cup", "note": "" },
-      { "name": "Eggs", "amount": "2", "note": "" },
-      { "name": "Vanilla pudding powder", "amount": "2 tbsp", "note": "" },
-      { "name": "Cornstarch", "amount": "1 tbsp", "note": "" },
-      { "name": "── White Topping ──", "amount": "", "note": "" },
-      { "name": "Sour cream", "amount": "200ml", "note": "1 full tub" },
-      { "name": "Sugar", "amount": "1.5 tbsp", "note": "" },
-      { "name": "Vanilla extract", "amount": "A little", "note": "" }
+      {
+        "name": "── Base ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Petit beurre cookies",
+        "amount": "100g",
+        "note": "Half a package, crushed to fine crumbs"
+      },
+      {
+        "name": "Melted butter",
+        "amount": "50g",
+        "note": ""
+      },
+      {
+        "name": "── Cheese Filling ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Cream cheese",
+        "amount": "375g",
+        "note": "1.5 tubs of 250g"
+      },
+      {
+        "name": "Sour cream",
+        "amount": "100ml",
+        "note": "Half a tub"
+      },
+      {
+        "name": "Sugar",
+        "amount": "1/2 cup",
+        "note": ""
+      },
+      {
+        "name": "Eggs",
+        "amount": "2",
+        "note": ""
+      },
+      {
+        "name": "Vanilla pudding powder",
+        "amount": "2 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Cornstarch",
+        "amount": "1 tbsp",
+        "note": ""
+      },
+      {
+        "name": "── White Topping ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Sour cream",
+        "amount": "200ml",
+        "note": "1 full tub"
+      },
+      {
+        "name": "Sugar",
+        "amount": "1.5 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Vanilla extract",
+        "amount": "A little",
+        "note": ""
+      }
     ],
     "steps": [
-      { "title": "Make the base", "text": "Crush 100g petit beurre cookies to fine crumbs and mix with 50g melted butter until it resembles wet sand. Press firmly into the bottom of a loaf pan and freeze for 10 minutes to set." },
-      { "title": "Make the filling", "text": "Preheat oven to 160°C. In a bowl, whisk by hand 375g cream cheese, 100ml sour cream and 1/2 cup sugar. Add 2 eggs one at a time, whisking just until absorbed. Fold in 2 tbsp vanilla pudding powder and 1 tbsp cornstarch until smooth." },
-      { "title": "First bake", "text": "Remove pan from freezer, pour the cheese filling over the cookie base and bake for 40-45 minutes. The cake is ready when the edges are set and the center still jiggles slightly (like jelly)." },
-      { "title": "White topping", "text": "While the cake bakes, mix 200ml sour cream, 1.5 tbsp sugar and a little vanilla extract. When the first bake is done, remove the cake (don't turn off the oven!), spread the topping evenly and return to the oven for 10 more minutes." },
-      { "title": "Cool and set", "text": "Remove from oven and let cool completely at room temperature. Refrigerate for at least 6 hours (overnight is best) before slicing. Cooling is critical for the cake's structure." }
+      {
+        "title": "Make the base",
+        "text": "Crush 100g petit beurre cookies to fine crumbs and mix with 50g melted butter until it resembles wet sand. Press firmly into the bottom of a loaf pan and freeze for 10 minutes to set."
+      },
+      {
+        "title": "Make the filling",
+        "text": "Preheat oven to 160°C. In a bowl, whisk by hand 375g cream cheese, 100ml sour cream and 1/2 cup sugar. Add 2 eggs one at a time, whisking just until absorbed. Fold in 2 tbsp vanilla pudding powder and 1 tbsp cornstarch until smooth."
+      },
+      {
+        "title": "First bake",
+        "text": "Remove pan from freezer, pour the cheese filling over the cookie base and bake for 40-45 minutes. The cake is ready when the edges are set and the center still jiggles slightly (like jelly)."
+      },
+      {
+        "title": "White topping",
+        "text": "While the cake bakes, mix 200ml sour cream, 1.5 tbsp sugar and a little vanilla extract. When the first bake is done, remove the cake (don't turn off the oven!), spread the topping evenly and return to the oven for 10 more minutes."
+      },
+      {
+        "title": "Cool and set",
+        "text": "Remove from oven and let cool completely at room temperature. Refrigerate for at least 6 hours (overnight is best) before slicing. Cooling is critical for the cake's structure."
+      }
     ],
     "proTip": "Never over-mix! Excessive mixing incorporates air into the batter and creates cracks. A hand whisk is better than a mixer — cheesecake loves gentleness.",
     "difficulty": "Medium",
@@ -328,20 +1109,65 @@
     "name": "Fruit \"Boost\" Shake (refreshing after meat)",
     "description": "A refreshing balanced fruit shake — fresh pear, strawberries, mango and banana. Perfect after a meaty meal to ease digestion and add freshness.",
     "intro": "A light and refreshing shake that combines sweet and tangy flavors. The pear adds moisture and softness, the strawberries and mango bring fruity sweetness, the banana provides a velvety texture, and the lemon balances everything. Ideal after a heavy meal — especially after meat — as the coolness and freshness aid digestion and relieve heaviness.",
-    "ingredients": ["Pear", "Frozen strawberries", "Frozen mango", "Banana", "Lemon", "Water", "Ice"],
+    "ingredients": [
+      "Pear",
+      "Frozen strawberries",
+      "Frozen mango",
+      "Banana",
+      "Lemon",
+      "Water",
+      "Ice"
+    ],
     "detailedIngredients": [
-      { "name": "Fresh pear", "amount": "1", "note": "With skin (more fiber)" },
-      { "name": "Frozen strawberries", "amount": "A handful", "note": "About 8-10 strawberries" },
-      { "name": "Frozen mango", "amount": "A little", "note": "2-3 cubes" },
-      { "name": "Fresh banana", "amount": "1/2", "note": "Ripe for maximum sweetness" },
-      { "name": "Lemon juice", "amount": "1 tsp", "note": "Freshly squeezed" },
-      { "name": "Cold water", "amount": "1 cup", "note": "Or more for desired texture" },
-      { "name": "Ice", "amount": "4-5 cubes", "note": "" }
+      {
+        "name": "Fresh pear",
+        "amount": "1",
+        "note": "With skin (more fiber)"
+      },
+      {
+        "name": "Frozen strawberries",
+        "amount": "A handful",
+        "note": "About 8-10 strawberries"
+      },
+      {
+        "name": "Frozen mango",
+        "amount": "A little",
+        "note": "2-3 cubes"
+      },
+      {
+        "name": "Fresh banana",
+        "amount": "1/2",
+        "note": "Ripe for maximum sweetness"
+      },
+      {
+        "name": "Lemon juice",
+        "amount": "1 tsp",
+        "note": "Freshly squeezed"
+      },
+      {
+        "name": "Cold water",
+        "amount": "1 cup",
+        "note": "Or more for desired texture"
+      },
+      {
+        "name": "Ice",
+        "amount": "4-5 cubes",
+        "note": ""
+      }
     ],
     "steps": [
-      { "title": "Start with frozen items", "text": "In a blender, first add the handful of frozen strawberries, the 2-3 frozen mango cubes, the ice and the cup of cold water. Blend for about 30 seconds until the frozen items break down and combine with the water into a uniform texture." },
-      { "title": "Add the fresh items", "text": "Add the fresh pear (with skin, cut into cubes), the half banana, and the teaspoon of lemon juice. Continue blending until completely velvety and smooth — about another 30-45 seconds." },
-      { "title": "Check texture and serve", "text": "If the shake is too thick, add a little more cold water and blend again. If too thin, add another ice cube or more frozen fruit. Pour into tall glasses and serve immediately." }
+      {
+        "title": "Start with frozen items",
+        "text": "In a blender, first add the handful of frozen strawberries, the 2-3 frozen mango cubes, the ice and the cup of cold water. Blend for about 30 seconds until the frozen items break down and combine with the water into a uniform texture."
+      },
+      {
+        "title": "Add the fresh items",
+        "text": "Add the fresh pear (with skin, cut into cubes), the half banana, and the teaspoon of lemon juice. Continue blending until completely velvety and smooth — about another 30-45 seconds."
+      },
+      {
+        "title": "Check texture and serve",
+        "text": "If the shake is too thick, add a little more cold water and blend again. If too thin, add another ice cube or more frozen fruit. Pour into tall glasses and serve immediately."
+      }
     ],
     "proTip": "Always blend the frozen ingredients with the liquid first before adding the fresh ones — this ensures a smooth texture without lumps. For an extra cold shake, you can also freeze the pear for 30 minutes before preparing.",
     "difficulty": "Easy",
@@ -352,19 +1178,55 @@
     "name": "Microwave Couscous",
     "description": "Fluffy, perfect couscous made in the microwave in minutes. No pot, no stove — just a bowl, a fork and patience.",
     "intro": "Fluffy, perfect couscous made in the microwave in minutes. No pot, no stove — just a bowl, a fork and patience. The method is simple: olive oil, microwave, water, microwave, mix — and repeat. The result? Separate, airy grains just like grandma used to make.",
-    "ingredients": ["Couscous semolina", "Olive oil", "Water", "Salt"],
+    "ingredients": [
+      "Couscous semolina",
+      "Olive oil",
+      "Water",
+      "Salt"
+    ],
     "detailedIngredients": [
-      { "name": "Couscous semolina", "amount": "2 cups", "note": "" },
-      { "name": "Olive oil", "amount": "⅓ cup", "note": "" },
-      { "name": "Water", "amount": "1 cup", "note": "⅓ cup × 3 rounds" },
-      { "name": "Salt", "amount": "1 tsp", "note": "" }
+      {
+        "name": "Couscous semolina",
+        "amount": "2 cups",
+        "note": ""
+      },
+      {
+        "name": "Olive oil",
+        "amount": "⅓ cup",
+        "note": ""
+      },
+      {
+        "name": "Water",
+        "amount": "1 cup",
+        "note": "⅓ cup × 3 rounds"
+      },
+      {
+        "name": "Salt",
+        "amount": "1 tsp",
+        "note": ""
+      }
     ],
     "steps": [
-      { "title": "Olive oil and first round", "text": "Pour 2 cups of couscous semolina into a microwave-safe bowl. Make a well in the center and pour in ⅓ cup olive oil. Microwave for 2 and a half minutes." },
-      { "title": "First mix", "text": "Remove from the microwave and mix thoroughly with a fork, breaking up all clumps." },
-      { "title": "First water round", "text": "Pour ⅓ cup water along the sides of the bowl (not directly onto the semolina). Microwave for 2 and a half minutes. Remove and mix with a fork." },
-      { "title": "Second water round", "text": "Again ⅓ cup water along the sides, 2 and a half minutes in the microwave, and mix with a fork." },
-      { "title": "Third water round and salt", "text": "Pour the last ⅓ cup water along the sides, 2 and a half minutes in the microwave. Remove, add a teaspoon of salt and mix thoroughly with a fork." }
+      {
+        "title": "Olive oil and first round",
+        "text": "Pour 2 cups of couscous semolina into a microwave-safe bowl. Make a well in the center and pour in ⅓ cup olive oil. Microwave for 2 and a half minutes."
+      },
+      {
+        "title": "First mix",
+        "text": "Remove from the microwave and mix thoroughly with a fork, breaking up all clumps."
+      },
+      {
+        "title": "First water round",
+        "text": "Pour ⅓ cup water along the sides of the bowl (not directly onto the semolina). Microwave for 2 and a half minutes. Remove and mix with a fork."
+      },
+      {
+        "title": "Second water round",
+        "text": "Again ⅓ cup water along the sides, 2 and a half minutes in the microwave, and mix with a fork."
+      },
+      {
+        "title": "Third water round and salt",
+        "text": "Pour the last ⅓ cup water along the sides, 2 and a half minutes in the microwave. Remove, add a teaspoon of salt and mix thoroughly with a fork."
+      }
     ],
     "proTip": "Always pour the water along the sides of the bowl and not directly onto the semolina — this way the grains absorb gradually and don't become sticky.",
     "difficulty": "Easy",
@@ -375,35 +1237,143 @@
     "name": "Maple-Caramelized Nuts with Rosemary and Sage",
     "description": "Fresh herbs, caramel sweetness and a pronounced saltiness. An addictive snack worthy of any table.",
     "intro": "The full, precise version: fresh herbs, caramel sweetness and pronounced saltiness. A snack that honors any table and disappears within minutes.",
-    "ingredients": ["Pecans", "Cashews", "Almonds", "Walnuts", "Hazelnuts", "Pumpkin seeds", "Maple syrup", "Olive oil", "Brown sugar", "Salt", "Crushed chili", "Fresh sage", "Fresh rosemary"],
+    "ingredients": [
+      "Pecans",
+      "Cashews",
+      "Almonds",
+      "Walnuts",
+      "Hazelnuts",
+      "Pumpkin seeds",
+      "Maple syrup",
+      "Olive oil",
+      "Brown sugar",
+      "Salt",
+      "Crushed chili",
+      "Fresh sage",
+      "Fresh rosemary"
+    ],
     "detailedIngredients": [
-      { "name": "── Nut Mix (raw only) ──", "amount": "", "note": "" },
-      { "name": "Pecans", "amount": "100g", "note": "" },
-      { "name": "Cashews", "amount": "100g", "note": "" },
-      { "name": "Almonds", "amount": "100g", "note": "" },
-      { "name": "Walnuts", "amount": "100g", "note": "" },
-      { "name": "Hazelnuts", "amount": "100g", "note": "" },
-      { "name": "Pumpkin seeds", "amount": "100g", "note": "" },
-      { "name": "── For the Coating (the 'marinade') ──", "amount": "", "note": "" },
-      { "name": "Quality natural maple syrup", "amount": "3 tbsp", "note": "" },
-      { "name": "Extra virgin olive oil", "amount": "3 tbsp", "note": "" },
-      { "name": "Dark brown sugar", "amount": "1 tbsp", "note": "" },
-      { "name": "Fine salt", "amount": "2 tsp", "note": "" },
-      { "name": "Crushed chili flakes", "amount": "1 tsp", "note": "To taste" },
-      { "name": "Fresh sage leaves", "amount": "A handful", "note": "Finely chopped" },
-      { "name": "Fresh rosemary leaves", "amount": "About 2 sprigs", "note": "Finely chopped" },
-      { "name": "Water", "amount": "2 tbsp", "note": "" },
-      { "name": "── To Finish ──", "amount": "", "note": "" },
-      { "name": "Coarse salt", "amount": "1 tsp", "note": "Atlantic or Maldon" },
-      { "name": "Fresh rosemary and sage", "amount": "A little", "note": "Finely chopped" }
+      {
+        "name": "── Nut Mix (raw only) ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Pecans",
+        "amount": "100g",
+        "note": ""
+      },
+      {
+        "name": "Cashews",
+        "amount": "100g",
+        "note": ""
+      },
+      {
+        "name": "Almonds",
+        "amount": "100g",
+        "note": ""
+      },
+      {
+        "name": "Walnuts",
+        "amount": "100g",
+        "note": ""
+      },
+      {
+        "name": "Hazelnuts",
+        "amount": "100g",
+        "note": ""
+      },
+      {
+        "name": "Pumpkin seeds",
+        "amount": "100g",
+        "note": ""
+      },
+      {
+        "name": "── For the Coating (the 'marinade') ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Quality natural maple syrup",
+        "amount": "3 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Extra virgin olive oil",
+        "amount": "3 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Dark brown sugar",
+        "amount": "1 tbsp",
+        "note": ""
+      },
+      {
+        "name": "Fine salt",
+        "amount": "2 tsp",
+        "note": ""
+      },
+      {
+        "name": "Crushed chili flakes",
+        "amount": "1 tsp",
+        "note": "To taste"
+      },
+      {
+        "name": "Fresh sage leaves",
+        "amount": "A handful",
+        "note": "Finely chopped"
+      },
+      {
+        "name": "Fresh rosemary leaves",
+        "amount": "About 2 sprigs",
+        "note": "Finely chopped"
+      },
+      {
+        "name": "Water",
+        "amount": "2 tbsp",
+        "note": ""
+      },
+      {
+        "name": "── To Finish ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Coarse salt",
+        "amount": "1 tsp",
+        "note": "Atlantic or Maldon"
+      },
+      {
+        "name": "Fresh rosemary and sage",
+        "amount": "A little",
+        "note": "Finely chopped"
+      }
     ],
     "steps": [
-      { "title": "Preheat", "text": "Heat the oven to 170°C (top and bottom heat). Line a wide baking tray with parchment paper." },
-      { "title": "Prepare the seasoning mix", "text": "In a small bowl, mix well 3 tbsp maple syrup, 3 tbsp olive oil, 1 tbsp dark brown sugar, 2 tsp fine salt, 1 tsp crushed chili, a handful of finely chopped sage leaves, the finely chopped rosemary leaves from 2 sprigs, and 2 tbsp water. Stir until the sugar and salt begin to dissolve into the liquid." },
-      { "title": "Coat the nuts", "text": "Place 100g of each type (pecans, cashews, almonds, walnuts, hazelnuts and pumpkin seeds) in a large bowl. Pour in the seasoning mix and stir well for a full minute, until every nut is coated in a glossy, even layer." },
-      { "title": "Bake", "text": "Spread the nuts on the tray in a single layer (important that there are no piles). Bake 30-40 minutes. The critical rule: remove and stir thoroughly every 10 minutes exactly. This ensures they don't burn and that the liquids evaporate evenly." },
-      { "title": "Finish and season", "text": "Remove from the oven. While the nuts are hot and sticky, sprinkle 1 tsp coarse salt and a little freshly chopped rosemary and sage. Stir lightly on the tray." },
-      { "title": "Full cooling", "text": "Leave to cool completely on the tray, 20-30 minutes. During this time the coating sets into a crisp, crackly crust. Transfer to an airtight glass jar only after the nuts have reached room temperature." }
+      {
+        "title": "Preheat",
+        "text": "Heat the oven to 170°C (top and bottom heat). Line a wide baking tray with parchment paper."
+      },
+      {
+        "title": "Prepare the seasoning mix",
+        "text": "In a small bowl, mix well 3 tbsp maple syrup, 3 tbsp olive oil, 1 tbsp dark brown sugar, 2 tsp fine salt, 1 tsp crushed chili, a handful of finely chopped sage leaves, the finely chopped rosemary leaves from 2 sprigs, and 2 tbsp water. Stir until the sugar and salt begin to dissolve into the liquid."
+      },
+      {
+        "title": "Coat the nuts",
+        "text": "Place 100g of each type (pecans, cashews, almonds, walnuts, hazelnuts and pumpkin seeds) in a large bowl. Pour in the seasoning mix and stir well for a full minute, until every nut is coated in a glossy, even layer."
+      },
+      {
+        "title": "Bake",
+        "text": "Spread the nuts on the tray in a single layer (important that there are no piles). Bake 30-40 minutes. The critical rule: remove and stir thoroughly every 10 minutes exactly. This ensures they don't burn and that the liquids evaporate evenly."
+      },
+      {
+        "title": "Finish and season",
+        "text": "Remove from the oven. While the nuts are hot and sticky, sprinkle 1 tsp coarse salt and a little freshly chopped rosemary and sage. Stir lightly on the tray."
+      },
+      {
+        "title": "Full cooling",
+        "text": "Leave to cool completely on the tray, 20-30 minutes. During this time the coating sets into a crisp, crackly crust. Transfer to an airtight glass jar only after the nuts have reached room temperature."
+      }
     ],
     "proTip": "The sage adds an earthy, slightly bitter layer that perfectly balances the maple sweetness. Combined with rosemary it creates a depth of flavor you won't get from a single herb. Storing too early creates moisture that ruins the crunch, so always wait for complete cooling.",
     "difficulty": "Easy",
@@ -414,30 +1384,114 @@
     "name": "Chicken Sofrito with Red Wine and Date Syrup",
     "description": "A deep home-style stew with a wine and date syrup sauce that reduces to a glossy syrup. The precise version for 500g.",
     "intro": "A deep home-style stew with a wine and date syrup sauce that reduces to a glossy syrup. The precise version for 500g, perfect for a dinner for two or a hungry trio.",
-    "ingredients": ["Chicken thighs", "Potatoes", "Carrot", "White onion", "Garlic", "Olive oil", "Red wine", "Date syrup", "Turmeric"],
+    "ingredients": [
+      "Chicken thighs",
+      "Potatoes",
+      "Carrot",
+      "White onion",
+      "Garlic",
+      "Olive oil",
+      "Red wine",
+      "Date syrup",
+      "Turmeric"
+    ],
     "detailedIngredients": [
-      { "name": "Boneless chicken thighs", "amount": "500g", "note": "Cleaned, cut into large cubes" },
-      { "name": "Potatoes", "amount": "2 medium", "note": "Cut into cubes" },
-      { "name": "Large carrot", "amount": "1", "note": "Sliced into thick rounds" },
-      { "name": "White onion", "amount": "1 small/medium", "note": "Roughly chopped" },
-      { "name": "Whole garlic cloves", "amount": "3-4", "note": "" },
-      { "name": "Olive oil", "amount": "3 tbsp", "note": "For searing" },
-      { "name": "── For the Sauce ──", "amount": "", "note": "" },
-      { "name": "Dry red wine", "amount": "½ cup", "note": "" },
-      { "name": "Date syrup (silan)", "amount": "1 heaping tbsp", "note": "" },
-      { "name": "Boiling water", "amount": "¾ cup", "note": "" },
-      { "name": "── Seasoning ──", "amount": "", "note": "" },
-      { "name": "Salt", "amount": "½ tsp", "note": "" },
-      { "name": "Ground black pepper", "amount": "½ tsp", "note": "" },
-      { "name": "Turmeric", "amount": "¼ tsp", "note": "" }
+      {
+        "name": "Boneless chicken thighs",
+        "amount": "500g",
+        "note": "Cleaned, cut into large cubes"
+      },
+      {
+        "name": "Potatoes",
+        "amount": "2 medium",
+        "note": "Cut into cubes"
+      },
+      {
+        "name": "Large carrot",
+        "amount": "1",
+        "note": "Sliced into thick rounds"
+      },
+      {
+        "name": "White onion",
+        "amount": "1 small/medium",
+        "note": "Roughly chopped"
+      },
+      {
+        "name": "Whole garlic cloves",
+        "amount": "3-4",
+        "note": ""
+      },
+      {
+        "name": "Olive oil",
+        "amount": "3 tbsp",
+        "note": "For searing"
+      },
+      {
+        "name": "── For the Sauce ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Dry red wine",
+        "amount": "½ cup",
+        "note": ""
+      },
+      {
+        "name": "Date syrup (silan)",
+        "amount": "1 heaping tbsp",
+        "note": ""
+      },
+      {
+        "name": "Boiling water",
+        "amount": "¾ cup",
+        "note": ""
+      },
+      {
+        "name": "── Seasoning ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "amount": "½ tsp",
+        "note": ""
+      },
+      {
+        "name": "Ground black pepper",
+        "amount": "½ tsp",
+        "note": ""
+      },
+      {
+        "name": "Turmeric",
+        "amount": "¼ tsp",
+        "note": ""
+      }
     ],
     "steps": [
-      { "title": "Sear the chicken", "text": "In a relatively small wide pot (sauté pan), heat 3 tbsp olive oil. Sear the 500g of chicken thighs until nicely browned on both sides. Remove to a bowl and set aside." },
-      { "title": "Caramelize the vegetables", "text": "To the same oil add the chopped onion, sliced carrot and 3-4 garlic cloves. Fry about 5 minutes until the onion turns golden and absorbs the meat drippings." },
-      { "title": "Fry the potatoes", "text": "Add the 2 cut potatoes to the pot. Fry together with the vegetables for another 5 minutes until they 'seal' and take on a little color." },
-      { "title": "Wine and date syrup", "text": "Pour in ½ cup red wine. Scrape the bottom with a wooden spoon. Add 1 heaping tbsp date syrup, ½ tsp salt, ½ tsp black pepper and ¼ tsp turmeric." },
-      { "title": "Cook", "text": "Return the chicken to the pot and add ¾ cup boiling water (the liquid should reach roughly halfway up the ingredients). Bring to a boil, lower the flame, cover and cook for about an hour." },
-      { "title": "Reduce the sauce", "text": "In the last ten minutes, uncover so the sauce reduces and turns into a glossy syrup." }
+      {
+        "title": "Sear the chicken",
+        "text": "In a relatively small wide pot (sauté pan), heat 3 tbsp olive oil. Sear the 500g of chicken thighs until nicely browned on both sides. Remove to a bowl and set aside."
+      },
+      {
+        "title": "Caramelize the vegetables",
+        "text": "To the same oil add the chopped onion, sliced carrot and 3-4 garlic cloves. Fry about 5 minutes until the onion turns golden and absorbs the meat drippings."
+      },
+      {
+        "title": "Fry the potatoes",
+        "text": "Add the 2 cut potatoes to the pot. Fry together with the vegetables for another 5 minutes until they 'seal' and take on a little color."
+      },
+      {
+        "title": "Wine and date syrup",
+        "text": "Pour in ½ cup red wine. Scrape the bottom with a wooden spoon. Add 1 heaping tbsp date syrup, ½ tsp salt, ½ tsp black pepper and ¼ tsp turmeric."
+      },
+      {
+        "title": "Cook",
+        "text": "Return the chicken to the pot and add ¾ cup boiling water (the liquid should reach roughly halfway up the ingredients). Bring to a boil, lower the flame, cover and cook for about an hour."
+      },
+      {
+        "title": "Reduce the sauce",
+        "text": "In the last ten minutes, uncover so the sauce reduces and turns into a glossy syrup."
+      }
     ],
     "proTip": "Since this is a smaller batch, watch that the liquid doesn't evaporate too quickly. If the pot dries out before the potatoes are tender, add a quarter cup of boiling water.",
     "difficulty": "Medium",
@@ -448,23 +1502,77 @@
     "name": "Hotel-Style Baked Cheesecake",
     "description": "A hotel-style baked cheesecake — creamy, soft and white. Slow baking at 140°C keeps the texture silky, with no browning and no cracks.",
     "intro": "A classic hotel-style cheesecake — white, soft and creamy. The secret is slow baking at 140°C, which keeps the cake pale and delicate without browning. No crust, no topping, just the clean taste of cheese and cream. Best at room temperature, but also excellent cold from the fridge or slightly warm.",
-    "ingredients": ["White cheese", "Whipping cream", "Eggs", "Sugar", "Cornstarch", "Vanilla pudding", "Lemon zest"],
+    "ingredients": [
+      "White cheese",
+      "Whipping cream",
+      "Eggs",
+      "Sugar",
+      "Cornstarch",
+      "Vanilla pudding",
+      "Lemon zest"
+    ],
     "detailedIngredients": [
-      { "name": "White cheese 5%-9%", "amount": "1 kg", "note": "" },
-      { "name": "Whipping cream 38%", "amount": "250 ml", "note": "One container" },
-      { "name": "Eggs", "amount": "5", "note": "" },
-      { "name": "Sugar", "amount": "1 cup", "note": "" },
-      { "name": "Cornstarch", "amount": "1/2 cup", "note": "" },
-      { "name": "Instant vanilla pudding", "amount": "80g", "note": "One packet" },
-      { "name": "Lemon zest", "amount": "1/2 tbsp", "note": "Fresh" }
+      {
+        "name": "White cheese 5%-9%",
+        "amount": "1 kg",
+        "note": ""
+      },
+      {
+        "name": "Whipping cream 38%",
+        "amount": "250 ml",
+        "note": "One container"
+      },
+      {
+        "name": "Eggs",
+        "amount": "5",
+        "note": ""
+      },
+      {
+        "name": "Sugar",
+        "amount": "1 cup",
+        "note": ""
+      },
+      {
+        "name": "Cornstarch",
+        "amount": "1/2 cup",
+        "note": ""
+      },
+      {
+        "name": "Instant vanilla pudding",
+        "amount": "80g",
+        "note": "One packet"
+      },
+      {
+        "name": "Lemon zest",
+        "amount": "1/2 tbsp",
+        "note": "Fresh"
+      }
     ],
     "steps": [
-      { "title": "Heat the oven", "text": "Heat the oven to 140°C, top and bottom heat. The low temperature is the secret to the creamy texture and the white color of the cake." },
-      { "title": "Cheese and cream base", "text": "In a large bowl place 1 kg white cheese, one container of whipping cream (250 ml) and a cup of sugar. Mix well with a hand whisk until all the sugar has dissolved completely and no grains remain." },
-      { "title": "Add the powders", "text": "Add 1/2 cup cornstarch and a packet of vanilla pudding (80g). Mix well until you get a completely uniform mixture with no lumps. It's important to scatter the powders so they blend in." },
-      { "title": "Eggs and lemon zest", "text": "Add 5 eggs and 1/2 tbsp lemon zest. Mix well until uniform and smooth. Don't overmix, just enough for the batter to be even." },
-      { "title": "Bake", "text": "Pour the batter into the baking pan and tap the pan lightly on the counter to release air bubbles. Bake one hour to an hour and a quarter, until the edges set (and turn slightly golden) while the center still wobbles a little. Note: the cake shouldn't brown, it should stay white." },
-      { "title": "Cool and serve", "text": "Cool completely before slicing. Cooling is critical for the cake to set. Tastiest at room temperature, neither hot nor cold. You can also serve it cold from the fridge, or warm it briefly in the oven or for a few seconds in the microwave (but let it cool first so it sets)." }
+      {
+        "title": "Heat the oven",
+        "text": "Heat the oven to 140°C, top and bottom heat. The low temperature is the secret to the creamy texture and the white color of the cake."
+      },
+      {
+        "title": "Cheese and cream base",
+        "text": "In a large bowl place 1 kg white cheese, one container of whipping cream (250 ml) and a cup of sugar. Mix well with a hand whisk until all the sugar has dissolved completely and no grains remain."
+      },
+      {
+        "title": "Add the powders",
+        "text": "Add 1/2 cup cornstarch and a packet of vanilla pudding (80g). Mix well until you get a completely uniform mixture with no lumps. It's important to scatter the powders so they blend in."
+      },
+      {
+        "title": "Eggs and lemon zest",
+        "text": "Add 5 eggs and 1/2 tbsp lemon zest. Mix well until uniform and smooth. Don't overmix, just enough for the batter to be even."
+      },
+      {
+        "title": "Bake",
+        "text": "Pour the batter into the baking pan and tap the pan lightly on the counter to release air bubbles. Bake one hour to an hour and a quarter, until the edges set (and turn slightly golden) while the center still wobbles a little. Note: the cake shouldn't brown, it should stay white."
+      },
+      {
+        "title": "Cool and serve",
+        "text": "Cool completely before slicing. Cooling is critical for the cake to set. Tastiest at room temperature, neither hot nor cold. You can also serve it cold from the fridge, or warm it briefly in the oven or for a few seconds in the microwave (but let it cool first so it sets)."
+      }
     ],
     "proTip": "The secret is patience. 140°C is a deliberate temperature that prevents browning and preserves the creamy texture. If you see the cake starting to brown, lower the heat slightly. The center should wobble when baking ends, it will set completely as it cools.",
     "difficulty": "Easy",
@@ -475,72 +1583,336 @@
     "name": "Crunchy Homemade Granola with Maple and Date Syrup",
     "description": "Crunchy homemade granola with thick rolled oats, nuts and seeds, coated in olive oil, maple and date syrup in balanced proportions — neither greasy nor overly sweet.",
     "intro": "The final, precise and balanced recipe for crunchy homemade granola. The combination of olive oil, maple, date syrup and cinnamon in the right proportions guarantees perfect crunch without the granola turning greasy or too sweet. The real secret to the crunch is actually the complete cooling after baking.",
-    "ingredients": ["Thick rolled oats", "Nuts", "Pumpkin seeds", "Cinnamon", "Olive oil", "Maple syrup", "Date syrup"],
+    "ingredients": [
+      "Thick rolled oats",
+      "Nuts",
+      "Pumpkin seeds",
+      "Cinnamon",
+      "Olive oil",
+      "Maple syrup",
+      "Date syrup"
+    ],
     "detailedIngredients": [
-      { "name": "── Dry Ingredients and Spices ──", "amount": "", "note": "" },
-      { "name": "Thick rolled oats", "amount": "3 cups", "note": "Whole / thick-cut oats" },
-      { "name": "Nut and seed mix", "amount": "1 cup", "note": "Almonds, pecans, walnuts, pumpkin seeds — measure whole, then roughly chop" },
-      { "name": "Ground cinnamon", "amount": "1 level tsp", "note": "" },
-      { "name": "Salt", "amount": "A pinch", "note": "" },
-      { "name": "── Liquids and Sweeteners ──", "amount": "", "note": "" },
-      { "name": "Olive oil", "amount": "4 tbsp", "note": "A mild-flavored one is recommended" },
-      { "name": "Natural maple syrup", "amount": "¼ cup", "note": "" },
-      { "name": "Natural date syrup (silan)", "amount": "¼ cup", "note": "No added sugar" }
+      {
+        "name": "── Dry Ingredients and Spices ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Thick rolled oats",
+        "amount": "3 cups",
+        "note": "Whole / thick-cut oats"
+      },
+      {
+        "name": "Nut and seed mix",
+        "amount": "1 cup",
+        "note": "Almonds, pecans, walnuts, pumpkin seeds — measure whole, then roughly chop"
+      },
+      {
+        "name": "Ground cinnamon",
+        "amount": "1 level tsp",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "amount": "A pinch",
+        "note": ""
+      },
+      {
+        "name": "── Liquids and Sweeteners ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Olive oil",
+        "amount": "4 tbsp",
+        "note": "A mild-flavored one is recommended"
+      },
+      {
+        "name": "Natural maple syrup",
+        "amount": "¼ cup",
+        "note": ""
+      },
+      {
+        "name": "Natural date syrup (silan)",
+        "amount": "¼ cup",
+        "note": "No added sugar"
+      }
     ],
     "steps": [
-      { "title": "Mix the dry ingredients", "text": "Heat the oven to 160°C (convection mode recommended). In a large bowl mix well 3 cups thick rolled oats, 1 cup roughly chopped nuts, 1 level tsp cinnamon and a pinch of salt, so the spices distribute evenly." },
-      { "title": "Coat with the liquids", "text": "Add 4 tbsp olive oil, ¼ cup maple syrup and ¼ cup date syrup to the bowl. Mix well for a full minute, until every oat flake and nut is completely coated and the whole mixture is moist and glossy." },
-      { "title": "Arrange on the tray", "text": "Line a large baking tray with parchment paper. Transfer the mixture to it and spread in an even layer. To get crunchy granola clusters, press the mixture lightly into the tray with the back of a spoon." },
-      { "title": "Controlled baking and stirring", "text": "Bake in the preheated oven for 20-25 minutes total. After 10-12 minutes (halfway through) carefully remove and stir once, moving the edges to the center and vice versa, to prevent the edges from scorching. Press lightly again and return to finish baking. The granola is ready when it's nicely browned." },
-      { "title": "Complete cooling (the crunch secret)", "text": "Remove the tray from the oven. The granola will still feel a bit soft and that's completely normal. Leave it to cool completely on the tray for about 45 to 60 minutes. As it cools, the natural sugars from the maple and date syrup harden, and the granola becomes super crunchy." },
-      { "title": "Break up and store", "text": "Once fully cooled, break the granola by hand into clusters the size you like and transfer to an airtight jar. Enjoy!" }
+      {
+        "title": "Mix the dry ingredients",
+        "text": "Heat the oven to 160°C (convection mode recommended). In a large bowl mix well 3 cups thick rolled oats, 1 cup roughly chopped nuts, 1 level tsp cinnamon and a pinch of salt, so the spices distribute evenly."
+      },
+      {
+        "title": "Coat with the liquids",
+        "text": "Add 4 tbsp olive oil, ¼ cup maple syrup and ¼ cup date syrup to the bowl. Mix well for a full minute, until every oat flake and nut is completely coated and the whole mixture is moist and glossy."
+      },
+      {
+        "title": "Arrange on the tray",
+        "text": "Line a large baking tray with parchment paper. Transfer the mixture to it and spread in an even layer. To get crunchy granola clusters, press the mixture lightly into the tray with the back of a spoon."
+      },
+      {
+        "title": "Controlled baking and stirring",
+        "text": "Bake in the preheated oven for 20-25 minutes total. After 10-12 minutes (halfway through) carefully remove and stir once, moving the edges to the center and vice versa, to prevent the edges from scorching. Press lightly again and return to finish baking. The granola is ready when it's nicely browned."
+      },
+      {
+        "title": "Complete cooling (the crunch secret)",
+        "text": "Remove the tray from the oven. The granola will still feel a bit soft and that's completely normal. Leave it to cool completely on the tray for about 45 to 60 minutes. As it cools, the natural sugars from the maple and date syrup harden, and the granola becomes super crunchy."
+      },
+      {
+        "title": "Break up and store",
+        "text": "Once fully cooled, break the granola by hand into clusters the size you like and transfer to an airtight jar. Enjoy!"
+      }
     ],
     "proTip": "Don't skip the full cooling on the tray, it's the secret to the crunch. As long as the granola is warm it will feel soft, and the crispness only builds as the sugars harden while cooling. A mild-flavored olive oil keeps the balance so the granola doesn't turn greasy.",
     "difficulty": "Easy",
     "category": "Breakfast",
     "servings": "About 8 servings"
-  },
+  },
   "25": {
     "name": "One-Pot Chicken Breast and Rice with Vegetables",
     "description": "A one-pot dish for two: juicy chicken breast in smoked paprika and hawaij, over rice that soaks up all the flavors along with carrot, red pepper and scallions.",
     "intro": "A balanced homemade one-pot meal that saves dishes without compromising on flavor. A quick sear seals the chicken, then it returns to the pot to steam on top of the rice instead of cooking inside it - that is how the breast stays juicy and the rice comes out grain by grain, soaked in hawaij and smoked paprika.",
-    "ingredients": ["Chicken breast", "Basmati rice", "Red bell pepper", "Carrot", "Onion", "Smoked paprika", "Hawaij soup spice"],
+    "ingredients": [
+      "Chicken breast",
+      "Basmati rice",
+      "Red bell pepper",
+      "Carrot",
+      "Onion",
+      "Smoked paprika",
+      "Hawaij soup spice"
+    ],
     "detailedIngredients": [
-      { "name": "── For the Chicken and Marinade ──", "amount": "", "note": "" },
-      { "name": "Chicken breast", "amount": "320 g", "note": "Cut into even cubes about 3 cm" },
-      { "name": "Olive oil", "amount": "1 tbsp", "note": "Heaping" },
-      { "name": "Smoked paprika", "amount": "½ tsp", "note": "" },
-      { "name": "Hawaij soup spice", "amount": "½ tsp", "note": "" },
-      { "name": "Garlic powder", "amount": "¼ tsp", "note": "" },
-      { "name": "Salt and ground black pepper", "amount": "A generous pinch", "note": "" },
-      { "name": "── For the Rice and Vegetables ──", "amount": "", "note": "" },
-      { "name": "Basmati or Persian rice", "amount": "¾ cup", "note": "Well rinsed and fully drained" },
-      { "name": "White or red onion", "amount": "1 small", "note": "Finely chopped" },
-      { "name": "Carrot", "amount": "1 medium", "note": "Small dice or thin strips" },
-      { "name": "Red bell pepper", "amount": "1 small", "note": "Cut into small cubes" },
-      { "name": "Garlic", "amount": "2 cloves", "note": "Crushed or thinly sliced" },
-      { "name": "Boiling water", "amount": "1⅓ cups", "note": "" },
-      { "name": "Salt", "amount": "½ tsp", "note": "Level, for the rice" },
-      { "name": "Hawaij soup spice", "amount": "A pinch", "note": "For color and flavor in the rice" },
-      { "name": "Black pepper", "amount": "A pinch", "note": "" },
-      { "name": "Oil for sauteing the vegetables", "amount": "1-2 tsp", "note": "" },
-      { "name": "── To Serve ──", "amount": "", "note": "" },
-      { "name": "Scallions", "amount": "2 stalks", "note": "Finely chopped, white and green parts" }
+      {
+        "name": "── For the Chicken and Marinade ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Chicken breast",
+        "amount": "320 g",
+        "note": "Cut into even cubes about 3 cm"
+      },
+      {
+        "name": "Olive oil",
+        "amount": "1 tbsp",
+        "note": "Heaping"
+      },
+      {
+        "name": "Smoked paprika",
+        "amount": "½ tsp",
+        "note": ""
+      },
+      {
+        "name": "Hawaij soup spice",
+        "amount": "½ tsp",
+        "note": ""
+      },
+      {
+        "name": "Garlic powder",
+        "amount": "¼ tsp",
+        "note": ""
+      },
+      {
+        "name": "Salt and ground black pepper",
+        "amount": "A generous pinch",
+        "note": ""
+      },
+      {
+        "name": "── For the Rice and Vegetables ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Basmati or Persian rice",
+        "amount": "¾ cup",
+        "note": "Well rinsed and fully drained"
+      },
+      {
+        "name": "White or red onion",
+        "amount": "1 small",
+        "note": "Finely chopped"
+      },
+      {
+        "name": "Carrot",
+        "amount": "1 medium",
+        "note": "Small dice or thin strips"
+      },
+      {
+        "name": "Red bell pepper",
+        "amount": "1 small",
+        "note": "Cut into small cubes"
+      },
+      {
+        "name": "Garlic",
+        "amount": "2 cloves",
+        "note": "Crushed or thinly sliced"
+      },
+      {
+        "name": "Boiling water",
+        "amount": "1⅓ cups",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "amount": "½ tsp",
+        "note": "Level, for the rice"
+      },
+      {
+        "name": "Hawaij soup spice",
+        "amount": "A pinch",
+        "note": "For color and flavor in the rice"
+      },
+      {
+        "name": "Black pepper",
+        "amount": "A pinch",
+        "note": ""
+      },
+      {
+        "name": "Oil for sauteing the vegetables",
+        "amount": "1-2 tsp",
+        "note": ""
+      },
+      {
+        "name": "── To Serve ──",
+        "amount": "",
+        "note": ""
+      },
+      {
+        "name": "Scallions",
+        "amount": "2 stalks",
+        "note": "Finely chopped, white and green parts"
+      }
     ],
     "steps": [
-      { "title": "Season the chicken", "text": "In a medium bowl, mix 320 g of cubed chicken breast with 1 tbsp olive oil, ½ tsp smoked paprika, ½ tsp hawaij soup spice, ¼ tsp garlic powder, salt and black pepper - until every piece is well coated." },
-      { "title": "Rinse the rice", "text": "Rinse ¾ cup of rice in a strainer under running water until the water runs clear (removing starch), then drain thoroughly. Fully drained rice is what keeps it from turning to mush." },
-      { "title": "Quick sear the chicken", "text": "Heat a medium heavy-bottomed or non-stick pot over high heat with a teaspoon of oil. Once very hot, lay the chicken cubes in a single layer, sear for a minute and a half to two minutes on one side, flip and sear one more minute. The chicken should not be cooked through at this stage. Transfer to a plate and keep the juices that collect on it." },
-      { "title": "Saute the vegetables", "text": "Lower to medium heat. In the same pot, with all the chicken fond, add 1-2 tsp oil and add 1 chopped onion and 1 carrot. Saute 3-4 minutes until the onion is translucent and softened. Add 1 chopped red bell pepper and 2 crushed garlic cloves and continue about 2 more minutes, stirring." },
-      { "title": "Toast the rice", "text": "Add the ¾ cup of rinsed, drained rice to the pot, season with ½ tsp salt, a pinch of pepper and a pinch of hawaij, and saute while stirring for about 2 minutes - until the grains are hot and coated in oil and the color of the vegetables." },
-      { "title": "Combine and cook", "text": "Pour in 1⅓ cups boiling water and gently scrape the bottom of the pot with a wooden spoon to release the fond. Return the chicken cubes and the juices from the plate, placing them gently on top of the rice layer - do not stir them in. Bring to a full boil, close with a tight lid, lower to the lowest heat and cook for exactly 18 minutes without lifting the lid." },
-      { "title": "Rest and serve", "text": "Turn off the heat and leave the lid closed for another 10 minutes - the steam finishes softening the rice and keeps the chicken juicy. Open, scatter 2 chopped scallions on top and gently fluff the rice with a fork." }
+      {
+        "title": "Season the chicken",
+        "text": "In a medium bowl, mix 320 g of cubed chicken breast with 1 tbsp olive oil, ½ tsp smoked paprika, ½ tsp hawaij soup spice, ¼ tsp garlic powder, salt and black pepper - until every piece is well coated."
+      },
+      {
+        "title": "Rinse the rice",
+        "text": "Rinse ¾ cup of rice in a strainer under running water until the water runs clear (removing starch), then drain thoroughly. Fully drained rice is what keeps it from turning to mush."
+      },
+      {
+        "title": "Quick sear the chicken",
+        "text": "Heat a medium heavy-bottomed or non-stick pot over high heat with a teaspoon of oil. Once very hot, lay the chicken cubes in a single layer, sear for a minute and a half to two minutes on one side, flip and sear one more minute. The chicken should not be cooked through at this stage. Transfer to a plate and keep the juices that collect on it."
+      },
+      {
+        "title": "Saute the vegetables",
+        "text": "Lower to medium heat. In the same pot, with all the chicken fond, add 1-2 tsp oil and add 1 chopped onion and 1 carrot. Saute 3-4 minutes until the onion is translucent and softened. Add 1 chopped red bell pepper and 2 crushed garlic cloves and continue about 2 more minutes, stirring."
+      },
+      {
+        "title": "Toast the rice",
+        "text": "Add the ¾ cup of rinsed, drained rice to the pot, season with ½ tsp salt, a pinch of pepper and a pinch of hawaij, and saute while stirring for about 2 minutes - until the grains are hot and coated in oil and the color of the vegetables."
+      },
+      {
+        "title": "Combine and cook",
+        "text": "Pour in 1⅓ cups boiling water and gently scrape the bottom of the pot with a wooden spoon to release the fond. Return the chicken cubes and the juices from the plate, placing them gently on top of the rice layer - do not stir them in. Bring to a full boil, close with a tight lid, lower to the lowest heat and cook for exactly 18 minutes without lifting the lid."
+      },
+      {
+        "title": "Rest and serve",
+        "text": "Turn off the heat and leave the lid closed for another 10 minutes - the steam finishes softening the rice and keeps the chicken juicy. Open, scatter 2 chopped scallions on top and gently fluff the rice with a fork."
+      }
     ],
     "proTip": "Do not skip the 10 minutes of resting with the heat off - it is the difference between dry chicken breast and a tender piece, and it is what keeps the rice from sticking so it comes out grain by grain. Just as important: the chicken stays on top of the rice and is not stirred in, otherwise it overcooks.",
-    "tags": ["High protein", "Gluten free", "Lactose free"],
-    "moods": ["High protein", "Family meal", "Comfort food"],
+    "tags": [
+      "High protein",
+      "Gluten free",
+      "Lactose free"
+    ],
+    "moods": [
+      "High protein",
+      "Family meal",
+      "Comfort food"
+    ],
     "difficulty": "Medium",
     "category": "Lunch",
     "servings": "2 servings"
+  },
+  "26": {
+    "name": "Whole Spelt Crepes",
+    "description": "Thin crepes made with whole spelt flour and soy milk. One batter, one pan, and you fill them with whatever you like.",
+    "intro": "Thin crepes made with whole spelt flour and soy milk. One batter, one pan, and you fill them with whatever you like. The trick is pouring the liquid gradually into the flour rather than the other way around, and whisking from the center outward - that is how the batter comes out smooth with no lumps and no need for a sieve.",
+    "ingredients": [
+      "Whole spelt flour",
+      "Soy milk",
+      "Eggs",
+      "Oil",
+      "Vanilla extract",
+      "Salt"
+    ],
+    "detailedIngredients": [
+      {
+        "name": "Whole spelt flour",
+        "amount": "1 cup",
+        "note": ""
+      },
+      {
+        "name": "Soy milk",
+        "amount": "1.5 cups",
+        "note": "At room temperature"
+      },
+      {
+        "name": "Eggs",
+        "amount": "2",
+        "note": ""
+      },
+      {
+        "name": "Oil",
+        "amount": "1 tbsp",
+        "note": "For the batter"
+      },
+      {
+        "name": "Vanilla extract",
+        "amount": "1 tsp",
+        "note": "Optional"
+      },
+      {
+        "name": "Salt",
+        "amount": "A pinch",
+        "note": ""
+      },
+      {
+        "name": "Oil for frying",
+        "amount": "A little",
+        "note": "A very thin layer for the pan"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Make a well in the flour",
+        "text": "Pour 1 cup of whole spelt flour into a bowl and form a well in the center - an open crater that will hold the liquids."
+      },
+      {
+        "title": "Liquids into the well",
+        "text": "Add 2 eggs, 1 tbsp oil and a pinch of salt into the well, plus 1 tsp vanilla extract if you like."
+      },
+      {
+        "title": "The batter",
+        "text": "Pour in 1.5 cups of soy milk gradually while whisking briskly from the center outward, until the batter is completely smooth and free of lumps."
+      },
+      {
+        "title": "Heat the pan",
+        "text": "Heat a non-stick pan and brush it with a very thin layer of oil. The pan should be hot before the first pour."
+      },
+      {
+        "title": "Fry",
+        "text": "Pour in a small ladle of batter, immediately swirl the pan to spread a thin, even layer, and fry for about a minute per side until golden."
+      }
+    ],
+    "proTip": "Whole grain flour absorbs liquid slowly. Letting the batter rest for 10-15 minutes before frying gives the bran time to soften, so the crepes come out more tender and are less likely to tear. If the batter is too thick after resting, add a splash more soy milk.",
+    "tags": [
+      "Lactose free",
+      "Kid friendly",
+      "Quick"
+    ],
+    "moods": [
+      "Quick",
+      "Kid friendly"
+    ],
+    "difficulty": "Easy",
+    "category": "Breakfast",
+    "servings": "4 servings (about 8 crepes)"
   }
 }
