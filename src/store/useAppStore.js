@@ -58,6 +58,15 @@ const useAppStore = create((set, get) => ({
     set({ checkedIngredients: updated })
   },
 
+  // Recipe usage - how many times each recipe was opened (drives list order)
+  recipeViews: JSON.parse(localStorage.getItem('nourish_recipe_views') || '{}'),
+  recordRecipeView: (recipeId) => {
+    const current = get().recipeViews
+    const updated = { ...current, [recipeId]: (current[recipeId] || 0) + 1 }
+    localStorage.setItem('nourish_recipe_views', JSON.stringify(updated))
+    set({ recipeViews: updated })
+  },
+
   // Personal recipe notes
   recipeNotes: JSON.parse(localStorage.getItem('nourish_recipe_notes') || '{}'),
   setRecipeNote: (recipeId, text) => {

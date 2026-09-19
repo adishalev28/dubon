@@ -21,8 +21,16 @@ export default function RecipePage() {
   const { t, isRTL } = useLanguage()
   const rawRecipe = recipes.find(r => r.id === Number(id))
   const recipe = useTranslatedRecipe(rawRecipe)
-  const { favorites, toggleFavorite, checkedIngredients, toggleIngredientCheck, recipeNotes, setRecipeNote } = useAppStore()
+  const { favorites, toggleFavorite, checkedIngredients, toggleIngredientCheck, recipeNotes, setRecipeNote, recordRecipeView } = useAppStore()
   const [noteText, setNoteText] = useState('')
+
+  // Count each opening of a recipe (ref guards against StrictMode's double effect in dev)
+  const countedIdRef = useRef(null)
+  useEffect(() => {
+    if (!rawRecipe || countedIdRef.current === rawRecipe.id) return
+    countedIdRef.current = rawRecipe.id
+    recordRecipeView(rawRecipe.id)
+  }, [rawRecipe, recordRecipeView])
   const [noteEditing, setNoteEditing] = useState(false)
   const isFavorite = recipe ? favorites.includes(recipe.id) : false
   const [isPlaying, setIsPlaying] = useState(false)

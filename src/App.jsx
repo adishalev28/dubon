@@ -13,6 +13,8 @@ import BottomNav from './components/Layout/BottomNav'
 import RecipePage from './components/Recipe/RecipePage'
 import TechniquesPage from './components/Techniques/TechniquesPage'
 
+const SHOW_MEAL_CATEGORIES = false
+
 function TechniquesBanner() {
   const navigate = useNavigate()
   return (
@@ -36,7 +38,8 @@ function HomePage() {
     <div className="pb-20">
       <HeroSection />
       <SearchBar />
-      <MealCategories />
+      {/* בוקר/צהריים/ערב מוסתר זמנית - יחזור כשיהיו מספיק מתכונים בכל קטגוריה */}
+      {SHOW_MEAL_CATEGORIES && <MealCategories />}
       <QuickFilters />
       <RecommendedRecipes />
       <TechniquesBanner />

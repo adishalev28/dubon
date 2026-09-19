@@ -1,167 +1,4 @@
 {
-  "11": {
-    "name": "Grilled Chicken with Fluffy Jasmine Rice",
-    "description": "A classic family lunch. Chicken in smoked paprika marinade alongside jasmine rice that always turns out perfect.",
-    "intro": "A classic family lunch. Chicken in smoked paprika marinade alongside jasmine rice that always turns out perfect. The marinade adds depth, and frying the rice in oil before cooking is the secret to separate, fluffy grains.",
-    "ingredients": [
-      "Chicken",
-      "Olive oil",
-      "Lemon",
-      "Garlic",
-      "Smoked paprika",
-      "Jasmine rice",
-      "Parsley",
-      "Cilantro",
-      "Red wine vinegar"
-    ],
-    "detailedIngredients": [
-      {
-        "name": "Chicken (drumsticks or thighs)",
-        "amount": "1 kg",
-        "note": ""
-      },
-      {
-        "name": "Olive oil",
-        "amount": "1/4 cup",
-        "note": "For marinade"
-      },
-      {
-        "name": "Fresh lemon juice",
-        "amount": "1/2 lemon",
-        "note": ""
-      },
-      {
-        "name": "Lemon zest",
-        "amount": "1 tsp",
-        "note": ""
-      },
-      {
-        "name": "Crushed garlic",
-        "amount": "3 cloves",
-        "note": ""
-      },
-      {
-        "name": "Smoked paprika",
-        "amount": "1 tbsp",
-        "note": "Heaping"
-      },
-      {
-        "name": "Fine salt",
-        "amount": "1.5 tsp",
-        "note": "Split between chicken and rice"
-      },
-      {
-        "name": "Ground black pepper",
-        "amount": "1/2 tsp",
-        "note": ""
-      },
-      {
-        "name": "── For Rice ──",
-        "amount": "",
-        "note": ""
-      },
-      {
-        "name": "Jasmine rice",
-        "amount": "2 cups",
-        "note": ""
-      },
-      {
-        "name": "Boiling water",
-        "amount": "3.5 cups",
-        "note": ""
-      },
-      {
-        "name": "Vegetable oil",
-        "amount": "3 tbsp",
-        "note": "For frying rice"
-      },
-      {
-        "name": "── Chimichurri (optional) ──",
-        "amount": "",
-        "note": ""
-      },
-      {
-        "name": "Fresh parsley",
-        "amount": "1 large bunch",
-        "note": "Leaves only, finely chopped"
-      },
-      {
-        "name": "Fresh cilantro",
-        "amount": "1/2 bunch",
-        "note": "Optional, adds a lot"
-      },
-      {
-        "name": "Garlic",
-        "amount": "3 large cloves",
-        "note": "Crushed or very finely chopped"
-      },
-      {
-        "name": "Red onion",
-        "amount": "1/4 medium",
-        "note": "Tiny cubes"
-      },
-      {
-        "name": "Extra virgin olive oil",
-        "amount": "1/2 cup",
-        "note": ""
-      },
-      {
-        "name": "Red wine vinegar",
-        "amount": "3 tbsp",
-        "note": "Or fresh lemon juice"
-      },
-      {
-        "name": "Dried oregano",
-        "amount": "1 tsp",
-        "note": ""
-      },
-      {
-        "name": "Crushed chili flakes",
-        "amount": "1/2 tsp",
-        "note": "Or more to taste"
-      },
-      {
-        "name": "Coarse salt",
-        "amount": "1 tsp",
-        "note": "Start with 3/4, taste"
-      },
-      {
-        "name": "Black pepper",
-        "amount": "1/2 tsp",
-        "note": ""
-      }
-    ],
-    "steps": [
-      {
-        "title": "Marinade",
-        "text": "Mix 1/4 cup olive oil, juice of half a lemon, lemon zest, 3 crushed garlic cloves, 1 tbsp smoked paprika, 1 tsp salt and 1/2 tsp black pepper."
-      },
-      {
-        "title": "Marinate chicken",
-        "text": "Coat 1 kg chicken pieces well with the marinade. Marinate for at least 30 minutes (up to overnight in the fridge)."
-      },
-      {
-        "title": "Rice base",
-        "text": "Heat 3 tbsp oil in a pot. Add 2 cups dry jasmine rice and fry for 2 minutes, stirring constantly, until the grains become translucent."
-      },
-      {
-        "title": "Cook rice",
-        "text": "Add 3.5 cups boiling water and 1/2 tsp salt. Bring to a boil, cover and reduce to lowest heat for 18 minutes. Turn off heat and leave covered 5 more minutes."
-      },
-      {
-        "title": "Grill chicken",
-        "text": "Heat a grill or grill pan to high. Grill chicken 10-15 minutes per side (depending on thickness) until deep golden char marks appear."
-      },
-      {
-        "title": "Chimichurri (optional)",
-        "text": "Hand-chop (not food processor!) 1 bunch parsley, 1/2 bunch cilantro, 3 garlic cloves and 1/4 red onion. Mix with 1 tsp oregano, 1/2 tsp chili, 1 tsp salt, 1/2 tsp pepper, 3 tbsp red wine vinegar and 1/2 cup olive oil. Let rest 30 minutes before serving — the flavors need to merge."
-      }
-    ],
-    "proTip": "Take the chicken out of the fridge 20 minutes before grilling — room temperature chicken grills more evenly. The chimichurri improves overnight in the fridge.",
-    "difficulty": "Medium",
-    "category": "Lunch",
-    "servings": "4 servings"
-  },
   "9": {
     "name": "Kid-Friendly Spaghetti Bolognese",
     "description": "Rich Bolognese with root vegetable soffritto 'hidden' in the sauce — nutritious, delicious and picky-eater approved.",
@@ -803,54 +640,25 @@
     "servings": "4-5 servings"
   },
   "16": {
-    "name": "Green Goddess Egg Salad on Sourdough",
-    "description": "Rich egg salad with avocado, pickles and fresh herbs on toasted sourdough. A balancing dinner that nourishes blood and clears heat.",
-    "intro": "A light, refreshing dinner combining rich eggs with creamy avocado, crunchy pickles and aromatic fresh herbs. The dill and mustard activate digestion, the arugula clears liver heat, and the pickles break down heaviness from previous meals.",
+    "name": "Homemade Egg Salad",
+    "description": "Homemade egg salad using the separation method: yolks mashed into a creamy spread with mayo, whites chopped with green onion, bell pepper and pickle.",
+    "intro": "The secret of this egg salad is separating the eggs. The yolks become a smooth, creamy spread, while the whites are knife-chopped and keep their texture. Combined at the end, you get a rich salad that is never mushy, with a gentle crunch from the vegetables.",
     "ingredients": [
       "Eggs",
-      "Avocado",
-      "Pickled cucumber",
-      "Dill",
-      "Arugula",
-      "Sourdough bread",
       "Mayo",
       "Mustard",
-      "Olive oil",
-      "Lemon"
+      "Green onion",
+      "Bell pepper",
+      "Pickled cucumber"
     ],
     "detailedIngredients": [
       {
         "name": "Hard boiled eggs",
-        "amount": "6",
+        "amount": "4",
         "note": "Peeled"
       },
       {
-        "name": "Ripe avocado",
-        "amount": "1",
-        "note": "Half mashed, half cubed"
-      },
-      {
-        "name": "Salt-pickled cucumber",
-        "amount": "2",
-        "note": "Finely chopped"
-      },
-      {
-        "name": "Fresh dill",
-        "amount": "Generous handful",
-        "note": "Chopped"
-      },
-      {
-        "name": "Arugula leaves",
-        "amount": "Handful",
-        "note": "Fresh"
-      },
-      {
-        "name": "Celery (optional)",
-        "amount": "1 stalk",
-        "note": "Peeled and micro-diced. Drains fluids and clears stomach heat."
-      },
-      {
-        "name": "── Dressing ──",
+        "name": "── For the yolks ──",
         "amount": "",
         "note": ""
       },
@@ -861,62 +669,62 @@
       },
       {
         "name": "Mustard",
-        "amount": "1 tsp",
-        "note": ""
+        "amount": "1/2 tsp",
+        "note": "Just a little - it takes over"
       },
       {
-        "name": "Olive oil",
-        "amount": "1 tbsp",
-        "note": ""
-      },
-      {
-        "name": "Fresh lemon juice",
-        "amount": "1/4 lemon",
-        "note": ""
-      },
-      {
-        "name": "Coarse black pepper",
+        "name": "Salt",
         "amount": "To taste",
         "note": ""
       },
       {
-        "name": "Sea salt",
+        "name": "Black pepper",
         "amount": "To taste",
         "note": ""
       },
       {
-        "name": "── Base ──",
+        "name": "── For the whites ──",
         "amount": "",
         "note": ""
       },
       {
-        "name": "Sourdough bread",
-        "amount": "2-3 slices",
-        "note": "Toasted"
+        "name": "Green onion",
+        "amount": "1 stalk",
+        "note": "Finely chopped"
+      },
+      {
+        "name": "Bell pepper",
+        "amount": "1/4",
+        "note": "Finely chopped"
+      },
+      {
+        "name": "Pickled cucumber",
+        "amount": "1",
+        "note": "Finely chopped"
       }
     ],
     "steps": [
       {
-        "title": "Prep eggs",
-        "text": "Roughly mash 6 peeled hard boiled eggs with a fork (keep it chunky for texture)."
+        "title": "Separate",
+        "text": "Halve 4 peeled hard boiled eggs and separate the yolks from the whites - yolks into one bowl, whites onto the cutting board."
       },
       {
-        "title": "Make dressing",
-        "text": "Mix 1 tbsp mayo, 1 tsp mustard, 1 tbsp olive oil, juice of 1/4 lemon, black pepper and sea salt."
+        "title": "Yolk spread",
+        "text": "Mash the yolks with a fork into a purée. Add 1 tbsp mayo, 1/2 tsp mustard (just a little - it takes over), salt and pepper, and mix into a smooth, moist spread."
+      },
+      {
+        "title": "Whites and vegetables",
+        "text": "Finely chop the whites with a knife and move them to a bowl. Add 1 stalk green onion, 1/4 bell pepper and 1 pickled cucumber - all finely chopped."
       },
       {
         "title": "Combine",
-        "text": "Add half a mashed avocado, 2 chopped pickled cucumbers, chopped dill and celery (if using) to the eggs. Gently fold in the dressing."
-      },
-      {
-        "title": "Assemble & serve",
-        "text": "Toast the sourdough slices. Top each generously with egg salad. Scatter avocado cubes, arugula leaves and freshly cracked black pepper on top."
+        "text": "Once the yolk is a moist, smooth paste, fold it back into the bowl of whites and gently mix everything together."
       }
     ],
-    "proTip": "Celery is optional but makes a real difference! Peel the outer fibers and dice microscopically so you get the crunch and drainage benefit without it dominating the flavor.",
+    "proTip": "No lemon and no olive oil needed - the mayo in the yolk gives all the creaminess. Go easy on the mustard: half a teaspoon is enough, any more and it takes over.",
     "difficulty": "Easy",
-    "category": "Dinner",
-    "servings": "2-3 servings"
+    "category": "Breakfast",
+    "servings": "2 servings"
   },
   "17": {
     "name": "Fermented Purple Cabbage with Lemon, Garlic & Honey",

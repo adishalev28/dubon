@@ -19,7 +19,7 @@ const fuse = new Fuse(recipes, {
 })
 
 export default function RecommendedRecipes() {
-  const { searchQuery, activeFilters, activeMealCategory } = useAppStore()
+  const { searchQuery, activeFilters, activeMealCategory, recipeViews } = useAppStore()
   const { t, isRTL } = useLanguage()
 
   const filtered = useMemo(() => {
@@ -45,8 +45,13 @@ export default function RecommendedRecipes() {
       }
     }
 
+    // Without a search, most-opened recipes first (stable sort keeps original order on ties)
+    if (!searchQuery) {
+      result = [...result].sort((a, b) => (recipeViews[b.id] || 0) - (recipeViews[a.id] || 0))
+    }
+
     return result
-  }, [searchQuery, activeFilters, activeMealCategory])
+  }, [searchQuery, activeFilters, activeMealCategory, recipeViews])
 
   const translatedFiltered = useTranslatedRecipes(filtered)
 
