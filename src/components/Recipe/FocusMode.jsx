@@ -13,6 +13,7 @@ export default function FocusMode({ steps, recipeName, onClose }) {
   // ── Text-to-Speech for focus mode ──
   const [isSpeaking, setIsSpeaking] = useState(false)
   const [autoRead, setAutoRead] = useState(false)
+  const keepAliveRef = useRef(null)
 
   const { isRTL } = useLanguage()
 
@@ -30,9 +31,30 @@ export default function FocusMode({ steps, recipeName, onClose }) {
     const voices = window.speechSynthesis.getVoices()
     const voice = voices.find(v => v.lang === lang) || voices.find(v => v.lang.startsWith(isEn ? 'en' : 'he'))
     if (voice) u.voice = voice
-    u.onstart = () => setIsSpeaking(true)
+    let started = false
+    u.onstart = () => { started = true; setIsSpeaking(true) }
     u.onend = () => setIsSpeaking(false)
+    u.onerror = () => setIsSpeaking(false)
     window.speechSynthesis.speak(u)
+
+    // כרום בטלפון קוטע הקראה ארוכה אחרי כ-15 שניות אם לא מרעננים אותה
+    clearInterval(keepAliveRef.current)
+    keepAliveRef.current = setInterval(() => {
+      if (window.speechSynthesis.speaking) window.speechSynthesis.resume()
+      else clearInterval(keepAliveRef.current)
+    }, 10000)
+
+    // אין קול מותקן בשפה הזו - להגיד את זה במקום להישאר בשקט
+    setTimeout(() => {
+      if (!started && !window.speechSynthesis.speaking) {
+        clearInterval(keepAliveRef.current)
+        setIsSpeaking(false)
+        setAutoRead(false)
+        alert(isEn
+          ? 'Your device has no installed voice for this language, so reading aloud is unavailable.'
+          : 'לא מותקן במכשיר קול בעברית, ולכן ההקראה לא זמינה. אפשר להתקין קול בהגדרות המכשיר, תחת נגישות ואז פלט טקסט לדיבור.')
+      }
+    }, 2000)
   }
 
   const toggleAutoRead = () => {
@@ -53,7 +75,10 @@ export default function FocusMode({ steps, recipeName, onClose }) {
 
   // Stop speech on unmount
   useEffect(() => {
-    return () => window.speechSynthesis.cancel()
+    return () => {
+      clearInterval(keepAliveRef.current)
+      window.speechSynthesis.cancel()
+    }
   }, [])
 
   // Load voices

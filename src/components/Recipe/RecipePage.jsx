@@ -117,36 +117,67 @@ export default function RecipePage() {
     return parts
   }
 
+  // הקראה בטלפון נופלת בשתי מלכודות ידועות של כרום:
+  // 1. תור ארוך של משפטים נזרק - ולכן מקריאים משפט אחד ומפעילים את הבא ב-onend.
+  // 2. ההקראה נקטעת אחרי כ-15 שניות - ולכן קוראים ל-resume כל 10 שניות.
+  const keepAliveRef = useRef(null)
+
+  const startKeepAlive = () => {
+    clearInterval(keepAliveRef.current)
+    keepAliveRef.current = setInterval(() => {
+      if (window.speechSynthesis.speaking) window.speechSynthesis.resume()
+    }, 10000)
+  }
+
   const startSpeaking = () => {
     window.speechSynthesis.cancel()
     const parts = buildSpeechText()
     if (parts.length === 0) return
 
     const isEn = !isRTL
-    const voices = window.speechSynthesis.getVoices()
     const lang = isEn ? 'en-US' : 'he-IL'
+    const voices = window.speechSynthesis.getVoices()
     const voice = voices.find(v => v.lang === lang) || voices.find(v => v.lang.startsWith(isEn ? 'en' : 'he'))
 
-    utterancesRef.current = parts.map((part, idx) => {
-      const u = new SpeechSynthesisUtterance(part.text)
+    let started = false
+    const speakPart = (idx) => {
+      if (idx >= parts.length) {
+        clearInterval(keepAliveRef.current)
+        setIsSpeaking(false)
+        setSpeakingStepIdx(-1)
+        return
+      }
+      const u = new SpeechSynthesisUtterance(parts[idx].text)
       u.lang = lang
       u.rate = 0.9
       if (voice) u.voice = voice
-      u.onstart = () => setSpeakingStepIdx(idx)
-      u.onend = () => {
-        if (idx === parts.length - 1) {
-          setIsSpeaking(false)
-          setSpeakingStepIdx(-1)
-        }
-      }
-      return u
-    })
+      u.onstart = () => { started = true; setSpeakingStepIdx(idx) }
+      u.onend = () => speakPart(idx + 1)
+      u.onerror = () => speakPart(idx + 1)
+      utterancesRef.current = [u]
+      window.speechSynthesis.speak(u)
+    }
 
     setIsSpeaking(true)
-    utterancesRef.current.forEach(u => window.speechSynthesis.speak(u))
+    startKeepAlive()
+    speakPart(0)
+
+    // אם אחרי שתי שניות שום דבר לא התחיל, למכשיר אין קול בשפה הזו
+    setTimeout(() => {
+      if (!started && !window.speechSynthesis.speaking) {
+        clearInterval(keepAliveRef.current)
+        window.speechSynthesis.cancel()
+        setIsSpeaking(false)
+        setSpeakingStepIdx(-1)
+        alert(isEn
+          ? 'Your device has no installed voice for this language, so reading aloud is unavailable.'
+          : 'לא מותקן במכשיר קול בעברית, ולכן ההקראה לא זמינה. אפשר להתקין קול בהגדרות המכשיר, תחת נגישות ואז פלט טקסט לדיבור.')
+      }
+    }, 2000)
   }
 
   const stopSpeaking = () => {
+    clearInterval(keepAliveRef.current)
     window.speechSynthesis.cancel()
     setIsSpeaking(false)
     setSpeakingStepIdx(-1)
@@ -162,7 +193,10 @@ export default function RecipePage() {
 
   // Stop speech on unmount
   useEffect(() => {
-    return () => window.speechSynthesis.cancel()
+    return () => {
+      clearInterval(keepAliveRef.current)
+      window.speechSynthesis.cancel()
+    }
   }, [])
 
   // Load voices (needed on some browsers)
