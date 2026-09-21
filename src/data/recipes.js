@@ -1268,7 +1268,7 @@ export const recipes = [
   {
     id: 28,
     name: 'מאפינס גבינות וזיתים',
-    image: '/מאפינס גבינות וזיתים.jpg',
+    image: '/מאפינס גבינות וזיתים.jpeg',
     tcm: {
       nature: 'ניטרלי',
       dominantFlavor: 'salty',
