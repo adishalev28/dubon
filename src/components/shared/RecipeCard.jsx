@@ -116,9 +116,9 @@ export default function RecipeCard({ recipe, variant = 'compact' }) {
 
   if (variant === 'compact') {
     return (
-      <div onClick={handleClick} className="flex-shrink-0 w-56 bg-white rounded-2xl overflow-hidden shadow-sm cursor-pointer active:scale-[0.98] transition-transform">
+      <div onClick={handleClick} className="w-full bg-white rounded-2xl overflow-hidden shadow-sm cursor-pointer active:scale-[0.98] transition-transform">
         {/* Image */}
-        <div className="relative h-[130px]">
+        <div className="relative h-[110px]">
           <img
             src={translatedRecipe.image}
             alt={translatedRecipe.name}
@@ -147,7 +147,7 @@ export default function RecipeCard({ recipe, variant = 'compact' }) {
 
         {/* Content */}
         <div className="p-3">
-          <h3 className="font-bold text-olive-800 text-sm mb-1 line-clamp-1">{translatedRecipe.name}</h3>
+          <h3 className="font-bold text-olive-800 text-sm mb-1 line-clamp-2 min-h-[2.5rem]">{translatedRecipe.name}</h3>
           <p className="text-xs text-cream-600 mb-2">
             {translatedRecipe.difficulty} · {translatedRecipe.category}
           </p>

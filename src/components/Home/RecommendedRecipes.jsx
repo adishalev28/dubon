@@ -66,7 +66,7 @@ export default function RecommendedRecipes() {
       {filtered.length === 0 ? (
         <p className="text-cream-600 text-center py-8 px-4">{t('home.noResults')}</p>
       ) : (
-        <div className="flex gap-4 overflow-x-auto px-4 pb-4 scrollbar-hide" style={{ direction: isRTL ? 'rtl' : 'ltr' }}>
+        <div className="grid grid-cols-2 gap-3 px-4 pb-4" style={{ direction: isRTL ? 'rtl' : 'ltr' }}>
           {translatedFiltered.map((recipe) => (
             <RecipeCard key={recipe.id} recipe={recipe} />
           ))}
