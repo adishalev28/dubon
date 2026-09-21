@@ -1329,7 +1329,7 @@ export const recipes = [
   {
     id: 29,
     name: 'גולאש בקר הונגרי',
-    image: '/גולאש.jpg',
+    image: '/גולאש.jpeg',
     time: 180,
     tcm: {
       nature: 'חם',
