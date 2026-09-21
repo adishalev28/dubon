@@ -1194,7 +1194,7 @@ export const recipes = [
   {
     id: 27,
     name: 'פנקייק סופלה יפני',
-    image: '/מתכון לפנקייק.jfif',
+    image: '/פנקייק סופלה יפני.jpg',
     link: 'https://www.facebook.com/share/r/1888r8Cgrg/',
     time: 35,
     tcm: {
