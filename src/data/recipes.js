@@ -1413,7 +1413,7 @@ export const recipes = [
   {
     id: 30,
     name: 'טבית עיראקי',
-    image: '/טבית עיראקי.jpg',
+    image: '/טבית ערקית.jpeg',
     link: 'https://vm.tiktok.com/ZSbrgUaPA/',
     time: 750,
     tcm: {
