@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { X, ChevronLeft, ChevronRight, Volume2, VolumeX } from 'lucide-react'
 import { useLanguage } from '../../i18n/LanguageContext'
+import Emph, { stripEmph } from '../shared/Emph'
 
 export default function FocusMode({ steps, recipeName, onClose }) {
   const { t } = useLanguage()
@@ -23,7 +24,7 @@ export default function FocusMode({ steps, recipeName, onClose }) {
     if (!step) return
 
     const isEn = !isRTL
-    const text = isEn ? `Step ${stepIdx + 1}: ${step.title}. ${step.text}` : `שלב ${stepIdx + 1}: ${step.title}. ${step.text}`
+    const text = isEn ? `Step ${stepIdx + 1}: ${step.title}. ${stripEmph(step.text)}` : `שלב ${stepIdx + 1}: ${step.title}. ${stripEmph(step.text)}`
     const u = new SpeechSynthesisUtterance(text)
     const lang = isEn ? 'en-US' : 'he-IL'
     u.lang = lang
@@ -195,7 +196,7 @@ export default function FocusMode({ steps, recipeName, onClose }) {
             {step.text.split('.').filter(s => s.trim()).map((sentence, i) => (
               <li key={i} className="flex items-start gap-2">
                 <span className="text-olive-600 mt-1 shrink-0">•</span>
-                <span>{sentence.trim()}</span>
+                <span><Emph text={sentence.trim()} /></span>
               </li>
             ))}
           </ul>

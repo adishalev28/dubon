@@ -8,6 +8,7 @@ import { useState, useRef, useEffect } from 'react'
 import { scaleAmount, parseAmount } from '../../utils/parseAmount'
 import FocusMode from './FocusMode'
 import { useLanguage } from '../../i18n/LanguageContext'
+import Emph, { stripEmph } from '../shared/Emph'
 import { useTranslatedRecipe } from '../../i18n/useTranslatedRecipe'
 
 export default function RecipePage() {
@@ -107,12 +108,12 @@ export default function RecipePage() {
     // Steps
     if (recipe.steps) {
       recipe.steps.forEach((step, i) => {
-        parts.push({ text: isEn ? `Step ${i + 1}: ${step.title}. ${step.text}` : `שלב ${i + 1}: ${step.title}. ${step.text}`, label: isEn ? `Step ${i + 1}` : `שלב ${i + 1}` })
+        parts.push({ text: isEn ? `Step ${i + 1}: ${step.title}. ${stripEmph(step.text)}` : `שלב ${i + 1}: ${step.title}. ${stripEmph(step.text)}`, label: isEn ? `Step ${i + 1}` : `שלב ${i + 1}` })
       })
     }
     // Pro tip
     if (recipe.proTip) {
-      parts.push({ text: (isEn ? 'Tip: ' : 'טיפ: ') + recipe.proTip, label: isEn ? 'Tip' : 'טיפ' })
+      parts.push({ text: (isEn ? 'Tip: ' : 'טיפ: ') + stripEmph(recipe.proTip), label: isEn ? 'Tip' : 'טיפ' })
     }
     return parts
   }
@@ -241,12 +242,12 @@ export default function RecipePage() {
     if (recipe.steps) {
       text += `\n👨‍🍳 *הכנה:*\n`
       recipe.steps.forEach((step, i) => {
-        text += `\n*${i + 1}. ${step.title}*\n${step.text}\n`
+        text += `\n*${i + 1}. ${step.title}*\n${step.text.replace(/\*\*/g, '*')}\n`
       })
     }
 
     if (recipe.proTip) {
-      text += `\n💡 *טיפ:* ${recipe.proTip}\n`
+      text += `\n💡 *טיפ:* ${recipe.proTip.replace(/\*\*/g, '*')}\n`
     }
 
     text += `\n_נשלח מאפליקציית דובון_ 🧸`
@@ -562,7 +563,7 @@ export default function RecipePage() {
                   </div>
                   <div className="flex-1">
                     <h3 className="font-bold text-olive-800 text-sm mb-1">{step.title}</h3>
-                    <p className="text-sm text-cream-600 leading-relaxed">{step.text}</p>
+                    <p className="text-sm text-cream-600 leading-relaxed"><Emph text={step.text} /></p>
                   </div>
                 </div>
               </div>
@@ -579,7 +580,7 @@ export default function RecipePage() {
             <Lightbulb size={20} className="text-warm-orange-600 flex-shrink-0 mt-0.5" />
             <div>
               <h3 className="font-bold text-warm-orange-600 text-sm mb-1">{t('recipe.proTipTitle')}</h3>
-              <p className="text-sm text-warm-brown-600 leading-relaxed">{recipe.proTip}</p>
+              <p className="text-sm text-warm-brown-600 leading-relaxed"><Emph text={recipe.proTip} /></p>
             </div>
           </div>
         </div>
