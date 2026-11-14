@@ -1722,5 +1722,143 @@
     "difficulty": "Easy",
     "category": "Breakfast",
     "servings": "4 servings (about 8 crepes)"
+  },
+  "31": {
+    "name": "Chocolate Birthday Cake",
+    "difficulty": "Easy",
+    "category": "Desserts",
+    "tags": [
+      "Sweet",
+      "Kid friendly",
+      "No mixer"
+    ],
+    "moods": [
+      "Sweet",
+      "Kid friendly"
+    ],
+    "description": "A soft, moist one-bowl chocolate cake with no mixer, topped with ganache that soaks into the warm cake.",
+    "intro": "The classic birthday chocolate cake: mix everything in one bowl with a hand whisk and bake. The secret is dissolving the cocoa in boiling water first - it releases all the flavor and gets rid of lumps. After baking, ganache is poured over the warm cake once it has been poked with holes, so it seeps in and keeps it moist. Also works as a base for a layer cake.",
+    "ingredients": [
+      "Chocolate drink powder",
+      "Cocoa powder",
+      "Instant coffee",
+      "Sugar",
+      "Oil",
+      "Eggs",
+      "Vanilla extract",
+      "Flour",
+      "Baking powder",
+      "Salt",
+      "Dark chocolate",
+      "Heavy cream"
+    ],
+    "servings": "One rectangular pan (about 20 squares)",
+    "detailedIngredients": [
+      {
+        "name": "Chocolate drink powder",
+        "amount": "3/4 cup",
+        "note": ""
+      },
+      {
+        "name": "Cocoa powder",
+        "amount": "1/4 cup",
+        "note": "Use more for a darker cake"
+      },
+      {
+        "name": "Instant coffee powder",
+        "amount": "1 tsp",
+        "note": "Not noticeable, deepens the chocolate"
+      },
+      {
+        "name": "Boiling water",
+        "amount": "1/2 cup",
+        "note": ""
+      },
+      {
+        "name": "Lukewarm water",
+        "amount": "1 1/2 cups",
+        "note": ""
+      },
+      {
+        "name": "Sugar",
+        "amount": "1 1/2 cups",
+        "note": ""
+      },
+      {
+        "name": "Oil",
+        "amount": "1 cup",
+        "note": ""
+      },
+      {
+        "name": "Large eggs",
+        "amount": "2",
+        "note": "Or 3 small"
+      },
+      {
+        "name": "Vanilla extract",
+        "amount": "1 tsp",
+        "note": ""
+      },
+      {
+        "name": "Flour",
+        "amount": "2 cups",
+        "note": ""
+      },
+      {
+        "name": "Baking powder",
+        "amount": "1 packet (10 g)",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "amount": "1/2 tsp",
+        "note": ""
+      },
+      {
+        "name": "Dark chocolate",
+        "amount": "150 g",
+        "note": "For the topping, broken into pieces"
+      },
+      {
+        "name": "Heavy cream",
+        "amount": "150 ml",
+        "note": "For the topping. Coconut cream for a dairy-free version"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Preheat the oven",
+        "text": "Preheat the oven to **180°C**. Use a standard rectangular pan, a 26 cm round pan or 2 loaf pans. To lift the cake out later - **line with baking paper**."
+      },
+      {
+        "title": "Dissolve the cocoa",
+        "text": "In a large bowl put 3/4 cup chocolate drink powder, 1/4 cup cocoa powder and 1 tsp instant coffee. Add 1/2 cup **boiling water** and whisk by hand **until everything dissolves**. The boiling water \"cooks\" the cocoa, releasing its flavor and breaking up lumps."
+      },
+      {
+        "title": "The wet ingredients",
+        "text": "Add 1 1/2 cups lukewarm water, 1 1/2 cups sugar, 1 cup oil, 2 large eggs and 1 tsp vanilla extract. Whisk until smooth."
+      },
+      {
+        "title": "The dry ingredients",
+        "text": "Add 2 cups flour, a packet of baking powder and 1/2 tsp salt - **don't skip the salt**, it brings out the chocolate. Whisk until there is **not a single lump**. The batter is **runny - that is correct**, do not add flour."
+      },
+      {
+        "title": "Bake",
+        "text": "Pour into the pan and bake **35-40 minutes**, until a toothpick inserted in the center comes out **dry**. For smaller pans lower the oven to **160°C**."
+      },
+      {
+        "title": "The ganache",
+        "text": "While it bakes, pour 150 ml heavy cream over 150 g broken dark chocolate. Microwave for **1-1.5 minutes**, then **don't stir** - wait **about 2 minutes** for the residual heat to melt the chocolate. Only then stir until smooth. Lumps left? Another half minute in the microwave and stir again."
+      },
+      {
+        "title": "Poke and pour",
+        "text": "Take the cake out and **while it is still hot** poke holes all over it with a toothpick. Pour the ganache right away and spread - it **seeps into the holes** and keeps the cake moist."
+      },
+      {
+        "title": "Cool",
+        "text": "Let the cake **cool** before cutting. Warm, it crumbles; once cool it slices neatly."
+      }
+    ],
+    "proTip": "Pour the ganache over a **hot** cake only - on a cold cake it won't soak in. For a darker, deeper cake shift the ratio **toward cocoa**, or use half chocolate powder and half cocoa."
   }
 }
