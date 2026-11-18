@@ -1860,5 +1860,137 @@
       }
     ],
     "proTip": "Pour the ganache over a **hot** cake only - on a cold cake it won't soak in. For a darker, deeper cake shift the ratio **toward cocoa**, or use half chocolate powder and half cocoa."
+  },
+  "32": {
+    "name": "Crispy-Top Cinnamon Cake",
+    "difficulty": "Easy",
+    "category": "Desserts",
+    "tags": [
+      "Sweet",
+      "Kid friendly",
+      "No mixer"
+    ],
+    "moods": [
+      "Sweet",
+      "Comfort food"
+    ],
+    "description": "A one-bowl cake layered with batter and cinnamon demerara sugar, with a crispy top crust and a drizzle of maple syrup.",
+    "intro": "A simple one-bowl cake made with a hand whisk that fills the house with the smell of cinnamon. The secret is in the layers: batter, cinnamon demerara sugar, more batter, and a full layer of cinnamon sugar on top, which bakes into a crispy crust. This version uses self-rising flour instead of all-purpose flour and finishes with a drizzle of maple syrup. Swap the milk for soy milk or orange juice to make it dairy-free.",
+    "ingredients": [
+      "Sugar",
+      "Canola oil",
+      "Milk",
+      "Vanilla sugar",
+      "Egg",
+      "Vanilla extract",
+      "Salt",
+      "Baking powder",
+      "Self-rising flour",
+      "Demerara sugar",
+      "Cinnamon",
+      "Maple syrup"
+    ],
+    "servings": "One loaf pan (about 10 slices)",
+    "detailedIngredients": [
+      {
+        "name": "Sugar",
+        "amount": "1 disposable hot-drink cup",
+        "note": "About 200 ml"
+      },
+      {
+        "name": "Canola oil",
+        "amount": "1/3 cup",
+        "note": ""
+      },
+      {
+        "name": "Milk",
+        "amount": "3/4 cup",
+        "note": "Or soy milk / orange juice for dairy-free"
+      },
+      {
+        "name": "Vanilla sugar",
+        "amount": "1 packet (10 g)",
+        "note": ""
+      },
+      {
+        "name": "Large egg",
+        "amount": "1",
+        "note": ""
+      },
+      {
+        "name": "Vanilla extract",
+        "amount": "1 tsp",
+        "note": ""
+      },
+      {
+        "name": "Salt",
+        "amount": "A small pinch",
+        "note": "Brings out the sweetness"
+      },
+      {
+        "name": "Baking powder",
+        "amount": "1 tsp",
+        "note": "No more"
+      },
+      {
+        "name": "Self-rising flour",
+        "amount": "1 1/4 cups",
+        "note": "Originally all-purpose flour"
+      },
+      {
+        "name": "Demerara sugar",
+        "amount": "1/2 cup",
+        "note": "For the layers and the crust"
+      },
+      {
+        "name": "Cinnamon",
+        "amount": "1 heaping tsp",
+        "note": ""
+      },
+      {
+        "name": "Maple syrup",
+        "amount": "A drizzle",
+        "note": "To finish, over the cake"
+      }
+    ],
+    "steps": [
+      {
+        "title": "Preheat the oven",
+        "text": "Preheat the oven to **180°C, conventional** (not fan). Grease a **loaf pan** with oil spray."
+      },
+      {
+        "title": "Wet ingredients",
+        "text": "In a bowl, combine 1 disposable cup of sugar, 1/3 cup canola oil, 3/4 cup milk, a packet of vanilla sugar, 1 large egg, 1 tsp vanilla extract and **a small pinch of salt**. Whisk by hand **until there are no lumps** and the mixture turns an even caramel color."
+      },
+      {
+        "title": "Dry ingredients",
+        "text": "Add 1 tsp baking powder and 1 1/4 cups **self-rising flour**. Mix **gently**, just until the flour is absorbed and no lumps remain. Don't overmix."
+      },
+      {
+        "title": "Cinnamon mixture",
+        "text": "In a small bowl, mix 1/2 cup **demerara sugar** with 1 heaping tsp **cinnamon**. This gives the cake its aroma and flavor."
+      },
+      {
+        "title": "Building the layers",
+        "text": "Pour **about a third of the batter** into the pan and gently sprinkle **about a third of the cinnamon mixture** over it. Pour another third of the batter (it doesn't have to cover everything), sprinkle another third of the cinnamon, then pour in **all the remaining batter**. Measure by eye - everything blends in the oven."
+      },
+      {
+        "title": "The crust",
+        "text": "Sprinkle **all the remaining cinnamon mixture** on top so it covers the whole surface. This is the important part - it creates the **crispy crust**."
+      },
+      {
+        "title": "Marbling",
+        "text": "Insert a toothpick into the cake and swirl **in circular motions**, like a marble cake, to work the top layer in. **Less than 30 seconds** - don't overdo it."
+      },
+      {
+        "title": "Bake",
+        "text": "Bake in the preheated oven for **about 40 minutes**, until the cake is tall and a toothpick in the center comes out dry."
+      },
+      {
+        "title": "Cool and maple",
+        "text": "Let the cake **cool completely**, then drizzle **a little maple syrup** over it before serving."
+      }
+    ],
+    "proTip": "The crispy crust comes from the top layer of **demerara sugar and cinnamon** - don't skimp on it, it should cover the whole cake. Prefer it without maple? Use **powdered sugar** or a glaze, or just leave it as is."
   }
 }
